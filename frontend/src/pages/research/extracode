@@ -1,0 +1,23 @@
+ <Box sx={{
+            minHeight: "calc(100vh - 164px)",
+            backgroundImage: "linear-gradient(to right, rgb(182, 244, 146), rgb(135, 201, 185));",
+            paddingTop: "1em",
+            paddingBottom: "1em"
+          }} >
+            backgroundImage: "linear-gradient(to right, rgb(182, 244, 146), rgb(135, 201, 185));",
+margin: "2em", marginTop: "1em"
+
+
+ minHeight: "calc(100vh - 500px)",
+              backgroundImage: "url(https://static.vecteezy.com/system/resources/previews/005/176/319/original/binary-code-wavy-on-black-background-for-digital-technology-concept-background-vector.jpg)",
+
+
+
+ <CardMedia
+                        height="500"
+                        component="h1"
+                        sx={{ color: "white", textAlign: "center", padding: "7em", fontSize: "4em", margin: "0" }}
+                        image={image}
+                        alt="A field of corn"
+                    >
+                    </CardMedia>

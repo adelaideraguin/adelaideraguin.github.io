@@ -1,0 +1,114 @@
+I am a postdoc at HHU. I recently completed my PhD in computational biophysics at the University of Sheffield, 
+                where I also completed my undergraduate degree in Theoretical Physics (MPhys). I am working on a computational project
+                at the interface of physics and biology, where we are using stochastic simulations to
+
+                    Impact of drought on the secondary cell wall of poplar xylem, a multi-disciplinary approach.
+                    I am working at the interface of computational physics and quantitative biology to model plant 
+                    cell wall molecular biosynthesis and water transport at the plant organ scale. We are developing 
+                    tailored computational approaches based on advanced stochastic simulations in C++ in order to investigate 
+                    the importance of microscopic properties of the xylem on the ability of a species to manage drought 
+                    conditions. My project is in collaboration with experimentalist partners at the Research Center
+                     of Jülich, and I also engage in the research activities of the interdisciplinary Cluster 
+                     of Excellence on Plant Sciences (CEPLAS), which funds the position.
+Partho
+I am a postdoctoral researcher with a PhD in biophysics. Before joining Dr Raguin's research group, 
+                I completed my PhD at the Indian Institute of Science Education and Research Kolkata, 
+                India. During my PhD, I worked on mathematical and computational modelling of the dynamics at the leading edge 
+                of a crawling eukaryotic cell, with a special focus on the emergent 'stick-slip' phenomena. I am 
+                working on the development of a computational tool to predict the enzymatic saccharification of 
+                lignocellulosic biomass. 
+In this project, I am building on the previous computational work of 
+                the team to provide free, open-source, and user-friendly software to predict saccharification dynamics 
+                for different types of biomass. I run stochastic simulations of the saccharification dynamics of a 
+                three-dimensional resolved lignocellulose microfibril (which can vary in structure and composition), 
+                that is being digested by a tunable enzyme cocktail. In addition, I utilise experimental data provided 
+                by our partners at Forschungszentrum Jülich to calibrate and train the model in order to boost its 
+                predictive capability. I believe my work on this project will not only yield a tool to answer precise
+                 applied questions (for instance best-adapted enzyme cocktails), but it will also provide new fundamental
+                  knowledge on the microscopic mechanisms and kinetics of lignocellulose saccharification.
+
+Merle 
+I completed my bachelors degree in quantitative biology at Heinrich Heine University and worked with crops before 
+discovering my interest in modelling techniques, which are the focus of my PhD project. Modelling gene expression 
+regulation at the whole-translatome scale. I am working on a CEPLAS funded PhD project about modelling gene expression
+regulation at the whole-translatome scale under controlled optogenetic perturbation. Translation is a crucial step in
+ protein synthesis in all cellular organisms and is hence worth a closer investigation. Various mathematical and computational 
+ models are developed for modelling translation in organisms like yeast and bacteria. The aim of this project is to develop the
+  first holistic model of translation in plants. To do so, I am using stochastic simulations and a Gillespie algorithm, programmed
+   in C++. The dynamic biophysical model will, later on, be expanded and refined with experimental data. The model will aim to answer 
+   questions regarding limiting translational resources, stress regulation, ideal ribosomal velocity parameters, codon tuning, or
+    translatome-related diseases.
+
+Jasmin
+                I did my bachelor's degree at the Institute for applied physics at HHU and I'm currently working on my master's degree.
+                Saccharification of cell wall biomass from maize mutants: optimising a fitting algorithm to compare stochastic simulations 
+                and quantitative experimental data
+                The plant cell walls of crop residues offer a previously unexploited possibility of energy production intended as biofuel. 
+                The digestion of the corn cell wall is achieved by various enzymes specialised in saccharification. This process is simulated 
+                by a stochastic model in C++. Additionally, a fitting algorithm compares stochastic simulations and quantitative experimental 
+                data to find the best-fitting set of input parameters to reproduce the experimental results. I am aiming to optimise the fitting
+                 algorithm via two different approaches:  sensitivity analysis to describe the impact each parameter has on saccharification and a
+                  new algorithm for an optimised search of the closest fit.
+
+Asma My name is Asma, and I am a master's student in computer science. The focus of my studies is data engineering 
+                and model simulations. My bachelor's thesis was about the dynamic motion of swarm robots. It focuses on 
+                developing algorithms for self-organization of cooperative robot systems capable of adapting to changing conditions 
+                in the environment without having a control-unit. During my studies, I worked as a student assistant in various chairs, 
+                mainly as a tutor and proofreader.
+
+                Within the framework of "individual research work", I am currently working on a research project that focuses on the simulation 
+                of biological systems. More precisely, we try to mimic the dynamics of motor proteins while crossing the intersection of 
+                two microtubules. We opted for the totally asymmetric simple exclusion process (TASEP) as our model. TASEP models interacting 
+                particles that follow simple rules to move in a one-dimensional environment. Therefore, the focus is on the intersection of two
+                 segments and the introduction of pumping-, bias- and detachment- rates on it. The results from the simulations will be compared
+                  to the analytical results obtained from the mathematical analysis as well as from the non-linear optimization solvers. By setting 
+                  some parameters we can actually control the system to reproduce the same behavior as in biological organisms. In that way, 
+                  the model's accuracy can be tested by comparing the simulation results to the existing collected data from biological experiments. 
+                  The work can also be expanded to find a model generalization. I.e to look at n intersecting segments instead of two.
+
+
+
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+            
+                
+                <Typography variant="h5"> Research Topics:
+                </Typography>
+                <Divider/>
+                <CardContent>
+                
+                <p>
+                <Button sx={{ textAlign: "right" }} variant="outlined" component={Link} to="/research/glycogen-starch">
+                    Glycogen & Stach
+                </Button></p>
+                <p>
+                <Button sx={{ textAlign: "right" }} variant="outlined"  component={Link} to="/research/protein-synthesis">
+                    Protein Synthesis
+                </Button></p>
+                <p>
+                <Button sx={{ textAlign: "right" }} variant="outlined"  component={Link} to="/research/cytoskeletal-transport">
+                    Cytoskeletal Transport
+                </Button></p>
+
+                <p><Button sx={{ textAlign: "right" }} variant="outlined"  component={Link} to="/research/biosynthesis-degredation">
+                    Plant cell wall biosynthesis and degredation
+                </Button>
+                </p>
+                </CardContent>
+            </Collapse>
+
+                    <Typography variant="h5" sx={{ textAlign: "left", margin: "1em" }}>
+                    Stochastic Models of Biological Systems
+                    </Typography>
+                    <Typography  paragraph variant="body1" sx={{ textAlign: "left", margin: "1em" }}>
+                    <p>I lead this course for master's students in the computer science department. This module is highly interdisciplinary 
+                    and combines knowledge and skills from Mathematics,
+                    Physics, Computer Sciences, and Biology. We will develop stochastic models using two main
+                    algorithms, the Monte Carlo algorithm (in its simplest version) and the Gillespie algorithm. </p>
+                    <p>Biological systems that will be modelled are:</p>
+                    <p>Chapter 1: Cell birth and death</p>
+                    <p>Chapter 2: Intra and extra cellular diffusion</p>
+                    <p>Chapter 3: Protein production</p>
+                    <p>Chapter 4: Cytoskeletal transport</p>
+                    <p>Chapter 5: Complex three-dimensional polysaccharide synthesis</p>
+
+                    </Typography>
