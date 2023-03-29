@@ -96,20 +96,20 @@ class App extends Component {
           }} >
           
             <Routes>
-              <Route exact path="/" element={<Home/>} />
-              <Route exact path="/group" element={<GroupMembers/>} />
-              <Route exact path="/research" element={<Research/>} />
-              <Route exact path="/software" element={<Software/>} />
-              <Route exact path="/hiring" element={<Hiring/>} />
-              <Route exact path="/funding" element={<Funding/>} />
-              <Route exact path="/contact-us" element={<Contact/>}/>
-              <Route exact path="/publications" element={<Publications/>}/>
-              <Route exact path="/research/biosynthesis" element={<Biosynthesis_Degredation/>}/>
-              <Route exact path="/research/protein-synthesis" element={<Protein_Synthesis/>}/>
-              <Route exact path="/research/glycogen" element={<Glycogen/>}/>
-              <Route exact path="/research/cytoskeletal-transport" element={<Transport/>}/>
-              <Route exact path="/research/fatty-acids" element={<FattyAcids/>}/>
-              <Route exact path="/research/starch" element={<Starch/>}/>
+              <Route exact path="/RaguinTeam" element={<Home/>} />
+              <Route exact path="/RaguinTeam/group" element={<GroupMembers/>} />
+              <Route exact path="/RaguinTeam/research" element={<Research/>} />
+              <Route exact path="/RaguinTeam/software" element={<Software/>} />
+              <Route exact path="/RaguinTeam/hiring" element={<Hiring/>} />
+              <Route exact path="/RaguinTeam/funding" element={<Funding/>} />
+              <Route exact path="/RaguinTeam/contact-us" element={<Contact/>}/>
+              <Route exact path="/RaguinTeam/publications" element={<Publications/>}/>
+              <Route exact path="/RaguinTeam/research/biosynthesis" element={<Biosynthesis_Degredation/>}/>
+              <Route exact path="/RaguinTeam/research/protein-synthesis" element={<Protein_Synthesis/>}/>
+              <Route exact path="/RaguinTeam/research/glycogen" element={<Glycogen/>}/>
+              <Route exact path="/RaguinTeam/research/cytoskeletal-transport" element={<Transport/>}/>
+              <Route exact path="/RaguinTeam/research/fatty-acids" element={<FattyAcids/>}/>
+              <Route exact path="/RaguinTeam/research/starch" element={<Starch/>}/>
             </Routes>
             </Box>
            
