@@ -29,14 +29,14 @@ const Navbar = () => {
                         Group of Adélaïde Raguin
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: "space-evenly" }}>
-                        <Button sx={{ color: "black" }} component={Link} to="/" variant="outline" color="primary">Home</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/group" variant="outline" color="primary">Meet the Group</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/research" variant="outline" color="primary">Research Projects</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/funding" variant="outline" color="primary">Funding</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/publications" variant="outline" color="primary">Publications</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/software" variant="outline" color="primary">Software</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/hiring" variant="outline" color="primary">Join Us!</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/contact-us" variant="outline" color="primary">Get in touch</Button>
+                        <Button sx={{ color: "black" }} component={Link} to="/RaguinTeam" variant="outline" color="primary">Home</Button>
+                        <Button sx={{ color: "black" }} component={Link} to="/RaguinTeam/group" variant="outline" color="primary">Meet the Group</Button>
+                        <Button sx={{ color: "black" }} component={Link} to="/RaguinTeam/research" variant="outline" color="primary">Research Projects</Button>
+                        <Button sx={{ color: "black" }} component={Link} to="/RaguinTeam/funding" variant="outline" color="primary">Funding</Button>
+                        <Button sx={{ color: "black" }} component={Link} to="/RaguinTeam/publications" variant="outline" color="primary">Publications</Button>
+                        <Button sx={{ color: "black" }} component={Link} to="/RaguinTeam/software" variant="outline" color="primary">Software</Button>
+                        <Button sx={{ color: "black" }} component={Link} to="/RaguinTeam/hiring" variant="outline" color="primary">Join Us!</Button>
+                        <Button sx={{ color: "black" }} component={Link} to="/RaguinTeam/contact-us" variant="outline" color="primary">Get in touch</Button>
                     </Box>
                 </Toolbar>
             </AppBar>
