@@ -29,10 +29,11 @@ function Funding(){
         <div>
             <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
                 <Grid item xs={8} sm={6} md={3.5}>
-                    <BioSCCard />
+                    <DFGCard />
                 </Grid>
                 <Grid item xs={8} sm={6} md={3.5} >
-                    <DFGCard />
+                    <BioSCCard />
+
                 </Grid>
                 <Grid item xs={8} sm={6} md={3.5} >
                     <CEPLASCard />

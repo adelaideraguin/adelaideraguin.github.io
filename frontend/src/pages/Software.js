@@ -33,7 +33,8 @@ function Teaching(){
             </Card>
             <Card  sx={{ margin: "2em", marginTop: "1em", position:"relative" }}>
             <Typography variant="h5" sx={{ textAlign: "center", margin: "1em", position: "relative" }}>
-                    We have a several softwares available via webservers and github repositories which you are able to access below. *need ethics statement from Adelaide"
+                    We have a several softwares available via webservers and github repositories which you are able to access below. 
+                    All of our softwares are open source, but please take care to cite our works if you use them in your research!
             </Typography>
             </Card>
             <p>
