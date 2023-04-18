@@ -96,20 +96,20 @@ class App extends Component {
           }} >
           
             <Routes>
-              <Route exact path="/raguinteam" element={<Home/>} />
-              <Route exact path="/raguinteam/group" element={<GroupMembers/>} />
-              <Route exact path="/raguinteam/research" element={<Research/>} />
-              <Route exact path="/raguinteam/software" element={<Software/>} />
-              <Route exact path="/raguinteam/hiring" element={<Hiring/>} />
-              <Route exact path="/raguinteam/funding" element={<Funding/>} />
-              <Route exact path="/raguinteam/contact-us" element={<Contact/>}/>
-              <Route exact path="/raguinteam/publications" element={<Publications/>}/>
-              <Route exact path="/raguinteam/research/biosynthesis" element={<Biosynthesis_Degredation/>}/>
-              <Route exact path="/raguinteam/research/protein-synthesis" element={<Protein_Synthesis/>}/>
-              <Route exact path="/raguinteam/research/glycogen" element={<Glycogen/>}/>
-              <Route exact path="/raguinteam/research/cytoskeletal-transport" element={<Transport/>}/>
-              <Route exact path="/raguinteam/research/fatty-acids" element={<FattyAcids/>}/>
-              <Route exact path="/raguinteam/research/starch" element={<Starch/>}/>
+              <Route exact path="/raguin-team" element={<Home/>} />
+              <Route exact path="/raguin-team/group" element={<GroupMembers/>} />
+              <Route exact path="/raguin-team/research" element={<Research/>} />
+              <Route exact path="/raguin-team/software" element={<Software/>} />
+              <Route exact path="/raguin-team/hiring" element={<Hiring/>} />
+              <Route exact path="/raguin-team/funding" element={<Funding/>} />
+              <Route exact path="/raguin-team/contact-us" element={<Contact/>}/>
+              <Route exact path="/raguin-team/publications" element={<Publications/>}/>
+              <Route exact path="/raguin-team/research/biosynthesis" element={<Biosynthesis_Degredation/>}/>
+              <Route exact path="/raguin-team/research/protein-synthesis" element={<Protein_Synthesis/>}/>
+              <Route exact path="/raguin-team/research/glycogen" element={<Glycogen/>}/>
+              <Route exact path="/raguin-team/research/cytoskeletal-transport" element={<Transport/>}/>
+              <Route exact path="/raguin-team/research/fatty-acids" element={<FattyAcids/>}/>
+              <Route exact path="/raguin-team/research/starch" element={<Starch/>}/>
             </Routes>
             </Box>
            
