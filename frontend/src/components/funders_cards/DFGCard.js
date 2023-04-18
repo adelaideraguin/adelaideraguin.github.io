@@ -24,15 +24,9 @@ const DFGCard = () => {
 
     return (
         <Card style={{ minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
-            <Box>
-                <CardHeader
-                    title="DFG"
-                />
-                <Divider />
-            </Box>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 500,
-                margin: "0 auto",
+                padding: "2em", maxWidth: 500,
+                margin: "auto", 
             }}
                 component="img"
                 image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/DFG-logo-blau.svg/2000px-DFG-logo-blau.svg.png"

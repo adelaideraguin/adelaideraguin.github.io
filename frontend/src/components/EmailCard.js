@@ -1,8 +1,8 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
-import { useState } from "react";
 import EmailIcon from '../components/email.png';
 import EmailOpenIcon from '../components/emailopen.png';
+import React, { useState, useEffect } from 'react';
 
 
 const ExpandMore = styled((props) => {
@@ -49,8 +49,9 @@ const EmailCard = () => {
             <Box>
             <Divider/>
                 <CardActions >
-                    <Button variant="contained" href="http://linkedin.com/in/ad%C3%A9la%C3%AFde-raguin">
+                    <Button variant="contained"  onClick={() =>  navigator.clipboard.writeText('adelaide.raguin@hhu.de')}>
                         Send Email
+                        
                     </Button>
 
                 </CardActions>

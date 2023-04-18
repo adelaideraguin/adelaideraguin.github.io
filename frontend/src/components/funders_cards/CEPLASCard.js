@@ -24,15 +24,10 @@ const CEPLASCard = () => {
 
     return (
         <Card style={{ minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
-            <Box>
-                <CardHeader
-                    title="CEPLAS"
-                />
-                <Divider />
-            </Box>
+
             <CardMedia sx={{
                 padding: "1em", maxWidth: 800,
-                margin: "0 auto",
+                margin: "auto",
             }}
                 component="img"
                 image="https://www.ceplas.eu/fileadmin/Resources/Public/Bootstrap/img/CEPLAS-Logo.svg"

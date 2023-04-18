@@ -3,7 +3,7 @@ import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Col
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ComputerIcon from '@mui/icons-material/ComputerTwoTone';
-import prediglogo from '../PREDIGLOGO.png';
+import prediglogo from '../PREDIGLOGO.jpg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Behle2021Card from '../paper_cards/Behle2021';
 

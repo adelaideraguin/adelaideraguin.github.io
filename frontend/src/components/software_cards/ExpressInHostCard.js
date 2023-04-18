@@ -3,7 +3,6 @@ import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Col
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ComputerIcon from '@mui/icons-material/GitHub';
-import prediglogo from '../PREDIGLOGO.png';
 import Raguin2023Card from '../paper_cards/Raguin2023';
 
 

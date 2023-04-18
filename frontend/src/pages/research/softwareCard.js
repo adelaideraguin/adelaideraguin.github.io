@@ -2,7 +2,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../components/PREDIGLOGO.png";
+import logo from "../../components/PREDIGLOGO.jpg";
 
 
 const ExpandMore = styled((props) => {
