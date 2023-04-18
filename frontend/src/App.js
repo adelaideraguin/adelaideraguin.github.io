@@ -97,19 +97,19 @@ class App extends Component {
           
             <Routes>
               <Route exact path="/" element={<Home/>} />
-              <Route exact path="/group" element={<GroupMembers/>} />
-              <Route exact path="/research" element={<Research/>} />
-              <Route exact path="/software" element={<Software/>} />
-              <Route exact path="/hiring" element={<Hiring/>} />
-              <Route exact path="/funding" element={<Funding/>} />
-              <Route exact path="/contact-us" element={<Contact/>}/>
-              <Route exact path="/publications" element={<Publications/>}/>
-              <Route exact path="/research/biosynthesis" element={<Biosynthesis_Degredation/>}/>
-              <Route exact path="/research/protein-synthesis" element={<Protein_Synthesis/>}/>
-              <Route exact path="/research/glycogen" element={<Glycogen/>}/>
-              <Route exact path="/research/cytoskeletal-transport" element={<Transport/>}/>
-              <Route exact path="/research/fatty-acids" element={<FattyAcids/>}/>
-              <Route exact path="/research/starch" element={<Starch/>}/>
+              <Route exact path="/raguinteam/group" element={<GroupMembers/>} />
+              <Route exact path="/raguinteam/research" element={<Research/>} />
+              <Route exact path="/raguinteam/software" element={<Software/>} />
+              <Route exact path="/raguinteam/hiring" element={<Hiring/>} />
+              <Route exact path="/raguinteam/funding" element={<Funding/>} />
+              <Route exact path="/raguinteam/contact-us" element={<Contact/>}/>
+              <Route exact path="/raguinteam/publications" element={<Publications/>}/>
+              <Route exact path="/raguinteam/research/biosynthesis" element={<Biosynthesis_Degredation/>}/>
+              <Route exact path="/raguinteam/research/protein-synthesis" element={<Protein_Synthesis/>}/>
+              <Route exact path="/raguinteam/research/glycogen" element={<Glycogen/>}/>
+              <Route exact path="/raguinteam/research/cytoskeletal-transport" element={<Transport/>}/>
+              <Route exact path="/raguinteam/research/fatty-acids" element={<FattyAcids/>}/>
+              <Route exact path="/raguinteam/research/starch" element={<Starch/>}/>
             </Routes>
             </Box>
            
