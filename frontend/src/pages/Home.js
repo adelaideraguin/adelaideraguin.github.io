@@ -1,11 +1,13 @@
 import React from 'react';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, Paper, styled, Typography } from "@mui/material";
 import ResearchPaperCard from '../components/ResearchPaperCard';
 import { List, ListItem, ListItemText } from '@mui/material';
 import MeetUsCard from '../components/MeetUsCard';
 import SoftwareCard from './research/softwareCard';
-import image from '../components/people_cards/group.jpg';
 import background from '../components/images/background.png';
+import LatestNewsCard from '../components/news_carousel';
+
+
 function Home(){
     return(
         <section>
@@ -86,68 +88,15 @@ function Home(){
 
                 </Grid>
 
-                <Card padding="2em" sx={{ margin: "3em", position: "relative" }}>
-                    <Typography variant="h4">
-                    Latest Lab Updates
-                    </Typography>
-
-                    
-                    <Divider />
-                    <List sx={{ width: '100%' }}>
-                        <ListItem>
-                            <Typography variant="h5">
-                                March 2023: The first group seminar of the year, everyone presented their research and we shared some lovely homecooked snacks!
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography variant="h5">
-                                Feb 2023: Lianne Gahan will present her PhD research at the Manchester Multiscale Modelling conference in April
-                            </Typography> 
-                        </ListItem>
-                        <ListItem>
-                            <Typography variant="h5">
-                                Feb 2023: We welcome Evaldas Simanavicius from Manchester University for an internship in the group!
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography variant="h5">
-                            Feb 2023: Merle Stein is attending the Annual Biophysical Society Meeting in San Diego (USA), to discuss her research on protein production regulation in plants
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography variant="h5">
-                             Jan 2023: Lianne Gahan joined the group as a post doctoral researcher after successfully defending her PhD at the University of Sheffield, UK
-                             </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography variant="h5">
-                                Oct 2022: Merle Stein joined our group as a CEPLAS graduate school PhD student
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography variant="h5">
-                                Oct 2022: Torben Glass joined our group as a research assistant to build an interface for our PREDIG software
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography variant="h5">
-                                Oct 2022: Asma Ben Janete joined our group as a Master's student to research cytoskeletal transport
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography variant="h5">
-                            April 2022: Dr Partho Sakha De joined the group as a postdoctoral researcher
-                            </Typography>
-                        </ListItem>
-                    </List>
-
+                <LatestNewsCard/>
                 </Card>
-                </Card>
+               
                 </Box>
+               
+                
             </div>
         </section>
     );
 }
-
 export default Home;
 
