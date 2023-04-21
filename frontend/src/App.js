@@ -104,7 +104,7 @@ class App extends Component {
               <Route exact path="/funding" element={<Funding/>} />
               <Route exact path="/contact-us" element={<Contact/>}/>
               <Route exact path="/publications" element={<Publications/>}/>
-              <Route exact path="/raguinteam/research/biosynthesis" element={<Biosynthesis_Degredation/>}/>
+              <Route exact path="/research/biosynthesis" element={<Biosynthesis_Degredation/>}/>
               <Route exact path="/research/protein-synthesis" element={<Protein_Synthesis/>}/>
               <Route exact path="/research/glycogen" element={<Glycogen/>}/>
               <Route exact path="/research/cytoskeletal-transport" element={<Transport/>}/>
