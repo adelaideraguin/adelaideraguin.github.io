@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RaguinTeam/static/css/main.797418dd.css",
-    "main.js": "/RaguinTeam/static/js/main.a5e5d4c7.js",
+    "main.js": "/RaguinTeam/static/js/main.fb92c434.js",
     "static/media/fatty_acids.png": "/RaguinTeam/static/media/fatty_acids.c22e0d31d31446490cdc.png",
     "static/media/starch.png": "/RaguinTeam/static/media/starch.9f34cf9c369554a5de93.png",
     "static/media/digest_animation.gif": "/RaguinTeam/static/media/digest_animation.8b2aebe8da1e66489603.gif",
@@ -21,6 +21,7 @@
     "static/media/plant_cell_wall.png": "/RaguinTeam/static/media/plant_cell_wall.353597fd5d3c1cee26d4.png",
     "static/media/glycogen.png": "/RaguinTeam/static/media/glycogen.10e64e66ca27191bc19d.png",
     "static/media/GUI_ExpressInHost.png": "/RaguinTeam/static/media/GUI_ExpressInHost.d3fde438637b82cf01d5.png",
+    "static/media/elvadas.jpeg": "/RaguinTeam/static/media/elvadas.25636536f3df28e62763.jpeg",
     "static/media/protein_synthesis.png": "/RaguinTeam/static/media/protein_synthesis.630de636d0c35563d7d2.png",
     "static/media/background.png": "/RaguinTeam/static/media/background.906be3b77d8a07d42b3f.png",
     "static/media/cytoskeleton.png": "/RaguinTeam/static/media/cytoskeleton.ad1d0d3df7de05a967da.png",
@@ -30,10 +31,10 @@
     "static/media/email.png": "/RaguinTeam/static/media/email.2c378c9ee25927123f7d.png",
     "index.html": "/RaguinTeam/index.html",
     "main.797418dd.css.map": "/RaguinTeam/static/css/main.797418dd.css.map",
-    "main.a5e5d4c7.js.map": "/RaguinTeam/static/js/main.a5e5d4c7.js.map"
+    "main.fb92c434.js.map": "/RaguinTeam/static/js/main.fb92c434.js.map"
   },
   "entrypoints": [
     "static/css/main.797418dd.css",
-    "static/js/main.a5e5d4c7.js"
+    "static/js/main.fb92c434.js"
   ]
 }
