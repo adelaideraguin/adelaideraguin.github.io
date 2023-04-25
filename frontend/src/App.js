@@ -96,7 +96,7 @@ class App extends Component {
           }} >
           
             <Routes>
-              <Route exact path="/RaguinTeam/" element={<Home/>} />
+              <Route exact path="/" element={<Home/>} />
               <Route exact path="/group" element={<GroupMembers/>} />
               <Route exact path="/research" element={<Research/>} />
               <Route exact path="/software" element={<Software/>} />
