@@ -17,7 +17,7 @@ const Navbar = () => {
                         variant="h6"
                         noWrap
                         component="a"
-                        href="/home"
+                        href="/"
                         sx={{
                             display: 'flex',
                             fontWeight: 500,
@@ -29,7 +29,7 @@ const Navbar = () => {
                         Group of Adélaïde Raguin
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: "space-evenly" }}>
-                        <Button component={Link} to="/home" variant="outline" color="primary">Home</Button>
+                        <Button component={Link} to="/" variant="outline" color="primary">Home</Button>
                         <Button sx={{ color: "black" }} component={Link} to="/group" variant="outline" color="primary">Meet the Group</Button>
                         <Button sx={{ color: "black" }} component={Link} to="/research" variant="outline" color="primary">Research Projects</Button>
                         <Button sx={{ color: "black" }} component={Link} to="/funding" variant="outline" color="primary">Funding</Button>
