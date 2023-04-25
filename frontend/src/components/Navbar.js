@@ -17,7 +17,7 @@ const Navbar = () => {
                         variant="h6"
                         noWrap
                         component="a"
-                        href="/RaguinTeam"
+                        href="/"
                         sx={{
                             display: 'flex',
                             fontWeight: 500,
