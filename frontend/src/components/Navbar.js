@@ -8,10 +8,11 @@ const Navbar = () => {
 
     return (
         <>
-            <AppBar position="sticky" sx={{ background: "white", marginBottom: "0.5em", marginTop: "0" }} >
+        <div >
+            <AppBar position="sticky" sx={{display: 'flex', background: "white", marginBottom: "0.5em", marginTop: "0" }} >
                 <Toolbar disableGutters  >
                     <Box sx={{ padding: "1em", paddingBottom: "1em" }}>
-                        <img src="https://www.hhu.de/typo3conf/ext/wiminno/Resources/Public/img/hhu_logo.png" alt="hhu" width="300px" />
+                        <img src="https://www.hhu.de/typo3conf/ext/wiminno/Resources/Public/img/hhu_logo.png" alt="hhu" width="200px" />
                     </Box>
                     <Typography
                         variant="h6"
@@ -40,7 +41,7 @@ const Navbar = () => {
                     </Box>
                 </Toolbar>
             </AppBar>
-            
+            </div>
         </>
     );
 }

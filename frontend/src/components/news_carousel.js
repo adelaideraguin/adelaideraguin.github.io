@@ -28,9 +28,9 @@ const LatestNewsCard = () => {
                     <Carousel animation="slide" sx={{ margin: "2em"}}>
                     <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
                         <Grid item xs={2} sm={6} md={3.5}>
-                            <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                            <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
-                                    margin: "0 auto", maxHeight: 400,
+                                    margin: "0 auto", maxHeight: 300,
                                     width: "auto",
                                     height: "auto",
                                     
@@ -46,9 +46,9 @@ const LatestNewsCard = () => {
                             </Card >
                         </Grid>
                         <Grid item xs={2} sm={6} md={3.5} >
-                        <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                        <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{
-                            margin: "0 auto", maxHeight: 400,
+                            margin: "0 auto", maxHeight: 300,
                             width: "auto",
                             height: "auto",
                             
@@ -67,9 +67,9 @@ const LatestNewsCard = () => {
 
                         </Grid>
                         <Grid item xs={2} sm={6} md={3.5} >
-                        <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                        <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{
-                            margin: "0 auto", maxHeight: 400,
+                            margin: "0 auto", maxHeight: 300,
                             width: "auto",
                             height: "auto",
                             
@@ -90,10 +90,10 @@ const LatestNewsCard = () => {
 
 
                     <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
-                        <Grid item xs={2} sm={6} md={3.5}>
-                            <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                        <Grid item xs={3} sm={6} md={3.5}>
+                            <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
-                                    margin: "0 auto", maxHeight: 400,
+                                    margin: "0 auto", maxHeight: 300,
                                     width: "auto",
                                     height: "auto",
                                     
@@ -104,15 +104,15 @@ const LatestNewsCard = () => {
                                 />
                                 <CardContent>
                                     <Typography align='left' padding="1em" variant="h5" >
-                                    Feb 2023: Merle Stein is attending the Annual Biophysical Society Meeting in San Diego (USA), to discuss her research on protein production regulation in plants
+                                    Feb 2023: Merle Stein is attending the Annual Biophysical Society Meeting in San Diego, to discuss her research on protein production regulation in plants
                                     </Typography>
                                 </CardContent>
                             </Card >
                         </Grid>
                         <Grid item xs={2} sm={6} md={3.5} >
-                            <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                            <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
-                                    margin: "0 auto", maxHeight: 400,
+                                    margin: "0 auto", maxHeight: 300,
                                     width: "auto",
                                     height: "auto",
                                     
@@ -131,9 +131,9 @@ const LatestNewsCard = () => {
 
                         </Grid>
                         <Grid item xs={2} sm={6} md={3.5} >
-                            <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                            <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
-                                    margin: "0 auto", maxHeight: 400,
+                                    margin: "0 auto", maxHeight: 300,
                                     width: "auto",
                                     height: "auto",
                                     
@@ -155,9 +155,9 @@ const LatestNewsCard = () => {
                     
                     <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
                         <Grid item xs={2} sm={6} md={3.5}>
-                            <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                            <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
-                                    margin: "0 auto", maxHeight: 400,
+                                    margin: "0 auto", maxHeight: 300,
                                     width: "auto",
                                     height: "auto",
                                     
@@ -175,9 +175,9 @@ const LatestNewsCard = () => {
                             </Card >
                         </Grid>
                         <Grid item xs={2} sm={6} md={3.5} >
-                            <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                            <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
-                                    margin: "0 auto", maxHeight: 400,
+                                    margin: "0 auto", maxHeight: 300,
                                     width: "auto",
                                     height: "auto",
                                     
@@ -196,9 +196,9 @@ const LatestNewsCard = () => {
 
                         </Grid>
                         <Grid item xs={2} sm={6} md={3.5} >
-                            <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                            <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
-                                    margin: "0 auto", maxHeight: 400,
+                                    margin: "0 auto", maxHeight: 300,
                                     width: "auto",
                                     height: "auto",
                                     
@@ -216,16 +216,7 @@ const LatestNewsCard = () => {
                             </Card >
                         </Grid>
                     </Grid>
-                    
-                   
-                    
-
-                    
-                    
-                    
-                    
-                    
-                    
+                
                 
                     
                 
