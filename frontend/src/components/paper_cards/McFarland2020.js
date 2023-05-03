@@ -1,5 +1,5 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
 import figure from "../McFarlandfig.jpeg";
 
@@ -57,17 +57,21 @@ const McFarland2020Card = () => {
                 </CardActions>
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <Grid container spacing={1} alignItems="center"  justifyContent="space-around" >
+                <Grid item xs={12} sm={12} md={5}>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 700,
+                padding: "2em", maxWidth: 700,
                 margin: "0 auto",
             }}
                 component="img"
                 image={figure}
                 alt="Simulation of a comprehensive translation system comprising tRNAs, ribosomes and codon-biased mRNAs to analyse tRNA synthetase depletion."
             />
+            </Grid>
+            <Grid item xs={12} sm={12} md={7}>
+
                 <CardContent>
-                    <Typography variant="h5">Abstract</Typography>
-                    <Typography variant="body 1" paragraph>
+                    <Typography align="left"  paddingLeft="2em" paddingRight="2em" variant="body 1" paragraph>
                     During protein synthesis, charged tRNAs deliver amino acids to translating ribosomes, and are then re-charged by tRNA synthetases (aaRS).
                      In humans, mutant aaRS cause a diversity of neurological disorders, but their molecular aetiologies are incompletely characterised. To 
                      understand system responses to aaRS depletion, the yeast glutamine aaRS gene (GLN4) was transcriptionally regulated using doxycycline 
@@ -82,6 +86,8 @@ const McFarland2020Card = () => {
                     and explains how aaRS sequestration of uncharged tRNAs can prevent GCN4 activation under non-starvation conditions.
                     </Typography>
                 </CardContent>
+                </Grid>
+                </Grid>
             </Collapse>
         </Card >
     );

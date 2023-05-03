@@ -3,6 +3,8 @@ import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Col
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ComputerIcon from '@mui/icons-material/GitHub';
+import DescriptionIcon from '@mui/icons-material/Description';
+
 import Rousset2023Card from '../paper_cards/Rousset2023';
 
 
@@ -30,18 +32,17 @@ const ThreeDimGlycogenCard = () => {
         <Card sx={{ margin: "2em", marginTop: "1em" }} style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader align="left"
-                    title="Stochastic modeling of a three dimensional glycogen granule"
+                    title="Biogenesis of spatially resolved glycogen granules"
                 />
                 <Divider />
             </Box>
-                <Typography variant="body 1"  align="left" padding="3em" >
-                Access this code via GitHub and take a look at the associated paper. 
-                </Typography>
-            
-            
+      
             <Box>
             <Divider/>
                 <CardActions >
+                <Button variant="contained" startIcon={<DescriptionIcon />} href="https://www.researchgate.net/publication/364921626_Stochastic_modelling_of_a_three-dimensional_glycogen_granule_synthesis_and_impact_of_the_branching_enzyme">
+                        To Publication
+                </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://github.com/yvanrousset/Stochastic-modeling-of-a-three-dimensional-glycogen-granule">
                         To GitHub
                 </Button>

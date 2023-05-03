@@ -34,7 +34,7 @@ const DFGCard = () => {
             />
             <CardContent>
                 <Typography variant="body1" >
-                    We are funded by DFG. To learn more about DFG you can visit their homepage linked below.
+                    To learn more about DFG you can visit their homepage linked below.
                 </Typography>
             </CardContent>
             <Box>
@@ -56,7 +56,7 @@ const DFGCard = () => {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                     <Typography variant="h5">About</Typography>
-                    <Typography paragraph>
+                    <Typography paragraph align="left">
                         
 The Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) is the central self-governing research funding 
 organisation in Germany. The DFG serves the sciences and humanities and promotes research of the highest quality in 

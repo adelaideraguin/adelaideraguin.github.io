@@ -35,7 +35,7 @@ const CEPLASCard = () => {
             />
             <CardContent>
                 <Typography variant="body1" >
-                    We are funded by CEPLAS. To learn more about CEPLAS you can visit their homepage linked below.
+                    To learn more about CEPLAS you can visit their homepage linked below.
                 </Typography>
             </CardContent>
             <Box>
@@ -57,25 +57,15 @@ const CEPLASCard = () => {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                     <Typography variant="h5">About</Typography>
-                    <Typography paragraph>
+                    <Typography paragraph align="left">
                         
 
-
-CEPLAS aims to assemble a blueprint of the genetic mechanisms that control complex plant traits with sufficient detail 
-to enable predictions of trait performance in different environments. This knowledge is crucial for the design of new 
-crop varieties using predictive trait engineering and will be important for sustainable food security for a growing population faced with climate change. 
-
-CEPLAS continues to contribute innovative solutions to these major challenges. 
-
-One of the major areas of CEPLAS research is mapping plant traits from genomic informa­tion, thereby enabling novel, 
-predictive breeding strategies. This research aims to develop a mechanistic understanding of the design principles underpinning 
-complex plant phenotypes, which emerge from variations in a limited set of evolutionarily deeply conserved elements and recurring
- patterns in development and metabolism as well as the interaction between plants and their microbial environment. 
-
-CEPLAS aims to mechanistically define how complex plant traits contribute to optimized plant performance in any given environmental 
-context. Understanding the mechanisms that integrate development and metabolism to control life cycle transitions and adaptation to the environment, 
-and understanding the role of soil biology and biochemistry in mediating functions at the soil-plant interface, are emerging topics in plant 
-biology that are of critical importance for developing strategies to sustainably increase crop plant yield.
+                    The Cluster of Excellence on Plant Sciences (CEPLAS) integrates the resources of the Universities of Cologne and Düsseldorf, 
+                    the Max Planck Institute for Plant Breeding Research, and the Forschungszentrum Jülich into an internationally leading plant
+                     science centre that attracts world-class faculty and junior researchers. It addresses grand challenges through world-class 
+                     fundamental research on complex plant traits of agronomic relevance that impact on yield and adaptation to limited resources. 
+                     Hence, it generates knowledge that 
+                    is essential for designing and breeding plants that react in a predictable way to future challenges (SMART plants).
                     </Typography>
                 </CardContent>
             </Collapse>

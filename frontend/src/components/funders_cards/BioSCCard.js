@@ -35,7 +35,7 @@ const BioSCCard = () => {
             />
             <CardContent>
                 <Typography variant="body1" >
-                    We are funded by BioSC. To learn more about BioSC you can visit their homepage linked below.
+                    To learn more about BioSC you can visit their homepage linked below.
                 </Typography>
             </CardContent>
             <Box>
@@ -57,12 +57,12 @@ const BioSCCard = () => {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                     <Typography variant="h5">About</Typography>
-                    <Typography paragraph>
-                    Central topics in the BioSC are the sustainable production of plants as food and feed and biomass, new bio-/chemocatalytic 
-                    and biotechnological methods and processes for the conversion of renewable raw materials into valuable materials such as 
-                    fine chemicals, proteins, enzymes, biopolymers, biofuels. Questions of the economic feasibility of the bioeconomy and its 
-                    social acceptance are also dealt with. Close cooperation with industry should accelerate the economic implementation of the research results. 
-                    The BioSC currently includes around 1900 employees from 67 member institutes from the partner institutions.
+                    <Typography paragraph align="left">
+                    The Bioeconomy Science Center is based on an integrative structure consisting of basic, applied, and industry-oriented research, 
+                    including the natural, engineering, and economic sciences, and is focussed on the mission of sustainable bioeconomy on the pillars 
+                    of the science system. The BioSC currently consists of around 1900 employees from 67 member institutes from the partner organisations: 
+                    the RWTH Aachen University, 
+                    the Heinrich Heine University Düsseldorf, the Friedrich Wilhelms University in Bonn, and the Forschungszentrum Jülich.
                     </Typography>
                 </CardContent>
             </Collapse>

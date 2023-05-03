@@ -1,7 +1,7 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
-import transport_fig from "../transport_fig.png";
+import figure from "../images/Raguin2017.png";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -55,17 +55,21 @@ const Raguin2017Card = () => {
                 </CardActions>
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <Grid container spacing={1} alignItems="center"  justifyContent="space-around" >
+                <Grid item xs={12} sm={12} md={5}>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 600,
+                padding: "2em", maxWidth: 600,
                 margin: "0 auto",
             }}
                 component="img"
-                image="https://port.silverchair-cdn.com/port/content_public/journal/biochemsoctrans/45/4/10.1042_bst20160407/2/bst-2016-0407c_01.jpeg?Expires=1679403550&Signature=2ZywAODcs9FV2FLzsbqCw21opO3A7F70Ey8PY-la2hrF-1Hu0qmbsicdTx8enZTtqR4NJbI0sn32uqqz4AYGgfWz10KAzNWP1NHC-yg~pMMQXFl0sbBWIK4zl8Czq5OXRDEr2NcDWL4VtS1lnRq0PkJO-AMqlr-raTPkNFq7JX3E8PCSV0g7iIoSgkpr1f-DoID5lHleOc4dpxAYv7vgoGgRslDBf7Vjd~sOSOpXEmsfvlNY~5f72upKltMUILnYmjfpI6NcpuzyU4gM5v7JJIo~g2uDoyS9zwUGxG6cRcJ3SjJKYKxkT4eByOWFVXpBTtBT4bRuFLrqrPuIZlj9IA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
+                image={figure}
                 alt="Structure and components of starch granules: amylopectin and amylose."
             />
+            </Grid>
+            <Grid item xs={12} sm={12} md={7}>
+
                 <CardContent>
-                    <Typography variant="h5">Abstract</Typography>
-                    <Typography variant="body 1" paragraph>
+                    <Typography align="left"  paddingLeft="2em" paddingRight="2em" variant="body 1" paragraph>
                     Starch is the most widespread and abundant storage carbohydrate in plants and the main source of carbohydrate in the human diet. 
                     Owing to its remarkable properties and commercial applications, starch is still of growing interest. Its unique granular structure 
                     made of intercalated layers of amylopectin and amylose has been unraveled thanks to recent progress in microscopic imaging, but 
@@ -82,6 +86,8 @@ const Raguin2017Card = () => {
                     and complex experimental results, and to address how macroscopic properties emerge from enzymatic activity and structural rearrangements.
                     </Typography>
                 </CardContent>
+                </Grid>
+                </Grid>
             </Collapse>
         </Card >
     );

@@ -20,22 +20,21 @@ function Funding(){
                         sx={{ color: "white", textAlign: "center", padding: "1.5em", fontSize: "4em", margin: "0" }}
                         image={background}
                     ><Typography variant="h2"> 
-                        Our Funding
+                        Our work is supported by ...
                         </Typography></CardMedia>
 
             </Card>
 
-
         <div>
             <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
-                <Grid item xs={8} sm={6} md={3.5}>
+                <Grid item xs={10} sm={6} md={3.5}>
                     <DFGCard />
                 </Grid>
-                <Grid item xs={8} sm={6} md={3.5} >
+                <Grid item xs={10} sm={6} md={3.5} >
                     <BioSCCard />
 
                 </Grid>
-                <Grid item xs={8} sm={6} md={3.5} >
+                <Grid item xs={10} sm={6} md={3.5} >
                     <CEPLASCard />
                 </Grid>
             </Grid>   

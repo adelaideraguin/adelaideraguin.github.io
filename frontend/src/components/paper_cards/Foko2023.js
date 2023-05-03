@@ -1,7 +1,7 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
-import figure from "../fatty_acids.png";
+import figure from "../images/Foko2023.png";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -55,17 +55,20 @@ const Foko2023Card = () => {
                 </CardActions>
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <Grid container spacing={1} alignItems="center"  justifyContent="space-around" >
+                <Grid item xs={12} sm={12} md={5}>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 700,
+                padding: "2em", maxWidth: 700,
                 margin: "0 auto",
             }}
                 component="img"
                 image={figure}
                 alt="Simulation of a comprehensive translation system comprising tRNAs, ribosomes and codon-biased mRNAs to analyse tRNA synthetase depletion."
             />
+            </Grid>
+                <Grid item xs={12} sm={12} md={7}>
                 <CardContent>
-                    <Typography variant="h5">Abstract</Typography>
-                    <Typography variant="body 1" paragraph>
+                    <Typography align="left"  paddingLeft="2em" paddingRight="2em" variant="body 1" paragraph>
                     The synthesis and modification of fatty acids from carbohydrates are paramount for the production of lipids. Simultaneously, 
                     lipids are pivotal energy storage in human health. They are associated with various metabolic diseases and their production 
                     pathways are for instance candidate therapeutic targets for cancer treatments. The fatty acid de novo synthesis (FADNS) 
@@ -80,6 +83,8 @@ const Foko2023Card = () => {
                     we support the development of such a mathematical approach by reviewing the available kinetic information of the enzymes involved.
                     </Typography>
                 </CardContent>
+                </Grid>
+                </Grid>
             </Collapse>
         </Card >
     );

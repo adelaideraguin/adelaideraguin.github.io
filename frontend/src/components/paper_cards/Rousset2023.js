@@ -1,7 +1,7 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
-import figure from "../glycogen.png";
+import figure from "../images/Rousset2023.png";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -54,8 +54,10 @@ const Rousset2023Card = () => {
                 </CardActions>
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardMedia sx={{
-                padding: "1em", maxWidth: 700,
+            <Grid container spacing={1} alignItems="center"  justifyContent="space-around" >
+                <Grid item xs={12} sm={12} md={5}>
+                <CardMedia sx={{
+                padding: "2em", maxWidth: 700,
                 margin: "0 auto",
             }}
                 component="img"
@@ -66,9 +68,13 @@ GDE degrade it. Besides, GN is the initial precursor of the granule and stands i
 core. Enzymes are noted in orange, glucose residues are in blue, and GN is highlighted
 with a yellow sphere."
             />
+
+                </Grid>
+                <Grid item xs={12} sm={12} md={7}>
+
+            
                 <CardContent>
-                    <Typography variant="h5">Abstract</Typography>
-                    <Typography variant="body 1" paragraph>
+                    <Typography align="left"  paddingLeft="2em" paddingRight="2em" variant="body 1" paragraph>
                     In humans, glycogen storage diseases result from metabolic inborn errors, and can lead to severe phenotypes 
                     and lethal conditions. Besides these rare diseases, glycogen is also associated to widely spread societal 
                     burdens such as diabetes. Glycogen is a branched glucose polymer synthesised and degraded by a complex set of 
@@ -88,6 +94,8 @@ with a yellow sphere."
                     and could in particular contribute to characterise the mechanisms responsible for glycogen storage disorders.
                     </Typography>
                 </CardContent>
+                </Grid>
+                </Grid>
             </Collapse>
         </Card >
     );

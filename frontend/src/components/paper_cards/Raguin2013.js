@@ -1,7 +1,7 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
-import transport_fig from "../transport_fig.png";
+import image from "../images/Raguin2013.png";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -55,17 +55,21 @@ const Raguin2013Card = () => {
                 </CardActions>
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <Grid container spacing={1} alignItems="center"  justifyContent="space-around" >
+                <Grid item xs={12} sm={12} md={5}>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 600,
+                padding: "2em", maxWidth: 600,
                 margin: "0 auto",
             }}
                 component="img"
-                image="https://journals.aps.org/pre/article/10.1103/PhysRevE.88.042104/figures/3/medium"
+                image={image}
                 alt="Schematic illustration of TASEP on a closed-loop (figure-of-eight) topology."
             />
+            </Grid>
+            <Grid item xs={12} sm={12} md={7}>
+
                 <CardContent>
-                    <Typography variant="h5">Abstract</Typography>
-                    <Typography variant="body 1" paragraph>
+                    <Typography align="left"  paddingLeft="2em" paddingRight="2em" variant="body 1" paragraph>
                     We study the effect of local regulation mechanisms on stochastic network traffic, based on simple examples. 
                     Using the totally asymmetric simple exclusion process on a multiloop structure in which several segments share 
                     a single junction, we illustrate several mechanisms: (i) additional segments improve transport but the effect 
@@ -75,6 +79,8 @@ const Raguin2013Card = () => {
                     We provide a generic discussion of combinations of these effects, including phase diagrams in terms of the control parameters.
                     </Typography>
                 </CardContent>
+                </Grid>
+                </Grid>
             </Collapse>
         </Card >
     );

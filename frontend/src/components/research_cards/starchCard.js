@@ -49,10 +49,9 @@ const StarchCard = () => {
                   semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
                   such as ‘blocklets’ and concentric ‘growth rings"
             />
-            <CardContent>
-                <Typography variant="body 1"   align='left' padding="1em">
-                Starch, the primary energy storage of most plants, is the second most abundant glucose polymer on earth after cellulose, 
-                and the main source of energy in human diet. The major component of starch, amylopectin, has a complex three-dimensional, 
+            <CardContent >
+                <Typography variant="body 1" align='left' padding="1em">
+                Starch is the second most abundant glucose polymer on earth after cellulose, and the main source of energy in human diet. The major component of starch, amylopectin, has a complex three-dimensional, 
                 branched architecture. This architecture stems from the combined actions of a multitude of enzymes, each having broad specificities 
                 that are difficult to capture experimentally. 
                 We are thus interested in understanding how the underlying enzymatic synthesis and degradation processes interplay with the amylopectin structure.

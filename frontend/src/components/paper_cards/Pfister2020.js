@@ -1,6 +1,7 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
+import figure from "../images/Pfister2020.png";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -54,12 +55,14 @@ const Pfister2020Card = () => {
                 </CardActions>
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <Grid container spacing={1} alignItems="center"  justifyContent="space-around" >
+                <Grid item xs={12} sm={12} md={5}>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 700,
+                padding: "2em", maxWidth: 700,
                 margin: "0 auto",
             }}
                 component="img"
-                image="https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11120-019-00704-y/MediaObjects/11120_2019_704_Fig1_HTML.png?as=webp"
+                image={figure}
                 alt="Structure of amylopectin and higher-order arrangements of starch. 
                 Two α-1,4/α-1,6-linked glucose polymers, amylopectin and amylose (not shown), comprise starch. 
                 Amylopectin is branched with 4–5% α-1,6 linkages, yielding a tree-like structure. This structure 
@@ -70,9 +73,11 @@ const Pfister2020Card = () => {
                   semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
                   such as ‘blocklets’ and concentric ‘growth rings"
             />
+            </Grid>
+            <Grid item xs={12} sm={12} md={7}>
+
                 <CardContent>
-                    <Typography variant="h5">Abstract</Typography>
-                    <Typography variant="body 1" paragraph>
+                    <Typography align="left"  paddingLeft="2em" paddingRight="2em" variant="body 1" paragraph>
                     Starch, a plant-derived insoluble carbohydrate composed of glucose polymers, is the principal carbohydrate in our diet 
                     and a valuable raw material for industry. The properties of starch depend on the arrangement of glucose units within 
                     the constituent polymers. However, key aspects of starch structure and the underlying biosynthetic processes are not 
@@ -81,6 +86,8 @@ const Pfister2020Card = () => {
                     is a previously overlooked factor that directly affects amylopectin architecture through its impact on enzyme function.
                     </Typography>
                 </CardContent>
+                </Grid>
+                </Grid>
             </Collapse>
         </Card >
     );

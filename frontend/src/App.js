@@ -21,6 +21,7 @@ import Glycogen from './pages/research/glycogen.js';
 import Transport from './pages/research/transport';
 import FattyAcids from './pages/research/fattyacids';
 import Starch from './pages/research/starch';
+import ScrollToTop from './components/ScrolltoTop';
 
 const darkTheme = createTheme({
   palette: {
@@ -84,6 +85,8 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <ScrollToTop />
+
         <div className="App">
             <ThemeProvider theme={dark2Theme}>
             <CssBaseline sx={{zIndex: "1"}}/>

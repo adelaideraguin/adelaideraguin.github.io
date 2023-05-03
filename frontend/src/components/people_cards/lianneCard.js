@@ -29,7 +29,7 @@ const LianneCard = () => {
         <Card sx={{ margin: "2em" }} style={{ position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
-                    title="Lianne Gahan"
+                    title="Dr Lianne Gahan"
                 />
                 <Divider />
             </Box>
@@ -48,7 +48,7 @@ const LianneCard = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={6}>
 
-                <Typography variant="body1" align='justify' >
+                <Typography variant="body1" align='left' >
                 Lianne is in her first postdoctoral position at Heinrich-Heine University after completing her PhD in computational biophysics at the University of Sheffield, 
                 where she also completed her undergraduate degree in Theoretical Physics (MPhys). She is now working on a computational project
                 at the interface of physics and biology, where she is using stochastic simulations to investigate 

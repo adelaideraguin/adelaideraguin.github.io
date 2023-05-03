@@ -42,7 +42,7 @@ const LinkedInCard = () => {
             />
             <CardContent>
                 <Typography variant="body 1" >
-                You can contact Dr Raguin via linked in by clicking here. 
+                You can contact Dr Raguin <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography> linked in by clicking here. 
                 </Typography>
             </CardContent>
             <Box>

@@ -26,15 +26,16 @@ function Contact(){
             
 
             <Grid container justifyContent="space-around" spacing={1} sx={{position:"relative"}} marginBottom="2em" >
-                <Grid item xs={8} sm={6} md={3.5} >
+                <Grid item xs={10} sm={6} md={3.5} >
                     <LinkedInCard/>
                 </Grid>
-                <Grid item xs={8} sm={6} md={3.5} >
-                   <EmailCard/>
-                </Grid>
-                <Grid item xs={8} sm={6} md={3.5}>
+                <Grid item xs={10} sm={6} md={3.5}>
                     <AboutUsCard />
                 </Grid>
+                <Grid item xs={10} sm={6} md={3.5} >
+                   <EmailCard/>
+                </Grid>
+                
             </Grid>
             <Card sx={{ margin: "2em", position:"relative" }}>
                 <Typography variant="h5" sx={{ textAlign: "center", margin: "1em" }}>

@@ -2,6 +2,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import DescriptionIcon from '@mui/icons-material/Description';
+
 import ComputerIcon from '@mui/icons-material/GitHub';
 import Raguin2023Card from '../paper_cards/Raguin2023';
 
@@ -36,13 +38,12 @@ proteins in host microorganisms"
                 <Divider />
             </Box>
             
-        
-                <Typography variant="body1" align="left" padding="3em" >
-                Access this code via GitHub and take a look at the associated paper
-                </Typography>
             <Box>
             <Divider/>
                 <CardActions >
+                <Button variant="contained" startIcon={<DescriptionIcon />}  href="https://doi.org/10.5334/jors.385">
+                        To Publication
+                </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://gitlab.com/a.raguin/expressinhost">
                         To GitHub
                 </Button>

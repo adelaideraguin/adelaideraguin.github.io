@@ -43,14 +43,14 @@ const EmailCard = () => {
             />
             <CardContent>
                 <Typography variant="body1" >
-                You can contact Dr Raguin via email at adelaide.raguin@hhu.de
+                You can contact Dr Raguin <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography> email at adelaide.raguin@hhu.de
                 </Typography>
             </CardContent>
             <Box>
             <Divider/>
                 <CardActions >
                     <Button variant="contained"  onClick={() =>  navigator.clipboard.writeText('adelaide.raguin@hhu.de')}>
-                        Send Email
+                        Copy Email
                         
                     </Button>
 

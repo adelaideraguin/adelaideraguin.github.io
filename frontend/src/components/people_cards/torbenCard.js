@@ -1,8 +1,10 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, Stack, styled, Typography } from "@mui/material";
 import { useState } from "react";
 import image from './torben.jpg';
 import { Link } from "react-router-dom";
+import ComputerIcon from '@mui/icons-material/ComputerTwoTone';
+
 
 
 const ExpandMore = styled((props) => {
@@ -60,9 +62,16 @@ const TorbenCard = () => {
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
+                <Stack direction="row" spacing={2}>
+
                     <Button variant="contained" component={Link} to="/research/biosynthesis">
                             Biosynthesis & Degredation
                     </Button>
+                    <Button variant="contained" component={Link} startIcon={<ComputerIcon />} href="https://predig.cs.hhu.de/">
+                            PREDIG
+                    </Button>
+                    </Stack>
+                    
                 </CardActions>
             </Box>
             </Card >

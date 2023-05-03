@@ -3,6 +3,8 @@ import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Col
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ComputerIcon from '@mui/icons-material/ComputerTwoTone';
+import DescriptionIcon from '@mui/icons-material/Description';
+
 import prediglogo from '../PREDIGLOGO.jpg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Behle2021Card from '../paper_cards/Behle2021';
@@ -33,18 +35,11 @@ const PREDIGCard = () => {
         <Card sx={{ margin: "2em", marginTop: "1em" }} style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader align="left"
-                    title="PREDIG: Plant Wall Degredation Simulation"
+                    title="PREDIG: a web application to simulate, fit experimental data, and optimise reaction conditions for the saccharification of plant biomass, lignocellulose"
                 />
                 <Divider />
             </Box>
-            <Grid container  spacing={1} alignItems="center"  justifyContent="space-around">
-                <Grid item xs={12} sm={12} md={6}>
-                    <Typography variant="body 1" align="left" padding="3em">
-                    We have embedded the PREDIG simulation scheme within a website where you can submit your parameters from experiments to the server as 
-                        initial conditions for the simulation. You will receive your results shortly afterwards by email. You can also access this software via GitHub.
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3.5}>
+                
                     <CardMedia sx={{
                         padding: "1em", maxWidth: 300,
                         margin: "0 auto",
@@ -53,14 +48,15 @@ const PREDIGCard = () => {
                         image={prediglogo}
                         alt=" lorem ipsum."
                     />
-                </Grid>
-                
-            </Grid>
+            
 
 
             <Box>
             <Divider/>
                 <CardActions >
+                <Button variant="contained" startIcon={<DescriptionIcon />} href="https://doi.org/10.1371/journal.pcbi.1009262">
+                        To Publication
+                </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://predig.cs.hhu.de/">
                         To page
                 </Button>

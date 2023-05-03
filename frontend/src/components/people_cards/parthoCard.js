@@ -1,6 +1,8 @@
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, Stack, styled, Typography } from "@mui/material";
 import { useState } from "react";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ComputerIcon from '@mui/icons-material/ComputerTwoTone';
+
 import { Link } from "react-router-dom";
 
 
@@ -54,7 +56,7 @@ const ParthoCard = () => {
                 he completed his PhD at the Indian Institute of Science Education and Research Kolkata, 
                 India. During his PhD, Partho worked on mathematical and computational modelling of the dynamics at the leading edge 
                 of a crawling eukaryotic cell, with a special focus on the emergent 'stick-slip' phenomena. He is
-                now working on the development of a computational tool to predict the enzymatic saccharification of 
+                now working on the development of PREDIG - a computational tool to predict the enzymatic saccharification of 
                 lignocellulosic biomass. 
                 </Typography>
 
@@ -79,9 +81,15 @@ const ParthoCard = () => {
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
+                <Stack direction="row" spacing={2}>
+
                     <Button variant="contained" component={Link} to="/research/biosynthesis">
                             Biosynthesis & Degredation
                     </Button>
+                    <Button variant="contained" component={Link} startIcon={<ComputerIcon />} href="https://predig.cs.hhu.de/">
+                            PREDIG
+                    </Button>
+                    </Stack>
                 </CardActions>
             </Box>
 

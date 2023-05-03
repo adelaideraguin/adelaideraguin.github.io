@@ -19,6 +19,8 @@ function Home(){
               top: "0",
               paddingTop: "1em",
               paddingBottom: "1em",
+              paddingLeft: "2em",
+              paddingRight: "2em",
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center',
               backgroundSize: 'cover',
@@ -61,9 +63,10 @@ function Home(){
 
             </Box>
             
-            <Card sx={{marginTop: "1em", position:"relative", color: "white",}}>
+            <Card sx={{marginTop: "1em", marginLeft: "2em", marginRight: "2em", position:"relative", color: "white", paddingLeft: "2em",
+              paddingRight: "2em",}}>
                    
-                    <Typography padding="2em"  align='justify' paragraph variant="h5" sx={{ margin: "1em", color: "black" }}>
+                    <Typography padding="2em"  align='left' paragraph variant="h5" sx={{ margin: "1em", color: "black" }}>
                         <p>We develop computational and mathematical methods to study the dynamics of complex biological systems 
                         at the sub-cellular scale. Our main expertise are stochastic simulations that we use to investigate the 
                         synthesis or degradation of large polymeric systems, and collective transport processes in one dimension. Some of the scientific questions we investigate are: </p>

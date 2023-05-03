@@ -2,7 +2,7 @@
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography} from "@mui/material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import fattyacidsimage from '../fatty_acids.png';
+import fattyacidsimage from '../images/Foko2023.png';
 
 
 const ExpandMore = styled((props) => {

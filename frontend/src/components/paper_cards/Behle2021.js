@@ -1,5 +1,5 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
 
 const ExpandMore = styled((props) => {
@@ -52,25 +52,30 @@ const Behle2021Card = () => {
                 </CardActions>
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardMedia sx={{
-                padding: "1em", maxWidth: 800,
-                margin: "0 auto",
-            }}
-                component="img"
-                image="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1009262.g001"
-                alt=" Schematic representation of the structure of the substrate in the model.
-                (a) Several cellulose microfibrils embedded in a matrix of hemicellulose reinforced by lignin. 
-                (b) Side-view of the top 50 nm of a single cellulose microfibril made of 36 polymers, and part 
-                of the surrounding matrix showing the relative arrangement of the hemicellulose and lignin 
-                polymers as well as gaps. In (a) and (b), polymer types are color-coded (cellulose: dark gray; 
-                hemicellulose: light gray; lignin: black). (c) Top-down view of the structure shown in (b). The 
-                core enclosed by the dotted line is composed of 36 polymers of cellulose (black crosses), and its
-                 structure follows that used by Ding et al. The positions in the two outer layers (gray crosses) 
-                 can each either be hemicellulose or lignin polymers."
-            />
+            <Grid container spacing={1} alignItems="center"  justifyContent="space-around" >
+                <Grid item xs={12} sm={12} md={5}>
+
+                    <CardMedia sx={{
+                    padding: "2em", maxWidth: 800,
+                    margin: "0 auto",
+                }}
+                    component="img"
+                    image="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1009262.g001"
+                    alt=" Schematic representation of the structure of the substrate in the model.
+                    (a) Several cellulose microfibrils embedded in a matrix of hemicellulose reinforced by lignin. 
+                    (b) Side-view of the top 50 nm of a single cellulose microfibril made of 36 polymers, and part 
+                    of the surrounding matrix showing the relative arrangement of the hemicellulose and lignin 
+                    polymers as well as gaps. In (a) and (b), polymer types are color-coded (cellulose: dark gray; 
+                    hemicellulose: light gray; lignin: black). (c) Top-down view of the structure shown in (b). The 
+                    core enclosed by the dotted line is composed of 36 polymers of cellulose (black crosses), and its
+                    structure follows that used by Ding et al. The positions in the two outer layers (gray crosses) 
+                    can each either be hemicellulose or lignin polymers."
+                />
+                </Grid>
+                <Grid item xs={12} sm={12} md={7}>
+
                 <CardContent>
-                    <Typography variant="h5">Abstract</Typography>
-                    <Typography variant="body 1" paragraph>
+                    <Typography align="left"  paddingLeft="2em" paddingRight="2em" variant="body 1" paragraph>
                     The processing of agricultural wastes towards extraction of renewable resources is recently being considered as a promising alternative 
                     to conventional biofuel production. The degradation of agricultural residues is a complex chemical process that is currently time 
                     intensive and costly. Various pre-treatment methods are being investigated to determine the subsequent modification of the material 
@@ -86,6 +91,8 @@ const Behle2021Card = () => {
                     interpret experimental saccharification data. Finally, our findings support the hypothesis of xylan being partially crystalline.
                     </Typography>
                 </CardContent>
+                </Grid>
+                </Grid>
             </Collapse>
         </Card >
     );

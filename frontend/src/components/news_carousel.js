@@ -10,7 +10,7 @@ import AsmaPhoto from '../components/people_cards/Asma-portraitformat.jpg';
 import MerlePhoto from '../components/people_cards/Merle-portraitformat.jpg';
 import LiannePhoto from '../components/people_cards/Lianne-portraitformat.jpg';
 import TorbenPhoto from '../components/people_cards/torben.jpg';
-import GroupMeetphoto from '../components/images/Groupsnacks.jpg';
+import HeidelbergPhoto from '../components/images/Heidelberg2023.jpg';
 import ManchesterPhoto from '../components/images/Manchester.jpg';
 import ElvadasPhoto from '../components/images/elvadas.jpeg';
 
@@ -27,7 +27,7 @@ const LatestNewsCard = () => {
                     <Divider />
                     <Carousel animation="slide" sx={{ margin: "2em"}}>
                     <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
-                        <Grid item xs={8} sm={6} md={3.5}>
+                        <Grid item xs={2} sm={6} md={3.5}>
                             <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 400,
@@ -45,7 +45,7 @@ const LatestNewsCard = () => {
                                 </CardContent>
                             </Card >
                         </Grid>
-                        <Grid item xs={8} sm={6} md={3.5} >
+                        <Grid item xs={2} sm={6} md={3.5} >
                         <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{
                             margin: "0 auto", maxHeight: 400,
@@ -54,19 +54,19 @@ const LatestNewsCard = () => {
                             
                         }}
                             component="img" 
-                            image={GroupMeetphoto}
-                            alt="A group photo of everyone having some food after a meeting"
+                            image={HeidelbergPhoto}
+                            alt="A photo of Partho Sahka De meeting some colleagues at the EMBO workshop"
                         />
                         <CardContent>
                             <Typography align='left' padding="1em" variant="h5" >
-                            March 2023: The first group seminar of the year, everyone presented their research and we shared some lovely homecooked snacks!
+                            Feb 2023: Partho Sakha De attended the EMBO Workshop: In situ structural biology: from cryo-EM to multi-scale modelling in Heidelberg
                             </Typography>
                         </CardContent>
 
                     </Card >
 
                         </Grid>
-                        <Grid item xs={8} sm={6} md={3.5} >
+                        <Grid item xs={2} sm={6} md={3.5} >
                         <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{
                             margin: "0 auto", maxHeight: 400,
@@ -90,7 +90,7 @@ const LatestNewsCard = () => {
 
 
                     <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
-                        <Grid item xs={8} sm={6} md={3.5}>
+                        <Grid item xs={2} sm={6} md={3.5}>
                             <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 400,
@@ -109,7 +109,7 @@ const LatestNewsCard = () => {
                                 </CardContent>
                             </Card >
                         </Grid>
-                        <Grid item xs={8} sm={6} md={3.5} >
+                        <Grid item xs={2} sm={6} md={3.5} >
                             <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 400,
@@ -130,7 +130,7 @@ const LatestNewsCard = () => {
                             </Card >
 
                         </Grid>
-                        <Grid item xs={8} sm={6} md={3.5} >
+                        <Grid item xs={2} sm={6} md={3.5} >
                             <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 400,
@@ -154,7 +154,7 @@ const LatestNewsCard = () => {
                     
                     
                     <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
-                        <Grid item xs={8} sm={6} md={3.5}>
+                        <Grid item xs={2} sm={6} md={3.5}>
                             <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 400,
@@ -174,7 +174,7 @@ const LatestNewsCard = () => {
 
                             </Card >
                         </Grid>
-                        <Grid item xs={8} sm={6} md={3.5} >
+                        <Grid item xs={2} sm={6} md={3.5} >
                             <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 400,
@@ -195,7 +195,7 @@ const LatestNewsCard = () => {
                             </Card >
 
                         </Grid>
-                        <Grid item xs={8} sm={6} md={3.5} >
+                        <Grid item xs={2} sm={6} md={3.5} >
                             <Card style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 400,

@@ -51,7 +51,7 @@ const AsmaCard = () => {
                 <Typography variant="body1" align='left' alignItems="center"  justifyContent="center">
                 Asma is a Master's student in the Department of Computer Science. The focus of her studies is data engineering 
                 and model simulations. Her Bachelor's thesis was about the dynamic motion of swarm robots and focussed on
-                developing algorithms for self-organization. She is currently working on developing numerical methods to investigate transport properties 
+                developing algorithms for self-organisation. She is currently working on developing numerical methods to investigate transport properties 
                 at the crossing of one-dimensional lattices with complex kinetic rules at the junction.
 
                 </Typography>

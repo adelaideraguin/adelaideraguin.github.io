@@ -1,7 +1,7 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
-import figure from "../images/GUI_ExpressInHost.png";
+import figure from "../images/Raguin_expressioninhost_light.png";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -55,8 +55,10 @@ const Raguin2023Card = () => {
                 </CardActions>
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <Grid container spacing={1} alignItems="center"  justifyContent="space-around" >
+                <Grid item xs={12} sm={12} md={5}>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 700,
+                padding: "2em", maxWidth: 700,
                 margin: "0 auto",
             }}
                 component="img"
@@ -66,9 +68,11 @@ const Raguin2023Card = () => {
                 shown on the abscissa, while the amino acid conservation is measured on the ordinate. 
                 The less proteins considered and the closer they are related, the more amino acids are conserved."
             />
+            </Grid>
+                <Grid item xs={12} sm={12} md={7}>
+
                 <CardContent>
-                    <Typography variant="h5">Abstract</Typography>
-                    <Typography variant="body 1" paragraph>
+                    <Typography align="left"  paddingLeft="2em" paddingRight="2em" variant="body 1" paragraph>
                     ExpressInHost (https://gitlab.com/a.raguin/expressinhost) is a GTK/C++ based user friendly graphical interface 
                     that allows tuning the codon sequence of an mRNA for recombinant protein expression in a host microorganism. 
                     Heterologous gene expression is widely implemented in biotechnology companies and academic research laboratories. 
@@ -81,6 +85,8 @@ const Raguin2023Card = () => {
                     which might be important to allow proper protein folding, thereby avoiding protein solubility problems.
                     </Typography>
                 </CardContent>
+                </Grid>
+                </Grid>
             </Collapse>
         </Card >
     );
