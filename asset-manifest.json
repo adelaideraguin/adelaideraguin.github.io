@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.797418dd.css",
-    "main.js": "/static/js/main.c9739dd2.js",
-    "static/media/fatty_acids.png": "/static/media/fatty_acids.c22e0d31d31446490cdc.png",
+    "main.js": "/static/js/main.586f1928.js",
     "static/media/starch.png": "/static/media/starch.9f34cf9c369554a5de93.png",
     "static/media/digest_animation.gif": "/static/media/digest_animation.8b2aebe8da1e66489603.gif",
     "static/media/Manchester.jpg": "/static/media/Manchester.248d610673712c19dc23.jpg",
@@ -16,25 +15,32 @@
     "static/media/digestion_light2.gif": "/static/media/digestion_light2.8c0cae5f82ebb0690850.gif",
     "static/media/torben.jpg": "/static/media/torben.b8d0cd4bcc4f872978cd.jpg",
     "static/media/McFarlandfig.jpeg": "/static/media/McFarlandfig.a177c3848c2433e94708.jpeg",
-    "static/media/Groupsnacks.jpg": "/static/media/Groupsnacks.3c799fb0c97d5eb59fbc.jpg",
+    "static/media/Foko2023.png": "/static/media/Foko2023.e0247249512443da084d.png",
+    "static/media/Rousset2023.png": "/static/media/Rousset2023.e6f7ba475a277a739733.png",
     "static/media/Merle_BPS.jpg": "/static/media/Merle_BPS.e8f5abab2e0064424e2e.jpg",
+    "static/media/Pfister2020.png": "/static/media/Pfister2020.30237f0d59afcdf5d36c.png",
     "static/media/plant_cell_wall.png": "/static/media/plant_cell_wall.353597fd5d3c1cee26d4.png",
     "static/media/glycogen.png": "/static/media/glycogen.10e64e66ca27191bc19d.png",
-    "static/media/GUI_ExpressInHost.png": "/static/media/GUI_ExpressInHost.d3fde438637b82cf01d5.png",
+    "static/media/Heidelberg2023.jpg": "/static/media/Heidelberg2023.e2f2cc44fac486bcddda.jpg",
+    "static/media/Raguin_expressioninhost_light.png": "/static/media/Raguin_expressioninhost_light.c6ff92b5b7b2330fd21e.png",
     "static/media/elvadas.jpeg": "/static/media/elvadas.25636536f3df28e62763.jpeg",
+    "static/media/Raguin2020b.png": "/static/media/Raguin2020b.4a34ddd78f65173e47bf.png",
+    "static/media/Raguin2017.png": "/static/media/Raguin2017.f7de6a0475703f3eb569.png",
     "static/media/protein_synthesis.png": "/static/media/protein_synthesis.630de636d0c35563d7d2.png",
     "static/media/background.png": "/static/media/background.906be3b77d8a07d42b3f.png",
     "static/media/cytoskeleton.png": "/static/media/cytoskeleton.ad1d0d3df7de05a967da.png",
+    "static/media/Raguin2013.png": "/static/media/Raguin2013.96ee90144ff2f52ed910.png",
     "static/media/PREDIGLOGO.jpg": "/static/media/PREDIGLOGO.74a649d3391f52535c53.jpg",
+    "static/media/Raguin2020a.png": "/static/media/Raguin2020a.1d0b4f03db1904427ac2.png",
     "static/media/transport_fig.png": "/static/media/transport_fig.7206d5a46686cd06276d.png",
     "static/media/emailopen.png": "/static/media/emailopen.2b7230076fdc42056e82.png",
     "static/media/email.png": "/static/media/email.2c378c9ee25927123f7d.png",
     "index.html": "/index.html",
     "main.797418dd.css.map": "/static/css/main.797418dd.css.map",
-    "main.c9739dd2.js.map": "/static/js/main.c9739dd2.js.map"
+    "main.586f1928.js.map": "/static/js/main.586f1928.js.map"
   },
   "entrypoints": [
     "static/css/main.797418dd.css",
-    "static/js/main.c9739dd2.js"
+    "static/js/main.586f1928.js"
   ]
 }
