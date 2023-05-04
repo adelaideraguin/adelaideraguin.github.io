@@ -49,7 +49,7 @@ const FattyAcidsCard = () => {
                   semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
                   such as ‘blocklets’ and concentric ‘growth rings"
             />
-            <CardContent>
+            <CardContent align='left'>
                 <Typography variant="body 1"  align='left' padding="1em" >
                 The synthesis and modification of fatty acids from carbohydrates are paramount for the production of lipids. Simultaneously, 
                 lipids are pivotal energy storage in human health. They are associated with various metabolic diseases and their production 
@@ -59,8 +59,8 @@ const FattyAcidsCard = () => {
             <Box>
             <Divider/>
                 <CardActions >
-                <Button variant="contained" component={Link} to="/research/fatty-acids">
-                        To page
+                <Button variant="contained" component={Link} to="/publications">
+                        Publications
                     </Button>
 
                 </CardActions>

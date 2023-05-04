@@ -44,10 +44,10 @@ const TASEPCard = () => {
             <Divider/>
                 <CardActions >
                 <Button variant="contained" startIcon={<DescriptionIcon />} href="https://doi.org/10.1093/nar/gkaa055">
-                        To Publication
+                        Publication
                 </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://www.ebi.ac.uk/biomodels/MODEL2001080004#Overview">
-                        To Repository
+                        software
                 </Button>
                 <ExpandMore
                         expand={expanded}

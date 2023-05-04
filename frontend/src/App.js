@@ -15,12 +15,7 @@ import Hiring from './pages/Hiring';
 import Contact from './pages/Contact';
 import Publications from './pages/Publications';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Biosynthesis_Degredation from './pages/research/biosynthesis_degredation';
-import Protein_Synthesis from './pages/research/protein_synthesis';
-import Glycogen from './pages/research/glycogen.js';
-import Transport from './pages/research/transport';
-import FattyAcids from './pages/research/fattyacids';
-import Starch from './pages/research/starch';
+
 import ScrollToTop from './components/ScrolltoTop';
 
 const darkTheme = createTheme({
@@ -107,12 +102,6 @@ class App extends Component {
               <Route exact path="/funding" element={<Funding/>} />
               <Route exact path="/contact-us" element={<Contact/>}/>
               <Route exact path="/publications" element={<Publications/>}/>
-              <Route exact path="/research/biosynthesis" element={<Biosynthesis_Degredation/>}/>
-              <Route exact path="/research/protein-synthesis" element={<Protein_Synthesis/>}/>
-              <Route exact path="/research/glycogen" element={<Glycogen/>}/>
-              <Route exact path="/research/cytoskeletal-transport" element={<Transport/>}/>
-              <Route exact path="/research/fatty-acids" element={<FattyAcids/>}/>
-              <Route exact path="/research/starch" element={<Starch/>}/>
             </Routes>
             </Box>
            

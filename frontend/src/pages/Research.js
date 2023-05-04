@@ -29,35 +29,35 @@ function Research(){
 
             </Card> 
             <Card sx={{ margin: "2em", position:"relative"  }}>
-                <Typography variant="h5" sx={{ textAlign: "center", margin: "1em" }}>
+                <Typography variant="h5" sx={{ textAlign: "left", margin: "1em" }}>
                 We develop computational and mathematical methods to study the dynamics of complex biological systems at the sub-cellular scale. 
                 Our main expertise are stochastic simulations 
                 that we use to investigate the synthesis or degradation of large polymeric systems, and collective transport processes in one dimension.
                 </Typography>
             </Card>
 
-                <Grid container justifyContent="space-around" spacing={1} marginTop={"3em"}>
-                    <Grid item xs={5.5} >
+            <Grid container justifyContent="space-around" spacing={1} marginTop={"3em"} sx={{position:"relative"}} >
+                    <Grid item xs={12} sm={12} md={5.5}>
                         <BiosynthesisCard/>
                     </Grid>
-                    <Grid item xs={5.5} >
+                    <Grid item item xs={12} sm={12} md={5.5} >
                         <StarchCard/>
                     </Grid>
                 </Grid>
-                <Grid container justifyContent="space-around" spacing={1} marginTop={"3em"} >
-                    <Grid item xs={5.5} >
+                <Grid container justifyContent="space-around" spacing={1} marginTop={"3em"} sx={{position:"relative"}} >
+                    <Grid item xs={12} sm={12} md={5.5} >
                     <ProteinSynthesisCard/>                       
                     </Grid>
-                    <Grid item xs={5.5} >
+                    <Grid item xs={12} sm={12} md={5.5} >
                         <TransportCard/>
                     </Grid>
                 </Grid>
-                <Grid container justifyContent="space-around" spacing={1} marginTop={"3em"} marginBottom={'4em'} >
-                    <Grid item xs={5.5} >
+                <Grid container justifyContent="space-around" spacing={1} marginTop={"3em"} marginBottom={'4em'} sx={{position:"relative"}} >
+                    <Grid item xs={12} sm={12} md={5.5} >
                         <GlycogenCard/>
                     </Grid>
 
-                    <Grid item xs={5.5} >
+                    <Grid item xs={12} sm={12} md={5.5} >
                         <FattyAcidsCard/>
                     </Grid>
                 </Grid>

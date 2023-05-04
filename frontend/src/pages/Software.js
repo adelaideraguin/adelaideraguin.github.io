@@ -32,7 +32,7 @@ function Teaching(){
 
             </Card>
             <Card  sx={{ margin: "2em", marginTop: "1em", position:"relative" }}>
-            <Typography variant="h5" sx={{ textAlign: "center", margin: "1em", position: "relative" }}>
+            <Typography variant="h5" sx={{ textAlign: "left", margin: "1em", position: "relative" }}>
             We have developed several softwares that are now available <Typography variant="h5" style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography>  web-servers and Github repositories. These softwares are open source and licensed.
             </Typography>
             </Card>

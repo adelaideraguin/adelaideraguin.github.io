@@ -49,7 +49,7 @@ const GlycogenCard = () => {
                   semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
                   such as ‘blocklets’ and concentric ‘growth rings"
             />
-            <CardContent>
+            <CardContent align='left'>
                 <Typography variant="body 1"  align='left' padding="1em">
                 Glycogen is a granule-like macromolecule made of 10,000 to 50,000 glucose units arranged in linear and branched chains. 
                 It serves as energy storage in many species, including humans. Depending on physiological conditions (hormone concentrations, 
@@ -60,8 +60,8 @@ const GlycogenCard = () => {
             <Box>
             <Divider/>
                 <CardActions >
-                <Button variant="contained" component={Link} to="/research/glycogen">
-                        To page
+                <Button variant="contained" component={Link} to="/publications">
+                        Publications
                     </Button>
 
                 </CardActions>

@@ -49,7 +49,7 @@ const StarchCard = () => {
                   semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
                   such as ‘blocklets’ and concentric ‘growth rings"
             />
-            <CardContent >
+            <CardContent align='left'>
                 <Typography variant="body 1" align='left' padding="1em">
                 Starch is the second most abundant glucose polymer on earth after cellulose, and the main source of energy in human diet. The major component of starch, amylopectin, has a complex three-dimensional, 
                 branched architecture. This architecture stems from the combined actions of a multitude of enzymes, each having broad specificities 
@@ -60,8 +60,8 @@ const StarchCard = () => {
             <Box>
             <Divider/>
                 <CardActions >
-                <Button variant="contained" component={Link} to="/research/starch">
-                        To page
+                <Button variant="contained" component={Link} to="/publications">
+                        Publications
                     </Button>
 
                 </CardActions>

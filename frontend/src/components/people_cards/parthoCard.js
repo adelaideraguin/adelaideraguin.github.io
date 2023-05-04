@@ -83,8 +83,8 @@ const ParthoCard = () => {
                 <CardActions disableSpacing>
                 <Stack direction="row" spacing={2}>
 
-                    <Button variant="contained" component={Link} to="/research/biosynthesis">
-                            Biosynthesis & Degredation
+                <Button variant="contained" component={Link} to="/research">
+                            Research Projects
                     </Button>
                     <Button variant="contained" component={Link} startIcon={<ComputerIcon />} href="https://predig.cs.hhu.de/">
                             PREDIG

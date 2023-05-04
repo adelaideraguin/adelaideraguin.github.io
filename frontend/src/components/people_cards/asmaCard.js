@@ -76,8 +76,8 @@ const AsmaCard = () => {
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
-                    <Button variant="contained" component={Link} to="/research/cytoskeletal-transport">
-                            Cytoskeletal Transport
+                <Button variant="contained" component={Link} to="/research">
+                            Research Projects
                     </Button>
                 </CardActions>
             </Box>

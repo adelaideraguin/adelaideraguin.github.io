@@ -60,8 +60,8 @@ const JasminCard = () => {
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
-                    <Button variant="contained" component={Link} to="/research/biosynthesis-degredation">
-                            Biosynthesis & Degredation
+                <Button variant="contained" component={Link} to="/research">
+                            Research Projects
                     </Button>
                 </CardActions>
             </Box>

@@ -66,14 +66,11 @@ const MerleCard = () => {
             <Box alignItems="center">
                 <Divider />
                 <CardActions>
-                    <Stack direction="row" spacing={2}>
-                        <Button variant="contained" component={Link} to="/research/biosynthesis">
-                                Biosynthesis & Degredation
-                        </Button>
-                        <Button variant="contained" component={Link} to="/research/research/protein-synthesis">
-                                Protein Synthesis
-                        </Button>
-                    </Stack>
+                   
+                        <Button variant="contained" component={Link} to="/research">
+                            Research Projects
+                    </Button>
+                   
 
                 </CardActions>
             </Box>

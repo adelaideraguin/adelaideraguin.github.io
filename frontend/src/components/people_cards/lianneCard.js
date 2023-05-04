@@ -74,8 +74,8 @@ const LianneCard = () => {
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
-                    <Button variant="contained" component={Link} to="/research/biosynthesis">
-                            Biosynthesis & Degredation
+                <Button variant="contained" component={Link} to="/research">
+                            Research Projects
                     </Button>
                 </CardActions>
             </Box>

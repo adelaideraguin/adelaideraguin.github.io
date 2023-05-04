@@ -56,7 +56,7 @@ const ProteinSynthesisCard = () => {
                     the demand for glutamine synthetases. This is why in the presence of doxycycline the charging level of glutamine in (F) and (G) is almost the 
                     same as in the case without doxycycline."
             />
-            <CardContent>
+            <CardContent align='left'>
                 <Typography variant="body 1"  align='left' padding="1em" >
                 Proteins are central cellular actors. They typically make most of the dry weight of cells, and drive metabolism pathways. 
                 Many pharmacological active compounds are enzymes, and it is essential to understand the economy of the cell to synthesis 
@@ -67,8 +67,8 @@ const ProteinSynthesisCard = () => {
             <Box>
             <Divider/>
                 <CardActions >
-                    <Button variant="contained" component={Link} to="/research/protein-synthesis">
-                        To page
+                    <Button variant="contained" component={Link} to="/publications">
+                        publications
                     </Button>
 
                 </CardActions>

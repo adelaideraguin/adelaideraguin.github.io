@@ -22,7 +22,7 @@ function Hiring(){
                 </Card>
 
                 <Card sx={{ margin: "2em", position:"relative" }}>
-                    <Typography variant="h5" sx={{ textAlign: "center", margin: "1em" }}>
+                    <Typography variant="h5" sx={{ textAlign: "left", margin: "1em" }}>
                     <p>
                         Hiring opportunities will be posted here as they become available. 
                     </p>

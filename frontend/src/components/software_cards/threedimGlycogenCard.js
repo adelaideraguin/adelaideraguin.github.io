@@ -41,10 +41,10 @@ const ThreeDimGlycogenCard = () => {
             <Divider/>
                 <CardActions >
                 <Button variant="contained" startIcon={<DescriptionIcon />} href="https://www.researchgate.net/publication/364921626_Stochastic_modelling_of_a_three-dimensional_glycogen_granule_synthesis_and_impact_of_the_branching_enzyme">
-                        To Publication
+                        Publication
                 </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://github.com/yvanrousset/Stochastic-modeling-of-a-three-dimensional-glycogen-granule">
-                        To GitHub
+                        GitHub
                 </Button>
                 <ExpandMore
                         expand={expanded}

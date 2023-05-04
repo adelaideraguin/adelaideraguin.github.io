@@ -69,18 +69,19 @@ const Foko2023Card = () => {
                 <Grid item xs={12} sm={12} md={7}>
                 <CardContent>
                     <Typography align="left"  paddingLeft="2em" paddingRight="2em" variant="body 1" paragraph>
-                    The synthesis and modification of fatty acids from carbohydrates are paramount for the production of lipids. Simultaneously, 
-                    lipids are pivotal energy storage in human health. They are associated with various metabolic diseases and their production 
-                    pathways are for instance candidate therapeutic targets for cancer treatments. The fatty acid de novo synthesis (FADNS) 
-                    occurs in the cytoplasm, while the microsomal modification of fatty acids (MMFA) happens at the surface of the endoplasmic 
-                    reticulum. The kinetics and regulation of these complex processes involve several enzymes. In mammals, those are the 
-                    acetyl-CoA carboxylase (ACC), the fatty acid synthase (FAS), the very-long-chain fatty acid elongases (ELOVL 1-7), and 
-                    the desaturases (delta family). Their mechanisms and expression in different organs have been studied for more than 50 years. 
-                    However, modeling them in the context of complex metabolic pathways is still a challenge. Distinct modeling approaches can be 
-                    implemented. Here we focus on dynamic modeling using ordinary differential equations based on kinetic rate laws. This requires 
-                    a combination of knowledge on the enzymatic mechanisms and their kinetics, as well as the interactions between the metabolites, 
-                    and between enzymes and metabolites. In this mini-review, after recalling the modeling framework, 
-                    we support the development of such a mathematical approach by reviewing the available kinetic information of the enzymes involved.
+                    The synthesis and modification of fatty acids from carbohydrates are paramount for the production of lipids. 
+                    Simultaneously, lipids are pivotal energy storage in human health. They are associated with various metabolic diseases 
+                    and their production pathways are for instance candidate therapeutic targets for cancer treatments. The fatty acid 
+                    <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>de novo</Typography> synthesis (FADNS) occurs in the 
+                    cytoplasm, while the microsomal modification of fatty acids (MMFA) happens at the surface of the endoplasmic reticulum. 
+                    The kinetics and regulation of these complex processes involve several enzymes. In mammals, the main ones are the acetyl-CoA carboxylase (ACC), 
+                    the fatty acid synthase (FAS), the very-long-chain fatty acid elongases (ELOVL 1-7), and the desaturases (delta family). 
+                    Their mechanisms and expression in different organs have been studied for more than 50 years. However, modeling them in the 
+                    context of complex metabolic pathways is still a challenge. Distinct modeling approaches can be implemented. Here we focus on
+                     dynamic modeling using ordinary differential equations based on kinetic rate laws. This requires a combination of knowledge 
+                     on the enzymatic mechanisms and their kinetics, as well as the interactions between the metabolites, and between enzymes and 
+                     metabolites. In this review, after recalling the modeling framework, we support the development of 
+                    such a mathematical approach by reviewing the available kinetic information of the enzymes involved.
                     </Typography>
                 </CardContent>
                 </Grid>

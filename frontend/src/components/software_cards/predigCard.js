@@ -34,20 +34,31 @@ const PREDIGCard = () => {
     return (
         <Card sx={{ margin: "2em", marginTop: "1em" }} style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
+            <Grid container alignItems="center"  justifyContent="space-around"  >
+            <Grid item xs={8} sm={9} md={10} l={11}>
+
                 <CardHeader align="left"
                     title="PREDIG: a web application to simulate, fit experimental data, and optimise reaction conditions for the saccharification of plant biomass, lignocellulose"
                 />
-                <Divider />
-            </Box>
+                </Grid>
                 
-                    <CardMedia sx={{
-                        padding: "1em", maxWidth: 300,
+            <Grid item xs={4} sm={3} md={2} l={1}>
+                <CardMedia sx={{
+                        padding: "1em", maxWidth: 200,
                         margin: "0 auto",
                     }}
                         component="img"
                         image={prediglogo}
                         alt=" lorem ipsum."
                     />
+                </Grid>
+                
+                </Grid>
+                 
+                <Divider />
+            </Box>
+                
+                   
             
 
 
@@ -55,13 +66,13 @@ const PREDIGCard = () => {
             <Divider/>
                 <CardActions >
                 <Button variant="contained" startIcon={<DescriptionIcon />} href="https://doi.org/10.1371/journal.pcbi.1009262">
-                        To Publication
+                        Publication
                 </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://predig.cs.hhu.de/">
-                        To page
+                        Software
                 </Button>
                 <Button variant="contained" startIcon={<GitHubIcon />} href="https://gitlab.com/erbeh/pcwsm">
-                        To GitHub
+                        GitHub
                 </Button>
                 <ExpandMore
                         expand={expanded}

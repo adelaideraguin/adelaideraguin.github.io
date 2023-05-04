@@ -42,10 +42,10 @@ proteins in host microorganisms"
             <Divider/>
                 <CardActions >
                 <Button variant="contained" startIcon={<DescriptionIcon />}  href="https://doi.org/10.5334/jors.385">
-                        To Publication
+                        Publication
                 </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://gitlab.com/a.raguin/expressinhost">
-                        To GitHub
+                        GitHub
                 </Button>
                 <ExpandMore
                         expand={expanded}
@@ -60,9 +60,7 @@ proteins in host microorganisms"
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                <Typography variant="body 1" >
-                Take a look at the associated paper below.
-                </Typography>
+             
                 <Raguin2023Card/>
                 </CardContent>
             </Collapse>

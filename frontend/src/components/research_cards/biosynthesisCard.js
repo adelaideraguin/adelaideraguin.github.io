@@ -29,7 +29,7 @@ const BiosynthesisCard = () => {
         <Card style={{ minHeight: "650px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
             <Box>
                 <CardHeader
-                    title="Plant Cell Wall Biosynthesis and Degredation"
+                    title="Plant Cell Wall Biosynthesis and Degradation"
                 />
                 <Divider />
             </Box>
@@ -49,7 +49,7 @@ const BiosynthesisCard = () => {
                  structure follows that used by Ding et al. The positions in the two outer layers (gray crosses) 
                  can each either be hemicellulose or lignin polymers."
             />
-            <CardContent>
+            <CardContent align="left">
                 <Typography variant="body 1" align='left' padding="1em">
                 Climate change directly impacts on plants, and specifically the plant cell wall is concerned. 
                 Thus, we are interested in understanding how the structure and composition of the latter impacts on 
@@ -63,8 +63,8 @@ const BiosynthesisCard = () => {
             <Box>
             <Divider/>
                 <CardActions >
-                <Button variant="contained" component={Link} to="/research/biosynthesis">
-                        To page
+                <Button variant="contained" component={Link} to="/publications">
+                        Publications
                     </Button>
 
                 </CardActions>

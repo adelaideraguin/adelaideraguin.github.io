@@ -49,7 +49,7 @@ const TransportCard = () => {
                   semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
                   such as ‘blocklets’ and concentric ‘growth rings"
             />
-            <CardContent >
+            <CardContent align='left'>
                 <Typography variant="body 1"  align='left' padding="1em" >
                 The cytoskeleton in eukaryotic cells plays several crucial roles. In terms of intracellular transport, 
                 motor proteins use the cytoskeletal filaments as a backbone along which they can actively transport 
@@ -59,8 +59,8 @@ const TransportCard = () => {
             <Box>
             <Divider/>
                 <CardActions >
-                <Button variant="contained" component={Link} to="/research/cytoskeletal-transport">
-                        To page
+                <Button variant="contained" component={Link} to="/publications">
+                        Publications
                     </Button>
 
                 </CardActions>
