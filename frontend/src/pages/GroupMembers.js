@@ -32,7 +32,7 @@ function GroupMembers(){
 
                 <Card sx={{ marginTop: "2em", position:"relative" }}>
                     <CardMedia
-                        sx={{ color: "white", textAlign: "center", padding: "2.75em", fontSize: "4em", margin: "0" }}
+                        sx={{ color: "white", textAlign: "center", padding: "2.75em", margin: "0" }}
                         image={groupphoto}>
                         <Typography variant="h4" sx={{ textAlign: "center", paddingTop: "3em", paddingBottom: "1em", margin: "1em" }}>
                             <p>

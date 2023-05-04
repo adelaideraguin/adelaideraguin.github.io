@@ -20,14 +20,14 @@ import ElvadasPhoto from '../components/images/elvadas.jpeg';
 const LatestNewsCard = () => {
 
     return (
-<Card padding="2em" navButtonsAlwaysVisible="True" sx={{ margin: "3em", position: "relative" }}  >
+<Card navButtonsAlwaysVisible="True" sx={{position: "relative" }}  >
                     <Typography variant="h4">
                     Latest Lab Updates
                     </Typography>
                     <Divider />
                     <Carousel animation="slide" sx={{ margin: "2em"}}>
-                    <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
-                        <Grid item xs={2} sm={6} md={3.5}>
+                    <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
+                        <Grid item xs={2} sm={6} md={4}>
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 300,
@@ -45,7 +45,7 @@ const LatestNewsCard = () => {
                                 </CardContent>
                             </Card >
                         </Grid>
-                        <Grid item xs={2} sm={6} md={3.5} >
+                        <Grid item xs={2} sm={6} md={4} >
                         <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{
                             margin: "0 auto", maxHeight: 300,
@@ -59,14 +59,39 @@ const LatestNewsCard = () => {
                         />
                         <CardContent>
                             <Typography align='left' padding="1em" variant="h5" >
-                            Feb 2023: Partho Sakha De attended the EMBO Workshop: In situ structural biology: from cryo-EM to multi-scale modelling in Heidelberg
+                            Feb 2023: Partho Sakha De attended the EMBO Workshop on Cryo-EM in Heidelberg
                             </Typography>
                         </CardContent>
 
                     </Card >
 
                         </Grid>
-                        <Grid item xs={2} sm={6} md={3.5} >
+                        <Grid item xs={4} sm={6} md={4} >
+                        <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                                <CardMedia sx={{
+                                    margin: "0 auto", maxHeight: 300,
+                                    width: "auto",
+                                    height: "auto",
+                                    
+                                }}
+                                    component="img"
+                                    image={MerleSanDiego}
+                                    alt="Merle Stein at the Annual Biophysical Society Meeting"
+                                />
+                                <CardContent>
+                                    <Typography align='left' padding="1em" variant="h5" >
+                                    Feb 2023: Merle Stein is attending the Annual Biophysical Society Meeting in San Diego
+                                    </Typography>
+                                </CardContent>
+                            </Card >
+
+                        </Grid>
+                    </Grid>   
+
+
+
+                    <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
+                        <Grid item xs={3} sm={6} md={4}>
                         <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{
                             margin: "0 auto", maxHeight: 300,
@@ -85,31 +110,7 @@ const LatestNewsCard = () => {
                         </CardContent>
                     </Card >
                         </Grid>
-                    </Grid>   
-
-
-
-                    <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
-                        <Grid item xs={3} sm={6} md={3.5}>
-                            <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
-                                <CardMedia sx={{
-                                    margin: "0 auto", maxHeight: 300,
-                                    width: "auto",
-                                    height: "auto",
-                                    
-                                }}
-                                    component="img"
-                                    image={MerleSanDiego}
-                                    alt="Merle Stein at the Annual Biophysical Society Meeting"
-                                />
-                                <CardContent>
-                                    <Typography align='left' padding="1em" variant="h5" >
-                                    Feb 2023: Merle Stein is attending the Annual Biophysical Society Meeting in San Diego, to discuss her research on protein production regulation in plants
-                                    </Typography>
-                                </CardContent>
-                            </Card >
-                        </Grid>
-                        <Grid item xs={2} sm={6} md={3.5} >
+                        <Grid item xs={2} sm={6} md={4} >
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 300,
@@ -130,7 +131,7 @@ const LatestNewsCard = () => {
                             </Card >
 
                         </Grid>
-                        <Grid item xs={2} sm={6} md={3.5} >
+                        <Grid item xs={2} sm={6} md={4} >
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 300,
@@ -153,8 +154,8 @@ const LatestNewsCard = () => {
                     </Grid>   
                     
                     
-                    <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
-                        <Grid item xs={2} sm={6} md={3.5}>
+                    <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
+                        <Grid item xs={2} sm={6} md={4}>
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 300,
@@ -174,7 +175,7 @@ const LatestNewsCard = () => {
 
                             </Card >
                         </Grid>
-                        <Grid item xs={2} sm={6} md={3.5} >
+                        <Grid item xs={2} sm={6} md={4} >
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 300,
@@ -195,7 +196,7 @@ const LatestNewsCard = () => {
                             </Card >
 
                         </Grid>
-                        <Grid item xs={2} sm={6} md={3.5} >
+                        <Grid item xs={12} sm={6} md={4} >
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 300,

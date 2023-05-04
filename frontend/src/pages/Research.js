@@ -19,7 +19,7 @@ function Research(){
                 <CardMedia
                     height="300"
                     component="h1"
-                    sx={{ color: "white", textAlign: "center", padding: "1.5em", fontSize: "4em", margin: "0" }}
+                    sx={{ color: "white", textAlign: "center", padding: "1.5em", margin: "0" }}
                     image={background}
                     alt="A field of corn"
                     ><Typography variant="h2"> 

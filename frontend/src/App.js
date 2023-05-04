@@ -3,7 +3,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Box, Container } from '@mui/material';
 import './App.css';
-import Navbar from './components/Navbar';
 //import Navbar from './components/scroll_navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -16,7 +15,7 @@ import Contact from './pages/Contact';
 import Publications from './pages/Publications';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import ScrollToTop from './components/ScrolltoTop';
-
+import Navbar from './components/Reactive_navbar';
 const darkTheme = createTheme({
   palette: {
     mode: 'light',
@@ -60,9 +59,9 @@ const dark2Theme = createTheme({
 
 
 dark2Theme.typography.h1 = {
-  fontSize: '1.2rem',
+  
   '@media (min-width:600px)': {
-    fontSize: '7rem', fontFamily: 'Merriweather Sans'
+    fontSize: '5rem', fontFamily: 'Merriweather Sans'
   }
  }
 

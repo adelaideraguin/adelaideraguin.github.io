@@ -19,27 +19,31 @@ function Home(){
               top: "0",
               paddingTop: "1em",
               paddingBottom: "1em",
-              paddingLeft: "2em",
-              paddingRight: "2em",
+            
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               
             }} >
                 <Card sx={{position:"relative" }}>
-                    <Box sx={{ position: 'relative' }}>
+                    <Box sx={{  position: 'relative' }}>
                         <CardMedia
-                                    height="300"
+                                    width="100%"
                                     component="h1"
                                     sx={{ color: "white", 
                                     textAlign: "center", 
-                                    padding: "5em", 
-                                    fontSize: "4em", 
-                                    margin: "0", 
+                                    padding: "2em", 
+                                    margin: "0",
                                     position:"relative" }}
                                     image={background}
                                     alt="A field of corn"
-                                >
+                                ><Typography variant="h1" sx={{ textAlign: "center", margin: "1em", color:"white", position:"relative" }}>
+                            Adélaïde Raguin's 
+                            <p>Research Team</p>
+                        </Typography>
+                        <Typography variant="h2" sx={{ textAlign: "center", margin: "1em", color: "white", position:"relative" }}>
+                            Computational and Theoretical Biophysics
+                        </Typography>
                         </CardMedia>
                         <Box
                             sx={{
@@ -50,21 +54,15 @@ function Home(){
                                 color: 'white',
                             }}
                             >
-                        <Typography variant="h1" sx={{ textAlign: "center", margin: "1em", color:"white", position:"relative" }}>
-                            Adélaïde Raguin's 
-                            <p>Research Team</p>
-                        </Typography>
-                        <Typography variant="h2" sx={{ textAlign: "center", margin: "1em", color: "white", position:"relative" }}>
-                            Computational and Theoretical Biophysics
-                        </Typography>
+                        
                     </Box>
                 </Box>
                 </Card>
 
             </Box>
             
-            <Card sx={{marginTop: "1em", marginLeft: "2em", marginRight: "2em", position:"relative", color: "white", paddingLeft: "2em",
-              paddingRight: "2em",}}>
+            <Card sx={{marginTop: "1em",  position:"relative", color: "white", paddingLeft: "2em",
+              paddingRight: "2em"}}>
                    
                     <Typography padding="2em"  align='left' paragraph variant="h5" sx={{ margin: "1em", color: "black" }}>
                         <p>We develop computational and mathematical methods to study the dynamics of complex biological systems 
@@ -78,20 +76,20 @@ function Home(){
                         <p>How do microtubule junctions contribute to control the cytoskeletal transport?</p>
                     </Typography>
 
-                <Grid container justifyContent="space-around" spacing={1} sx={{position:"relative"}} >
-                    <Grid item xs={8} sm={6} md={3.5}>
+                <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom:"2em", position:"relative"}} >
+                    <Grid item xs={12} sm={12} md={4}>
                         <MeetUsCard/>
                     </Grid>
-                    <Grid item xs={8} sm={6} md={3.5} >
+                    <Grid item xs={12} sm={12} md={4} >
                         <ResearchPaperCard />
                     </Grid>
-                    <Grid item xs={8} sm={6} md={3.5} >
+                    <Grid item xs={12} sm={12} md={4} >
                         <SoftwareCard/>
                     </Grid>
 
                 </Grid>
 
-                <LatestNewsCard/>
+                <LatestNewsCard sx={{marginTop:"2em", marginBottom:"3em", display: { xs: "none", md: "flex" }}}/>
                 </Card>
                
                 </Box>

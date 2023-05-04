@@ -8,7 +8,6 @@ import Raguin2023Card from '../components/paper_cards/Raguin2023';
 import ExpressInHostCard from '../components/software_cards/ExpressInHostCard';
 import ThreeDimGlycogenCard from '../components/software_cards/threedimGlycogenCard';
 import TASEPCard from '../components/software_cards/TASEPCard';
-
 import background from '../components/images/background.png';
 
 
@@ -21,7 +20,7 @@ function Teaching(){
                     <CardMedia
                         height="300"
                         component="h1"
-                        sx={{ color: "white", textAlign: "center", padding: "1.5em", fontSize: "4em", margin: "0" }}
+                        sx={{ color: "white", textAlign: "center", padding: "1.5em", margin: "0" }}
                         image={background}
                         alt="A field of corn"
                     >

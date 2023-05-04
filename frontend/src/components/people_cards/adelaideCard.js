@@ -35,7 +35,7 @@ const AdelaideCard = () => {
             </Box>
             <CardContent>
             <Grid container  spacing={1} alignItems="center" justifyContent="center">
-                <Grid item xs={8} sm={8} md={3.5}>
+                <Grid item xs={12} sm={12} md={3.5}>
                 <CardMedia sx={{
                     padding: "1em", maxWidth: 280,
                     margin: "0 auto",
@@ -45,7 +45,7 @@ const AdelaideCard = () => {
                     alt="A smart photo of Dr Adelaide Raguin"
                 />
                 </Grid>
-                <Grid item xs={8} sm={8} md={6}>
+                <Grid item xs={12} sm={12} md={6}>
                 
                 <Typography align='left' variant="body1" >
                 <p>Dr Adélaïde Raguin studied Physics at the University of Montpellier, where she received her PhD in theoretical Physics in 
