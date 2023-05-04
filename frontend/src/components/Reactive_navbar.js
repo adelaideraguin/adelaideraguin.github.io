@@ -9,7 +9,7 @@ import Menu from "@mui/material/Menu";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-const pages = [<Link to="/">Home</Link>, <Link to="/group">Meet the Group</Link>, <Link to="/research">Research Projects</Link>,
+const pages = [<Link color="black" underline="none" to="/">Home</Link>, <Link to="/group">Meet the Group</Link>, <Link to="/research">Research Projects</Link>,
 <Link to="/funding">Funding</Link>, <Link to="/publications">Publications</Link>, <Link to="/software">Software</Link>, <Link to="/hiring">Join us!</Link>, <Link to="/contact-us">Get in touch</Link>]
 
 const Navbar = () => {

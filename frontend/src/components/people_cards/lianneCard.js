@@ -36,7 +36,7 @@ const LianneCard = () => {
 
             <CardContent>
             <Grid container  spacing={1} alignItems="center"  justifyContent="space-around">
-                <Grid item xs={12} sm={12} md={3.5}>
+                <Grid item xs={7} sm={12} md={3.5}>
                 <CardMedia sx={{
                     padding: "1em", maxWidth: 350,
                     margin: "0 auto",

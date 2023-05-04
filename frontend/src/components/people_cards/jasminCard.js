@@ -34,7 +34,7 @@ const JasminCard = () => {
             </Box>
             <CardContent>
             <Grid container alignItems="center"  justifyContent="space-around" spacing={1} >
-                <Grid item xs={12} sm={12} md={3.5}>
+                <Grid item xs={7} sm={12} md={3.5}>
                 <CardMedia sx={{
                     padding: "1em", maxWidth: 280,
                     margin: "0 auto",
