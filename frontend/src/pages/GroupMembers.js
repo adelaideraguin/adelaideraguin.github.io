@@ -30,9 +30,9 @@ function GroupMembers(){
                     </CardMedia>
                 </Card>
 
-                <Card sx={{ marginTop: "2em", position:"relative" }}>
+                <Card sx={{ marginTop: "2em", position:"relative", display: { xs: "none", sm: "none", md: "flex" } }}>
                     <CardMedia
-                        sx={{ color: "white", textAlign: "center", padding: "2.75em", margin: "0" }}
+                        sx={{ display: 'flex', color: "white", textAlign: "center", padding: "2.75em", margin: "0" }}
                         image={groupphoto}>
                         <Typography variant="h4" sx={{ textAlign: "center", paddingTop: "3em", paddingBottom: "1em", margin: "1em" }}>
                             <p>
@@ -44,6 +44,17 @@ function GroupMembers(){
                         </Typography>
                     </CardMedia>
 
+                </Card>
+
+                <Card sx={{ marginTop: "2em", position:"relative", display: { xs: "stretch", sm: "stretch", md: "none" } }}>
+                    <CardMedia
+                        height="400"
+                        component="h1"
+                        sx={{ color: "white", textAlign: "center", padding: "1.5em",  margin: "0" }}
+                        image={groupphoto}
+                        alt="binary"
+                    >
+                    </CardMedia>
                 </Card>
             
                 <p>
