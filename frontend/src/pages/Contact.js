@@ -11,7 +11,7 @@ function Contact(){
     return(
         <section>
         <div class="container-fluid">
-            <Card sx={{ margin: "2em", marginTop: "1em", position:"relative" }}>
+            <Card sx={{  marginTop: "1em", marginBottom: "2em", position:"relative" }}>
                     <CardMedia
                         height="300"
                         component="h1"
@@ -25,19 +25,19 @@ function Contact(){
             </Card>
             
 
-            <Grid container justifyContent="space-around" spacing={1} sx={{position:"relative"}} marginBottom="2em" >
-                <Grid item xs={10} sm={6} md={3.5} >
+            <Grid container justifyContent="space-around" spacing={3} sx={{position:"relative"}} marginBottom="2em" >
+                <Grid item xs={12} sm={12} md={4} >
                     <LinkedInCard/>
                 </Grid>
-                <Grid item xs={10} sm={6} md={3.5}>
+                <Grid item xs={12} sm={12} md={4}>
                     <AboutUsCard />
                 </Grid>
-                <Grid item xs={10} sm={6} md={3.5} >
+                <Grid item xs={12} sm={12} md={4} >
                    <EmailCard/>
                 </Grid>
                 
             </Grid>
-            <Card sx={{ margin: "2em", position:"relative" }}>
+            <Card sx={{ position:"relative" }}>
                 <Typography variant="h5" sx={{ textAlign: "center", margin: "1em" }}>
                         You can find us in the Computational Cell Biology Institute at Heinrich-Heine University
                 </Typography>

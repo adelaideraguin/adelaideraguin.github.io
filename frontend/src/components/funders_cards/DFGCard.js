@@ -33,7 +33,7 @@ const DFGCard = () => {
                 alt="Logo for the DFG"
             />
             <CardContent>
-                <Typography variant="body1" >
+                <Typography align="left" variant="body1" >
                     To learn more about DFG you can visit their homepage linked below.
                 </Typography>
             </CardContent>

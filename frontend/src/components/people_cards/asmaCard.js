@@ -27,7 +27,7 @@ const AsmaCard = () => {
     };
 
     return (
-        <Card  sx={{ margin: "2em" }} style={{ position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+        <Card  style={{ position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
                     title="Asma Ben Janete"
@@ -46,7 +46,7 @@ const AsmaCard = () => {
                     alt="A smart photo of Asma Ben Janete"
                 />
                 </Grid>
-                <Grid item xs={12} sm={12} md={6} >
+                <Grid item xs={12} sm={12} md={7} >
               
                 <Typography variant="body1" align='left' alignItems="center"  justifyContent="center">
                 Asma is a Master's student in the Department of Computer Science. The focus of her studies is data engineering 

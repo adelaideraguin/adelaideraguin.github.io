@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Box } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import './App.css';
 import Navbar from './components/Navbar';
 //import Navbar from './components/scroll_navbar';
@@ -15,7 +15,6 @@ import Hiring from './pages/Hiring';
 import Contact from './pages/Contact';
 import Publications from './pages/Publications';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
 import ScrollToTop from './components/ScrolltoTop';
 
 const darkTheme = createTheme({
@@ -80,9 +79,11 @@ class App extends Component {
   render() {
     return (
       <Router>
+
         <ScrollToTop />
 
         <div className="App">
+
             <ThemeProvider theme={dark2Theme}>
             <CssBaseline sx={{zIndex: "1"}}/>
             <Navbar sx={{zIndex: "1"}}/>
@@ -92,6 +93,8 @@ class App extends Component {
             width: "100%"
 
           }} >
+            <Container maxWidth="xl">
+
           
             <Routes>
               <Route exact path="/" element={<Home/>} />
@@ -103,11 +106,12 @@ class App extends Component {
               <Route exact path="/contact-us" element={<Contact/>}/>
               <Route exact path="/publications" element={<Publications/>}/>
             </Routes>
+            </Container>
+
             </Box>
-           
           <Footer />
         </ThemeProvider>
-
+       
         </div>
       </Router>
     );

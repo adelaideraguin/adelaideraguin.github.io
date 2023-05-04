@@ -28,7 +28,7 @@ const TorbenCard = () => {
     };
 
     return (
-        <Card sx={{ margin: "2em" }} style={{position:"relative",  minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+        <Card style={{position:"relative",  minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
                     title="Torben Glass"
@@ -47,7 +47,7 @@ const TorbenCard = () => {
                 alt="A smart photo of Torben Glass sitting on a wall"
                 />
                 </Grid>
-                <Grid item xs={12} sm={12} md={6} >
+                <Grid item xs={12} sm={12} md={7} >
 
                 <Typography variant="body1" align='left'>
                 Torben is currently working on the BioSC funded PREDIG project, for which we develop a modelling software to predict the enzymatic digestion of 

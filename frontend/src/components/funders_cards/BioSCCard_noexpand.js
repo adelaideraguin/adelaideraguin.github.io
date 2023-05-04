@@ -40,7 +40,7 @@ const BioSCCardnoexpand = () => {
             />
             <CardContent>
                 <Typography variant="body1" >
-                    We are funded by BioSC. To learn more about BioSC you can visit their homepage linked below.
+                    To learn more about BioSC you can visit their homepage linked below.
                 </Typography>
             </CardContent>
             <Box>

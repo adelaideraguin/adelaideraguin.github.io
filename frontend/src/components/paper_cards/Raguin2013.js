@@ -24,7 +24,7 @@ const Raguin2013Card = () => {
     };
 
     return (
-        <Card sx={{ margin: "2em", marginTop: "1em" }} style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+        <Card style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader align="left"
                     title="Role of network junctions for the totally asymmetric simple exclusion process"

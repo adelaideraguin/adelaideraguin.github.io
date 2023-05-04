@@ -26,7 +26,7 @@ const AdelaideCard = () => {
     };
 
     return (
-        <Card sx={{ margin: "2em" }} style={{position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+        <Card sx={{ marginTop: "2em" }} style={{position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
                     title="Dr Adélaïde Raguin"

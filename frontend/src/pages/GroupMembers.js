@@ -16,7 +16,7 @@ function GroupMembers(){
         <section>
             <div class="container-fluid">
 
-                <Card sx={{ margin: "2em", marginTop: "1em", position:"relative" }}>
+                <Card sx={{ marginTop: "1em", position:"relative" }}>
                     <CardMedia
                         height="300"
                         component="h1"
@@ -30,7 +30,7 @@ function GroupMembers(){
                     </CardMedia>
                 </Card>
 
-                <Card sx={{ margin: "2em", position:"relative" }}>
+                <Card sx={{ marginTop: "2em", position:"relative" }}>
                     <CardMedia
                         sx={{ color: "white", textAlign: "center", padding: "2.75em", fontSize: "4em", margin: "0" }}
                         image={groupphoto}>
@@ -50,10 +50,8 @@ function GroupMembers(){
                     <AdelaideCard />
                 </p>
 
-                <Card sx={{ margin: "2em", position:"relative" }}>
-                
-                </Card>
-                <Grid container justifyContent="space-around" spacing={1} sx={{position:"relative"}} >
+              
+                <Grid container justifyContent="space-around" spacing={3} sx={{position:"relative", marginTop:"2em"}} >
                     <Grid item xs={12} sm={12} md={6}>
                         <ParthoCard />
                     </Grid>
@@ -63,7 +61,7 @@ function GroupMembers(){
                 </Grid>
 
                
-                <Grid container justifyContent="space-around" spacing={1} sx={{position:"relative"}} >
+                <Grid container justifyContent="space-around" spacing={3} sx={{position:"relative", marginTop:"2em"}} >
                     <Grid item xs={12} sm={12} md={6}>
                         <MerleCard />
                     </Grid>
@@ -73,7 +71,7 @@ function GroupMembers(){
                 </Grid>
 
         
-                <Grid container justifyContent="space-around" marginBottom={"2em"} spacing={1} sx={{position:"relative"}} >
+                <Grid container justifyContent="space-around" marginBottom={"2em"} spacing={3} sx={{position:"relative", marginTop:"2em"}} >
                     <Grid item xs={12} sm={12} md={6}>
                         <JasminCard />
                     </Grid>

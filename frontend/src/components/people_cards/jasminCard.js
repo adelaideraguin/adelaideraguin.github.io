@@ -25,7 +25,7 @@ const JasminCard = () => {
     };
 
     return (
-        <Card sx={{ margin: "2em" }} style={{ position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+        <Card style={{ position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
                     title="Jasmin Theilmann"
@@ -44,7 +44,7 @@ const JasminCard = () => {
                 alt="A smart photo of Jasmin Theilmann"
                 />
                 </Grid>
-                <Grid item xs={12} sm={12} md={6} >
+                <Grid item xs={12} sm={12} md={7} >
                 
                 <Typography variant="body1" align='left'  >
                 Jasmin studied for her Bachelor's degree at the Institute for Applied Physics at Heinrich-Heine University and is currently completing 

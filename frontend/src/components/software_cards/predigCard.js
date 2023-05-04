@@ -32,7 +32,7 @@ const PREDIGCard = () => {
     };
 
     return (
-        <Card sx={{ margin: "2em", marginTop: "1em" }} style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+        <Card sx={{  marginTop: "1em" }} style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
             <Grid container alignItems="center"  justifyContent="space-around"  >
             <Grid item xs={8} sm={9} md={10} l={11}>

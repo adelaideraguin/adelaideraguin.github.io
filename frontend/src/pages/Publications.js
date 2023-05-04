@@ -17,7 +17,7 @@ function Publications(){
 
         <section>
         <div class="container-fluid">
-        <Card sx={{ margin: "2em", marginTop: "1em", position:"relative" }}>
+        <Card sx={{ marginTop: "1em", marginBottom:"2em", position:"relative" }}>
                     <CardMedia
                         height="300"
                         component="h1"

@@ -8,7 +8,7 @@ function Hiring(){
         <section>
             <div class="container-fluid">
 
-                <Card sx={{ margin: "2em", marginTop: "1em", position:"relative" }}>
+                <Card sx={{  marginTop: "1em", position:"relative" }}>
                     <CardMedia
                         height="300"
                         component="h1"
@@ -21,7 +21,7 @@ function Hiring(){
 
                 </Card>
 
-                <Card sx={{ margin: "2em", position:"relative" }}>
+                <Card sx={{ marginTop: "2em", position:"relative" }}>
                     <Typography variant="h5" sx={{ textAlign: "left", margin: "1em" }}>
                     <p>
                         Hiring opportunities will be posted here as they become available. 
@@ -32,7 +32,7 @@ function Hiring(){
                     </Typography>
                 </Card>
 
-                <Card sx={{ margin: "2em", position:"relative" }}>
+                <Card sx={{ marginTop: "2em", position:"relative" }}>
                     <Typography variant="h5" sx={{ textAlign: "left", margin: "1em" }}>
                     EtransColi: A multidisciplinary study of Escherichia coli’s trans-translation regulation under stress conditions
 

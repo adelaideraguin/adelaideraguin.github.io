@@ -17,7 +17,7 @@ function Teaching(){
         <section>
         <div class="container-fluid">
         
-            <Card sx={{ margin: "2em", marginTop: "1em", position:"relative" }}>
+            <Card sx={{ marginTop: "1em", position:"relative" }}>
                     <CardMedia
                         height="300"
                         component="h1"
@@ -31,7 +31,7 @@ function Teaching(){
                     </CardMedia>
 
             </Card>
-            <Card  sx={{ margin: "2em", marginTop: "1em", position:"relative" }}>
+            <Card  sx={{marginTop: "2em", position:"relative" }}>
             <Typography variant="h5" sx={{ textAlign: "left", margin: "1em", position: "relative" }}>
             We have developed several softwares that are now available <Typography variant="h5" style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography>  web-servers and Github repositories. These softwares are open source and licensed.
             </Typography>

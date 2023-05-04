@@ -13,7 +13,7 @@ function Funding(){
         <section>
         <div class="container-fluid">
 
-            <Card sx={{ margin: "2em", marginTop: "1em", position:"relative"}}>
+            <Card sx={{ marginTop: "1em", marginBottom: "2em", position:"relative"}}>
                     <CardMedia
                         height="300"
                         component="h1"
@@ -25,20 +25,20 @@ function Funding(){
 
             </Card>
 
-        <div>
-            <Grid container justifyContent="space-around" spacing={1} sx={{marginBottom: "2em"}} >
-                <Grid item xs={10} sm={6} md={3.5}>
+       
+            <Grid container justifyContent="space-around" spacing={3} sx={{ marginBottom: "2em"}} >
+                <Grid item xs={12} sm={12} md={4}>
                     <DFGCard />
                 </Grid>
-                <Grid item xs={10} sm={6} md={3.5} >
+                <Grid item xs={12} sm={12} md={4} >
                     <BioSCCard />
 
                 </Grid>
-                <Grid item xs={10} sm={6} md={3.5} >
+                <Grid item xs={12} sm={12} md={4} >
                     <CEPLASCard />
                 </Grid>
             </Grid>   
-        </div>
+       
         </div>
         </section>
     );

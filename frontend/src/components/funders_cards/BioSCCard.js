@@ -34,7 +34,7 @@ const BioSCCard = () => {
                 alt="Paella dish"
             />
             <CardContent>
-                <Typography variant="body1" >
+                <Typography align="left" variant="body1" >
                     To learn more about BioSC you can visit their homepage linked below.
                 </Typography>
             </CardContent>

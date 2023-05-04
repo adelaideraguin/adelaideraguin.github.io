@@ -23,7 +23,7 @@ const Behle2021Card = () => {
     };
 
     return (
-        <Card sx={{ margin: "2em", marginTop: "1em" }} style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+        <Card  style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader align="left"
                     title="Stochastic model of lignocellulosic material saccharification"

@@ -34,7 +34,7 @@ const CEPLASCard = () => {
                 alt="Logo for CEPLAS"
             />
             <CardContent>
-                <Typography variant="body1" >
+                <Typography align="left" variant="body1" >
                     To learn more about CEPLAS you can visit their homepage linked below.
                 </Typography>
             </CardContent>
