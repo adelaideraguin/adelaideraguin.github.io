@@ -29,7 +29,12 @@ function Research(){
 
             </Card> 
             <Card sx={{ marginTop: "2em", position:"relative"  }}>
-                <Typography variant="h5" sx={{ textAlign: "left", margin: "1em" }} xs={12} md={12}>
+                <Typography variant="h5" sx={{ textAlign: "left", margin: "1em", display: { xs: "none", sm: "none", md: "block" }}} xs={12} md={12}>
+                We develop computational and mathematical methods to study the dynamics of complex biological systems at the sub-cellular scale. 
+                Our main expertise are stochastic simulations 
+                that we use to investigate the synthesis or degradation of large polymeric systems, and collective transport processes in one dimension.
+                </Typography>
+                <Typography variant="body1" sx={{ textAlign: "left", margin: "1em", display: { xs: "block", sm: "block", md: "none" }}} xs={12} md={12}>
                 We develop computational and mathematical methods to study the dynamics of complex biological systems at the sub-cellular scale. 
                 Our main expertise are stochastic simulations 
                 that we use to investigate the synthesis or degradation of large polymeric systems, and collective transport processes in one dimension.

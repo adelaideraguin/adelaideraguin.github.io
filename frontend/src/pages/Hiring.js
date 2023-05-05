@@ -22,7 +22,15 @@ function Hiring(){
                 </Card>
 
                 <Card sx={{ marginTop: "2em", position:"relative" }}>
-                    <Typography variant="h5" sx={{ textAlign: "left", margin: "1em" }}>
+                    <Typography variant="h5" sx={{ textAlign: "left", margin: "1em", display: { xs: "none", sm: "none", md: "block" } }}>
+                    <p>
+                        Hiring opportunities will be posted here as they become available. 
+                    </p>
+                    <p>
+                    Master's students from physics, computer science, and quantitative biology that are interested in an internship are encouraged to contact Dr Adélaïde Raguin.
+                    </p>
+                    </Typography>
+                    <Typography variant="body1" sx={{ textAlign: "left", margin: "1em", display: { xs: "block", sm: "block", md: "none" } }}>
                     <p>
                         Hiring opportunities will be posted here as they become available. 
                     </p>

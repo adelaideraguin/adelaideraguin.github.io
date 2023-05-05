@@ -62,8 +62,7 @@ function Home(){
             </Box>
             <Card sx={{marginTop: "1em",  position:"relative", color: "white", paddingLeft: "1em",
               paddingRight: "1em"}}>
-                   
-                    <Typography paddingLeft="0.25em" paddingRight="0.25em"  align='left' paragraph variant="h5" sx={{ marginTop: "2em", marginBottom: "2em", color: "black" }}>
+                   <Typography paddingLeft="0.25em" paddingRight="0.25em"  align='left' paddingLeft="2em" paddingRight="2em" variant="h5" sx={{ marginTop: "2em", marginBottom: "2em", color: "black", display: { xs: "none", sm: "none", md: "block" } }}>
                         <p>We develop computational and mathematical methods to study the dynamics of complex biological systems 
                         at the sub-cellular scale. Our main expertise are stochastic simulations that we use to investigate the 
                         synthesis or degradation of large polymeric systems, and collective transport processes in one dimension. Some of the scientific questions we investigate are: </p>
@@ -74,6 +73,18 @@ function Home(){
                         traffic along the mRNA on protein synthesis regulation?</p> 
                         <p>How do microtubule junctions contribute to control the cytoskeletal transport?</p>
                     </Typography>
+                    <Typography paddingLeft="0.25em" paddingRight="0.25em"  align='left' paragraph variant="body1" sx={{ marginTop: "2em", marginBottom: "2em", color: "black", display: { xs: "block", sm: "block", md: "none" } }}>
+                        <p>We develop computational and mathematical methods to study the dynamics of complex biological systems 
+                        at the sub-cellular scale. Our main expertise are stochastic simulations that we use to investigate the 
+                        synthesis or degradation of large polymeric systems, and collective transport processes in one dimension. Some of the scientific questions we investigate are: </p>
+
+                        <p>How does the three-dimensional structure of large macromolecules 
+                        (e.g. starch, glycogen, lignocellulose) interplays with its dynamics?</p>
+                        <p> What is the impact of ribosome interactions and 
+                        traffic along the mRNA on protein synthesis regulation?</p> 
+                        <p>How do microtubule junctions contribute to control the cytoskeletal transport?</p>
+                    </Typography>
+                    
 
                 <Grid container  spacing={3}  sx={{marginBottom:"2em", position:"relative", display: 'flex', alignItems: 'stretch'}}  >
                     <Grid item xs={12} sm={12} md={4} >

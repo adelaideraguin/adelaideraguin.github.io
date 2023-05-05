@@ -11,7 +11,7 @@ function Contact(){
     return(
         <section>
         <div class="container-fluid">
-            <Card sx={{  marginTop: "1em", marginBottom: "2em", position:"relative" }}>
+            <Card sx={{  marginTop: "1em", marginBottom: "2em", position:"relative"}}>
                     <CardMedia
                         height="300"
                         component="h1"

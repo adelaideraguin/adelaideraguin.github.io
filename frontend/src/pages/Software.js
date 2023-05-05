@@ -31,7 +31,10 @@ function Teaching(){
 
             </Card>
             <Card  sx={{marginTop: "2em", position:"relative" }}>
-            <Typography variant="h5" sx={{ textAlign: "left", margin: "1em", position: "relative" }}>
+            <Typography variant="body1" sx={{ textAlign: "left", margin: "1em", position: "relative", display: { xs: "block", sm: "block", md: "none" } }}>
+            We have developed several softwares that are now available <Typography variant="body1" style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography>  web-servers and Github repositories. These softwares are open source and licensed.
+            </Typography>
+            <Typography variant="h5" sx={{ textAlign: "left", margin: "1em", position: "relative", display: { xs: "none", sm: "none", md: "block" } }}>
             We have developed several softwares that are now available <Typography variant="h5" style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography>  web-servers and Github repositories. These softwares are open source and licensed.
             </Typography>
             </Card>
