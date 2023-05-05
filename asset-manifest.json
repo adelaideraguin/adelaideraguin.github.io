@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.797418dd.css",
-    "main.js": "/static/js/main.41cf3eee.js",
+    "main.js": "/static/js/main.76c914d7.js",
     "static/media/starch.png": "/static/media/starch.9f34cf9c369554a5de93.png",
-    "static/media/Manchester.jpg": "/static/media/Manchester.248d610673712c19dc23.jpg",
+    "static/media/digest_animation.gif": "/static/media/digest_animation.8b2aebe8da1e66489603.gif",
     "static/media/group2.jpg": "/static/media/group2.a6b7a974708dfcad4fa3.jpg",
     "static/media/Jasmin-portraitformat.jpg": "/static/media/Jasmin-portraitformat.cff70d73d9c6894e2b92.jpg",
     "static/media/Merle-portraitformat.jpg": "/static/media/Merle-portraitformat.f270eccfeb7839e15bc7.jpg",
@@ -15,10 +15,10 @@
     "static/media/torben.jpg": "/static/media/torben.b8d0cd4bcc4f872978cd.jpg",
     "static/media/McFarlandfig.jpeg": "/static/media/McFarlandfig.a177c3848c2433e94708.jpeg",
     "static/media/Foko2023.png": "/static/media/Foko2023.e0247249512443da084d.png",
+    "static/media/Manchester.jpg": "/static/media/Manchester.0d0ba2ad50af72504756.jpg",
     "static/media/Rousset2023.png": "/static/media/Rousset2023.e6f7ba475a277a739733.png",
     "static/media/Merle_BPS.jpg": "/static/media/Merle_BPS.e8f5abab2e0064424e2e.jpg",
     "static/media/Pfister2020.png": "/static/media/Pfister2020.30237f0d59afcdf5d36c.png",
-    "static/media/plant_cell_wall.png": "/static/media/plant_cell_wall.353597fd5d3c1cee26d4.png",
     "static/media/glycogen.png": "/static/media/glycogen.10e64e66ca27191bc19d.png",
     "static/media/Heidelberg2023.jpg": "/static/media/Heidelberg2023.e2f2cc44fac486bcddda.jpg",
     "static/media/Raguin_expressioninhost_light.png": "/static/media/Raguin_expressioninhost_light.c6ff92b5b7b2330fd21e.png",
@@ -36,10 +36,10 @@
     "static/media/email.png": "/static/media/email.2c378c9ee25927123f7d.png",
     "index.html": "/index.html",
     "main.797418dd.css.map": "/static/css/main.797418dd.css.map",
-    "main.41cf3eee.js.map": "/static/js/main.41cf3eee.js.map"
+    "main.76c914d7.js.map": "/static/js/main.76c914d7.js.map"
   },
   "entrypoints": [
     "static/css/main.797418dd.css",
-    "static/js/main.41cf3eee.js"
+    "static/js/main.76c914d7.js"
   ]
 }
