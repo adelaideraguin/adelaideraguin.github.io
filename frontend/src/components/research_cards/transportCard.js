@@ -26,7 +26,7 @@ const TransportCard = () => {
     };
 
     return (
-        <Card style={{ minHeight: "60px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
+        <Card style={{ minHeight: "680px", display: 'flex', justifyContent: 'space-between', flexGrow: "1", flexDirection: 'column', position:"relative" }} elevation={5} >
             <Box>
                 <CardHeader
                     title="Cytoskeletal Transport"
@@ -34,7 +34,7 @@ const TransportCard = () => {
                 <Divider />
             </Box>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 600,
+                padding: "1em", maxWidth: 570,
                 margin: "0 auto",
             }}
                 component="img"

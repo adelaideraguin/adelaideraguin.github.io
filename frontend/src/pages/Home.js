@@ -32,7 +32,7 @@ function Home(){
                                     component="h1"
                                     sx={{ color: "white", 
                                     textAlign: "center", 
-                                    padding: "2em", 
+                                    padding: "0.25em", 
                                     margin: "0",
                                     position:"relative" }}
                                     image={background}
@@ -60,11 +60,10 @@ function Home(){
                 </Card>
 
             </Box>
-            
-            <Card sx={{marginTop: "1em",  position:"relative", color: "white", paddingLeft: "2em",
-              paddingRight: "2em"}}>
+            <Card sx={{marginTop: "1em",  position:"relative", color: "white", paddingLeft: "1em",
+              paddingRight: "1em"}}>
                    
-                    <Typography padding="2em"  align='left' paragraph variant="h5" sx={{ margin: "1em", color: "black" }}>
+                    <Typography paddingLeft="0.25em" paddingRight="0.25em"  align='left' paragraph variant="h5" sx={{ marginTop: "2em", marginBottom: "2em", color: "black" }}>
                         <p>We develop computational and mathematical methods to study the dynamics of complex biological systems 
                         at the sub-cellular scale. Our main expertise are stochastic simulations that we use to investigate the 
                         synthesis or degradation of large polymeric systems, and collective transport processes in one dimension. Some of the scientific questions we investigate are: </p>
@@ -76,22 +75,25 @@ function Home(){
                         <p>How do microtubule junctions contribute to control the cytoskeletal transport?</p>
                     </Typography>
 
-                <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom:"2em", position:"relative"}} >
-                    <Grid item xs={12} sm={12} md={4}>
-                        <MeetUsCard/>
-                    </Grid>
+                <Grid container  spacing={3}  sx={{marginBottom:"2em", position:"relative", display: 'flex', alignItems: 'stretch'}}  >
                     <Grid item xs={12} sm={12} md={4} >
                         <ResearchPaperCard />
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={4}>
+                        <MeetUsCard/>
                     </Grid>
                     <Grid item xs={12} sm={12} md={4} >
                         <SoftwareCard/>
                     </Grid>
 
                 </Grid>
-
-                <LatestNewsCard sx={{marginTop:"2em", marginBottom:"3em", display: { xs: "none", md: "flex" }}}/>
+                <box sx={{display: { xs: "none", sm: "none", md: "flex" }}}>
+                <LatestNewsCard sx={{marginTop:"2em", marginBottom:"3em"}}/>
+                </box>
+                
+                
+                
                 </Card>
-               
                 </Box>
                
                 

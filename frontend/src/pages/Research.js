@@ -36,7 +36,7 @@ function Research(){
                 </Typography>
             </Card>
 
-            <Grid container justifyContent="space-around" spacing={3} marginTop={"2em"} sx={{position:"relative"}} >
+            <Grid container spacing={3} marginTop={"2em"} sx={{position:"relative", flexGrow: "1", alignItems: 'stretch'}} >
                     <Grid item xs={12} sm={12} md={6}>
                         <BiosynthesisCard/>
                     </Grid>

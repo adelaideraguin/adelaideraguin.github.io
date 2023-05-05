@@ -26,7 +26,7 @@ const StarchCard = () => {
     };
 
     return (
-        <Card style={{ minHeight: "650px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
+        <Card style={{ minHeight: "680px", display: 'flex', justifyContent: 'space-between', flexGrow: "1", flexDirection: 'column', alignContent: 'stretch', position:"relative" }} elevation={5} >
             <Box>
                 <CardHeader
                     title="Starch"

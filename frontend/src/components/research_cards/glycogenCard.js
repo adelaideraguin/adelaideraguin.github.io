@@ -26,7 +26,7 @@ const GlycogenCard = () => {
     };
 
     return (
-        <Card style={{ minHeight: "600px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
+        <Card style={{ minHeight: "680px", display: 'flex', justifyContent: 'space-between', flexGrow: "1", flexDirection: 'column', position:"relative" }} elevation={5} >
             <Box>
                 <CardHeader
                     title="Glycogen"

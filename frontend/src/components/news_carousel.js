@@ -20,7 +20,7 @@ import ElvadasPhoto from '../components/images/elvadas.jpeg';
 const LatestNewsCard = () => {
 
     return (
-<Card navButtonsAlwaysVisible="True" sx={{position: "relative" }}  >
+<Card navButtonsAlwaysVisible="True" sx={{position: "relative" }}   >
                     <Typography variant="h4">
                     Latest Lab Updates
                     </Typography>
@@ -116,7 +116,6 @@ const LatestNewsCard = () => {
                                     margin: "0 auto", maxHeight: 300,
                                     width: "auto",
                                     height: "auto",
-                                    
                                 }}
                                     component="img" 
                                     image={LiannePhoto}

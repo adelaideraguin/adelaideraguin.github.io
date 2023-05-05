@@ -2,8 +2,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import degredationimage from '../plant_cell_wall.png';
-
+import image from '..//images/digest_animation.gif';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -26,19 +25,20 @@ const BiosynthesisCard = () => {
     };
 
     return (
-        <Card style={{ minHeight: "650px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
+        <Card style={{ minHeight: "680px", display: 'flex', justifyContent: 'space-between', flexGrow: "1", flexDirection: 'column', alignContent: 'stretch', position:"relative" }} elevation={5} >
             <Box>
                 <CardHeader
                     title="Plant Cell Wall Biosynthesis and Degradation"
                 />
                 <Divider />
             </Box>
+            
             <CardMedia sx={{
-                padding: "1em", maxWidth: 700,
+                padding: "1em", maxWidth: 420,
                 margin: "0 auto",
             }}
                 component="img"
-                image={degredationimage}
+                image={image}
                 alt=" Schematic representation of the structure of the substrate in the model.
                 (a) Several cellulose microfibrils embedded in a matrix of hemicellulose reinforced by lignin. 
                 (b) Side-view of the top 50 nm of a single cellulose microfibril made of 36 polymers, and part 

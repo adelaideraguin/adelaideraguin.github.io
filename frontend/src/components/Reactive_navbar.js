@@ -26,12 +26,15 @@ const Navbar = () => {
     return (
         <>
         
-            <AppBar position="sticky" sx={{flexGrow: 1, display: 'flex', background: "white", justifyContent: 'space-between', marginBottom: "0.5em", marginTop: "0" }} >
+            <AppBar position="sticky" sx={{flexGrow: 1, display: 'flex', background: "white", justifyContent: 'space-between', marginBottom: "0.5em", flexWrap: 'wrap', marginTop: "0" }} >
             <Container maxWidth="xl">
                 <Toolbar disableGutters  >
                 
-                    <Box sx={{ padding: "1em", paddingBottom: "1em" }}>
-                        <img src="https://www.hhu.de/typo3conf/ext/wiminno/Resources/Public/img/hhu_logo.png" alt="hhu" width="200px" />
+                    <Box sx={{ padding: "1em", paddingBottom: "1em",  display: { xs: "flex", sm: "flex", md: "none" } }}>
+                        <img src="https://www.hhu.de/typo3conf/ext/wiminno/Resources/Public/img/hhu_logo.png" alt="hhu" width="150px" />
+                    </Box>
+                    <Box sx={{ padding: "1em", paddingBottom: "1em",  display: { xs: "none", sm: "none", md: "flex" } }}>
+                        <img src="https://www.hhu.de/typo3conf/ext/wiminno/Resources/Public/img/hhu_logo.png" alt="hhu" width="250px" />
                     </Box>
                     <Typography
                         variant="h6"

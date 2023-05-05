@@ -35,7 +35,7 @@ const SoftwareCard = () => {
                 <Divider />
             </Box>
             <CardMedia sx={{
-                padding: "1em", maxHeight: 290,
+                padding: "1em", maxHeight: 220,
                 margin: "0 auto",
                 width: "auto",
                 height: "auto"
