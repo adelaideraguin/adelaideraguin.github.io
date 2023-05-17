@@ -41,7 +41,7 @@ proteins in host microorganisms"
             <Box>
             <Divider/>
                 <CardActions >
-                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} useFlexGap flexWrap="wrap">
+                <Stack  direction={{ xs: 'column', sm: 'row' }} spacing={2} useFlexGap flexWrap="wrap">
                 <Button variant="contained" startIcon={<DescriptionIcon />}  href="https://doi.org/10.5334/jors.385">
                         Publication
                 </Button>

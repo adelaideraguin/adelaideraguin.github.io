@@ -47,6 +47,7 @@ const dark2Theme = createTheme({
       // contrastText: will be calculated to contrast with palette.primary.main
     },
 
+
   },
   typography: {
     a: {

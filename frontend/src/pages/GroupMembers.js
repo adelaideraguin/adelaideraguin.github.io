@@ -82,7 +82,6 @@ function GroupMembers(){
                         <LianneCard />
                     </Grid>
                 </Grid>
-
                
                 <Grid container justifyContent="space-around" spacing={3} sx={{position:"relative", marginTop:"2em"}} >
                     <Grid item xs={12} sm={12} md={6}>

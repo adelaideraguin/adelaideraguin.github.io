@@ -9,8 +9,8 @@ import Menu from "@mui/material/Menu";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-const pages = [<Link color="black" underline="none" to="/">Home</Link>, <Link to="/group">Meet the Group</Link>, <Link to="/research">Research Projects</Link>,
-<Link to="/funding">Funding</Link>, <Link to="/publications">Publications</Link>, <Link to="/software">Software</Link>, <Link to="/hiring">Join us!</Link>, <Link to="/contact-us">Get in touch</Link>]
+const pages = [<Link color="inherit" underline="none" to="/">Home</Link>, <Link underline="none" to="/group">Meet the Group</Link>, <Link to="/research">Research Projects</Link>,
+<Link to="/funding">Funding</Link>, <Link underline="none" to="/publications">Publications</Link>, <Link to="/software">Software</Link>, <Link to="/hiring">Join us!</Link>, <Link to="/contact-us">Get in touch</Link>]
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -67,12 +67,12 @@ const Navbar = () => {
                         anchorEl={anchorElNav}
                         anchorOrigin={{
                           vertical: "bottom",
-                          horizontal: "left",
+                          horizontal: "right",
                         }}
                         keepMounted
                         transformOrigin={{
                           vertical: "top",
-                          horizontal: "left",
+                          horizontal: "right",
                         }}
                         open={Boolean(anchorElNav)}
                         onClose={handleCloseNavMenu}
@@ -81,8 +81,8 @@ const Navbar = () => {
                         }}
                       >
                         {pages.map((page) => (
-                          <MenuItem key={page} onClick={handleCloseNavMenu}>
-                            <Typography textAlign="center">{page}</Typography>
+                          <MenuItem divider="true"  key={page} onClick={handleCloseNavMenu}>
+                            <Typography  textAlign="center">{page}</Typography>
                           </MenuItem>
                         ))}
                       </Menu>
