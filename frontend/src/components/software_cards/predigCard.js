@@ -1,5 +1,5 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, Stack, styled, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ComputerIcon from '@mui/icons-material/ComputerTwoTone';
@@ -65,15 +65,17 @@ const PREDIGCard = () => {
             <Box>
             <Divider/>
                 <CardActions >
+                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} useFlexGap flexWrap="wrap">
                 <Button variant="contained" startIcon={<DescriptionIcon />} href="https://doi.org/10.1371/journal.pcbi.1009262">
                         Publication
                 </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://predig.cs.hhu.de/">
-                        Software
+                        Web App
                 </Button>
                 <Button variant="contained" startIcon={<GitHubIcon />} href="https://gitlab.com/erbeh/pcwsm">
                         GitHub
                 </Button>
+                </Stack>
                 <ExpandMore
                         expand={expanded}
                         onClick={handleExpandClick}

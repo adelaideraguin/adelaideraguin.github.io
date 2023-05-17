@@ -56,7 +56,6 @@ const BioSCCard = () => {
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography variant="h5">About</Typography>
                     <Typography paragraph align="left">
                     The Bioeconomy Science Center is based on an integrative structure consisting of basic, applied, and industry-oriented research, 
                     including the natural, engineering, and economic sciences, and is focussed on the mission of sustainable bioeconomy on the pillars 

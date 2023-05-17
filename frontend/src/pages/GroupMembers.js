@@ -10,6 +10,8 @@ import TorbenCard from '../components/people_cards/torbenCard';
 
 import background from '../components/images/background.png';
 import groupphoto from  '../components/images/group2.jpg';
+import EricCard from '../components/people_cards/ericCard';
+import LauraCard from '../components/people_cards/lauraCard';
 
 function GroupMembers(){
     return(
@@ -98,6 +100,15 @@ function GroupMembers(){
                     </Grid>
                     <Grid item xs={12} sm={12} md={6}>
                         <AsmaCard />
+                    </Grid>
+                </Grid>
+
+                <Grid container justifyContent="space-around" marginBottom={"2em"} spacing={3} sx={{position:"relative", marginTop:"2em"}} >
+                    <Grid item xs={12} sm={12} md={6}>
+                        <EricCard />
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={6}>
+                        <LauraCard />
                     </Grid>
                 </Grid>
 

@@ -55,7 +55,7 @@ const SoftwareCard = () => {
                 <CardActions disableSpacing  >
 
 
-                <Button variant="contained" component={Link} to="/software">
+                <Button variant="contained" href="https://predig.cs.hhu.de/">
                         Learn More
                 </Button>
 

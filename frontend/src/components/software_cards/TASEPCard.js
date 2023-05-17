@@ -1,5 +1,5 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, Stack, styled, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import DescriptionIcon from '@mui/icons-material/Description';
@@ -33,7 +33,7 @@ const TASEPCard = () => {
         <Card sx={{ marginTop: "1em" }} style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader align="left"
-                    title="Whole-translatome protein production and tRNA sequestration in yeas"
+                    title="Whole-translatome protein production and tRNA sequestration in yeast"
                 />
                 <Divider />
             </Box>
@@ -43,12 +43,14 @@ const TASEPCard = () => {
             <Box>
             <Divider/>
                 <CardActions >
+                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} useFlexGap flexWrap="wrap">
                 <Button variant="contained" startIcon={<DescriptionIcon />} href="https://doi.org/10.1093/nar/gkaa055">
                         Publication
                 </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://www.ebi.ac.uk/biomodels/MODEL2001080004#Overview">
                         software
                 </Button>
+                </Stack>
                 <ExpandMore
                         expand={expanded}
                         onClick={handleExpandClick}

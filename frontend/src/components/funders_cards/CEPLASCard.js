@@ -56,7 +56,6 @@ const CEPLASCard = () => {
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography variant="h5">About</Typography>
                     <Typography paragraph align="left">
                         
 

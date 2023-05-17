@@ -1,5 +1,5 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, Stack, styled, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import DescriptionIcon from '@mui/icons-material/Description';
@@ -41,12 +41,14 @@ proteins in host microorganisms"
             <Box>
             <Divider/>
                 <CardActions >
+                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} useFlexGap flexWrap="wrap">
                 <Button variant="contained" startIcon={<DescriptionIcon />}  href="https://doi.org/10.5334/jors.385">
                         Publication
                 </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://gitlab.com/a.raguin/expressinhost">
                         GitHub
                 </Button>
+                </Stack>
                 <ExpandMore
                         expand={expanded}
                         onClick={handleExpandClick}

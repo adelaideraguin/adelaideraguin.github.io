@@ -55,7 +55,6 @@ const DFGCard = () => {
             </Box>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography variant="h5">About</Typography>
                     <Typography paragraph align="left">
                         
 The Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) is the central self-governing research funding 
