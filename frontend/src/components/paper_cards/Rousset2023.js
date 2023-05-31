@@ -34,13 +34,13 @@ const Rousset2023Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Rousset Y, Ebenhöh O, Raguin A (2023) Stochastic modelling of a three-dimensional glycogen granule synthesis and impact of the branching enzyme. (Submitted)
+                Rousset Y, Ebenhöh O, Raguin A (2023) Stochastic modelling of a three-dimensional glycogen granule synthesis and impact of the branching enzyme. PLoS Computational Biology. 19(5): e1010694.
                 </Typography>
             </CardContent>
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
-                    <Button variant="contained" href="https://www.researchgate.net/publication/364921626_Stochastic_modelling_of_a_three-dimensional_glycogen_granule_synthesis_and_impact_of_the_branching_enzyme">
+                    <Button variant="contained" href="https://doi.org/10.1371/journal.pcbi.1010694">
                         Learn More
                     </Button>
                     <ExpandMore

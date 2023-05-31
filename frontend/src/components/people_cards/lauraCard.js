@@ -29,7 +29,7 @@ const LauraCard = () => {
         <Card style={{ position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
-                    title="Laura Randarevitch (Alumn)"
+                    title="Laura Randarevitch (Alumni)"
                 />
                 <Divider />
             </Box>

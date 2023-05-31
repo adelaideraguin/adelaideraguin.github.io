@@ -24,10 +24,7 @@ const DFGCard = () => {
 
     return (
         <Card style={{ minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
-            <CardMedia sx={{
-                padding: "2em", maxWidth: 500,
-                margin: "auto", 
-            }}
+            <CardMedia sx={{ display: 'flex', color: "white", textAlign: "center", padding: "2em", margin: "auto" }}
                 component="img"
                 image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/DFG-logo-blau.svg/2000px-DFG-logo-blau.svg.png"
                 alt="Logo for the DFG"

@@ -33,7 +33,7 @@ const ProteinSynthesisCard = () => {
                 <Divider />
             </Box>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 600,
+                padding: "1em", width: "80%",
                 margin: "0 auto",
             }}
                 component="img"
@@ -56,13 +56,12 @@ const ProteinSynthesisCard = () => {
                     the demand for glutamine synthetases. This is why in the presence of doxycycline the charging level of glutamine in (F) and (G) is almost the 
                     same as in the case without doxycycline."
             />
-            <CardContent align='left'>
-                <Typography variant="body 1"  align='left' padding="1em" >
+            <CardContent padding="1em" align='left'>
                 Proteins are central cellular actors. They typically make most of the dry weight of cells, and drive metabolism pathways. 
                 Many pharmacological active compounds are enzymes, and it is essential to understand the economy of the cell to synthesis 
                 enzymes, for instance from heterologous genes. On the one hand, we focus on modelling translation and its regulation as a
                  complex one dimensional transport process. On the other hand, we are interested in tuning mRNA codon sequences, 
-                using the redundancy of the genetic code, in order to improve the expression rate of accurately folded proteins.</Typography>
+                using the redundancy of the genetic code, in order to improve the expression rate of accurately folded proteins.
             </CardContent>
             <Box>
             <Divider/>

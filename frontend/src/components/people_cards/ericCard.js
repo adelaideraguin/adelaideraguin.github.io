@@ -29,7 +29,7 @@ const EricCard = () => {
         <Card style={{ position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
-                    title="Eric Behle (Alumn)"
+                    title="Eric Behle (Alumni)"
                 />
                 <Divider />
             </Box>

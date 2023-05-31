@@ -34,7 +34,7 @@ const StarchCard = () => {
                 <Divider />
             </Box>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 500,
+                padding: "2em", width: "80%",
                 margin: "0 auto",
             }}
                 component="img"
@@ -49,13 +49,12 @@ const StarchCard = () => {
                   semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
                   such as ‘blocklets’ and concentric ‘growth rings"
             />
-            <CardContent align='left'>
-                <Typography variant="body 1" align='left' padding="1em">
+            <CardContent padding="1em" align='left'>
                 Starch is the second most abundant glucose polymer on earth after cellulose, and the main source of energy in human diet. The major component of starch, amylopectin, has a complex three-dimensional, 
                 branched architecture. This architecture stems from the combined actions of a multitude of enzymes, each having broad specificities 
                 that are difficult to capture experimentally. 
                 We are thus interested in understanding how the underlying enzymatic synthesis and degradation processes interplay with the amylopectin structure.
-                </Typography>
+               
             </CardContent>
             <Box>
             <Divider/>

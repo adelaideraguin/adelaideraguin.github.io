@@ -34,7 +34,7 @@ const GlycogenCard = () => {
                 <Divider />
             </Box>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 500,
+                padding: "1em", width: "80%",
                 margin: "0 auto",
             }}
                 component="img"
@@ -49,13 +49,12 @@ const GlycogenCard = () => {
                   semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
                   such as ‘blocklets’ and concentric ‘growth rings"
             />
-            <CardContent align='left'>
-                <Typography variant="body 1"  align='left' padding="1em">
+            <CardContent padding="1em" align='left'>
                 Glycogen is a granule-like macromolecule made of 10,000 to 50,000 glucose units arranged in linear and branched chains. 
                 It serves as energy storage in many species, including humans. Depending on physiological conditions (hormone concentrations, 
                 glucose level, etc.) glycogen granules are either synthesised or degraded. In addition, if this complex enzymatic process
                  is impaired, it can lead to severe diseases. We are thus interested in understanding how the fine-tuned structure of glycogen emerges from the 
-                underlying enzymatic processes, and how the balance of glycogen synthesis and degradation drives glucose homeostasis. </Typography>
+                underlying enzymatic processes, and how the balance of glycogen synthesis and degradation drives glucose homeostasis.
             </CardContent>
             <Box>
             <Divider/>

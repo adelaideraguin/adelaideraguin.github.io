@@ -34,7 +34,7 @@ const TransportCard = () => {
                 <Divider />
             </Box>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 570,
+                padding: "1em", width: "80%",
                 margin: "0 auto",
             }}
                 component="img"
@@ -49,12 +49,11 @@ const TransportCard = () => {
                   semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
                   such as ‘blocklets’ and concentric ‘growth rings"
             />
-            <CardContent align='left'>
-                <Typography variant="body 1"  align='left' padding="1em" >
+            <CardContent padding="1em" align='left'>
                 The cytoskeleton in eukaryotic cells plays several crucial roles. In terms of intracellular transport, 
                 motor proteins use the cytoskeletal filaments as a backbone along which they can actively transport 
                 biological cargos such as vesicles carrying biochemical reactants.
-                 We use the Totally Asymmetric Simple Exclusion Process to study the properties of transport at the junction of microtubules.    </Typography>
+                 We use the Totally Asymmetric Simple Exclusion Process to study the properties of transport at the junction of microtubules.    
             </CardContent>
             <Box>
             <Divider/>

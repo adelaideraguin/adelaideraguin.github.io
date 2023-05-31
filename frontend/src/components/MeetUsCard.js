@@ -36,12 +36,7 @@ const MeetUsCard = () => {
 
 
 
-            <CardMedia sx={{
-                margin: "0 auto", maxHeight: 250,
-                width: "auto",
-                height: "auto",
-                
-            }}
+            <CardMedia sx={{ display: 'flex', color: "white", textAlign: "center", padding: "1em", margin: "0" }}
                 component="img"
                 image={photo}
                 alt="Asma, Jasmin and Merle"

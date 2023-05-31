@@ -25,10 +25,7 @@ const BioSCCard = () => {
     return (
         <Card style={{ minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
 
-            <CardMedia sx={{
-                padding: "1em", maxWidth: 400,
-                margin: "auto",
-            }}
+            <CardMedia sx={{ display: 'flex', color: "white", textAlign: "center", padding: "2em", margin: "0" }}
                 component="img"
                 image="https://www.biosc.de/lw_resource/datapool/systemfiles/elements/images/691c994f-f902-11e6-8c78-dead53a91d31/current/image/BioSC-Logo-330x230.jpg"
                 alt="Paella dish"

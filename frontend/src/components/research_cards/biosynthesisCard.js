@@ -2,7 +2,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import image from '..//images/digest_animation.gif';
+import image from '..//images/digest_animation2.gif';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -34,7 +34,7 @@ const BiosynthesisCard = () => {
             </Box>
             
             <CardMedia sx={{
-                padding: "1em", maxWidth: 420,
+                padding: "1em", width: "60%",
                 margin: "0 auto",
             }}
                 component="img"
@@ -50,7 +50,6 @@ const BiosynthesisCard = () => {
                  can each either be hemicellulose or lignin polymers."
             />
             <CardContent align="left">
-                <Typography variant="body 1" align='left' padding="1em">
                 Climate change directly impacts on plants, and specifically the plant cell wall is concerned. 
                 Thus, we are interested in understanding how the structure and composition of the latter impacts on 
                 the ability of the xylem to transport water under drought stress conditions. 
@@ -58,7 +57,6 @@ const BiosynthesisCard = () => {
                 that can be extracted as monomers, during saccharification.
                  In the context of energy shortage, we 
                 tend to predict the recalcitrance of lignocellulose to saccharification, by taking into consideration its structure and composition.
-                </Typography>
             </CardContent>
             <Box>
             <Divider/>

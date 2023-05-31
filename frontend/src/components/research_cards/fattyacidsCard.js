@@ -34,7 +34,7 @@ const FattyAcidsCard = () => {
                 <Divider />
             </Box>
             <CardMedia sx={{
-                padding: "1em", maxWidth: 415,
+                padding: "1em", width: "70%",
                 margin: "0 auto",
             }}
                 component="img"
@@ -49,12 +49,11 @@ const FattyAcidsCard = () => {
                   semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
                   such as ‘blocklets’ and concentric ‘growth rings"
             />
-            <CardContent align='left'>
-                <Typography variant="body 1"  align='left' padding="1em" >
+            <CardContent padding="1em" align='left'>
                 The synthesis and modification of fatty acids from carbohydrates are paramount for the production of lipids. Simultaneously, 
                 lipids are pivotal energy storage in human health. They are associated with various metabolic diseases and their production 
                 pathways are for instance candidate therapeutic targets for cancer treatments. To study the dynamics of fatty acid   <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>de novo </Typography> synthesis and 
-                the subsequent microsomal modifications, we develop a deterministic approach based on Ordinary Differential Equations. </Typography>
+                the subsequent microsomal modifications, we develop a deterministic approach based on Ordinary Differential Equations. 
             </CardContent>
             <Box>
             <Divider/>
