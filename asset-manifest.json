@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.797418dd.css",
-    "main.js": "/static/js/main.f023a1d9.js",
+    "main.js": "/static/js/main.8925eee7.js",
     "static/media/starch.png": "/static/media/starch.9f34cf9c369554a5de93.png",
     "static/media/digest_animation2.gif": "/static/media/digest_animation2.bfeb0e1057e99619e8da.gif",
     "static/media/group2.jpg": "/static/media/group2.a6b7a974708dfcad4fa3.jpg",
@@ -27,8 +27,10 @@
     "static/media/Raguin2020b.png": "/static/media/Raguin2020b.4a34ddd78f65173e47bf.png",
     "static/media/cytoskeleton1.png": "/static/media/cytoskeleton1.97261cb3b426f8417fd2.png",
     "static/media/Raguin2017.png": "/static/media/Raguin2017.f7de6a0475703f3eb569.png",
+    "static/media/proteinsynthesis1.png": "/static/media/proteinsynthesis1.1dbc3ea7f386ffbca464.png",
     "static/media/protein_synthesis.png": "/static/media/protein_synthesis.630de636d0c35563d7d2.png",
     "static/media/background.png": "/static/media/background.906be3b77d8a07d42b3f.png",
+    "static/media/cytoskeleton.png": "/static/media/cytoskeleton.4318a0e76cd3dbf8509b.png",
     "static/media/Raguin2013.png": "/static/media/Raguin2013.96ee90144ff2f52ed910.png",
     "static/media/PREDIGLOGO.jpg": "/static/media/PREDIGLOGO.74a649d3391f52535c53.jpg",
     "static/media/Raguin2020a.png": "/static/media/Raguin2020a.1d0b4f03db1904427ac2.png",
@@ -38,10 +40,10 @@
     "static/media/email.png": "/static/media/email.2c378c9ee25927123f7d.png",
     "index.html": "/index.html",
     "main.797418dd.css.map": "/static/css/main.797418dd.css.map",
-    "main.f023a1d9.js.map": "/static/js/main.f023a1d9.js.map"
+    "main.8925eee7.js.map": "/static/js/main.8925eee7.js.map"
   },
   "entrypoints": [
     "static/css/main.797418dd.css",
-    "static/js/main.f023a1d9.js"
+    "static/js/main.8925eee7.js"
   ]
 }
