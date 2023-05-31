@@ -1,7 +1,7 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import transport_fig from "../cytoskeleton.png";
+import transport_fig from "../cytoskeleton1.png";
 import { useState } from "react";
 
 
