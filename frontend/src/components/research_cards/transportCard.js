@@ -1,7 +1,9 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import transport_fig from "../cytoskeleton1.png";
+import transport_fig1 from "../cytoskeleton1.png";
+import transport_fig from "../cytoskeleton.png";
+
 import { useState } from "react";
 
 
@@ -35,8 +37,24 @@ const TransportCard = () => {
             </Box>
             <CardMedia sx={{
                 padding: "1em", width: "80%",
-                margin: "0 auto",
-            }}
+                margin: "0 auto", display: { xs: "flex", sm: "flex", md: "none" }}}
+            
+                component="img"
+                image={transport_fig1}
+                alt="Structure of amylopectin and higher-order arrangements of starch. 
+                Two α-1,4/α-1,6-linked glucose polymers, amylopectin and amylose (not shown), comprise starch. 
+                Amylopectin is branched with 4–5% α-1,6 linkages, yielding a tree-like structure. This structure 
+                has A-chains that are external and unbranched, B-chains that carry other branches, and one C-chain 
+                which has the molecule’s single reducing end (indicated with a sphere). Within clusters of linear 
+                amylopectin chain segments, double helices form and pack into ordered lamellar arrays, forming either
+                 the A- or B-type allomorph, that stack with a 9–10 nm periodicity. This is the basis for the
+                  semi-crystalline nature of starch, and amylopectin lamellae are organized into higher-order structures, 
+                  such as ‘blocklets’ and concentric ‘growth rings"
+            />
+            <CardMedia sx={{
+                padding: "1em", width: "80%",
+                margin: "0 auto", display: { xs: "none", sm: "none", md: "flex" }}}
+            
                 component="img"
                 image={transport_fig}
                 alt="Structure of amylopectin and higher-order arrangements of starch. 
