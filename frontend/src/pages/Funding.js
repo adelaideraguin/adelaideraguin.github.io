@@ -4,6 +4,7 @@ import BioSCCard from '../components/funders_cards/BioSCCard';
 import DFGCard from '../components/funders_cards/DFGCard';
 import CEPLASCard from '../components/funders_cards/CEPLASCard';
 import background from '../components/images/background.png';
+import BMBFCard from '../components/funders_cards/bmbfCard.js';
 
 
 
@@ -27,14 +28,18 @@ function Funding(){
 
        
             <Grid container justifyContent="space-around" spacing={3} sx={{ marginBottom: "2em"}} >
-                <Grid item xs={12} sm={12} md={4}>
+                <Grid item xs={12} sm={12} md={6} lg={3}>
                     <DFGCard />
                 </Grid>
-                <Grid item xs={12} sm={12} md={4} >
+                <Grid item xs={12} sm={12} md={6} lg={3} >
                     <BioSCCard />
 
                 </Grid>
-                <Grid item xs={12} sm={12} md={4} >
+                <Grid item xs={12} sm={12} md={6} lg={3} >
+                    <BMBFCard />
+
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={3} >
                     <CEPLASCard />
                 </Grid>
             </Grid>   
