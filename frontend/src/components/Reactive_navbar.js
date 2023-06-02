@@ -1,7 +1,6 @@
-
 import * as React from "react";
 import { AppBar, Box, Button, Container, Stack, Toolbar, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import LogoDevIcon from "@mui/icons-material/LogoDev";

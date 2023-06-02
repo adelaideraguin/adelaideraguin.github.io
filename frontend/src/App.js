@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { HashRouter as Router, Routes, Route, Switch, Link} from 'react-router-dom';
+
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Box, Container } from '@mui/material';
@@ -13,7 +15,6 @@ import Funding from './pages/Funding';
 import Hiring from './pages/Hiring';
 import Contact from './pages/Contact';
 import Publications from './pages/Publications';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import ScrollToTop from './components/ScrolltoTop';
 import Navbar from './components/Reactive_navbar';
 const darkTheme = createTheme({
