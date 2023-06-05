@@ -35,9 +35,9 @@ const FattyAcidsCard = () => {
                 <Divider />
             </Box>
             <CardMedia sx={{
-                padding: "1em", width: "70%",
-                margin: "0 auto", display: { xs: "flex", sm: "flex", md: "none" }}}
-            
+                padding: "2em", maxWidth: 700,
+                margin: "0 auto",
+            }}            
                 component="img"
                 image={fattyacidsimage1}
                 alt="Structure of amylopectin and higher-order arrangements of starch. 
