@@ -33,7 +33,8 @@ const ResearchPaperCard = () => {
                 />
                 <Divider />
             </Box>
-            <CardMedia  sx={{ display: 'flex', color: "white", textAlign: "center", padding: "1em", margin: "0" }}
+            <CardMedia  sx={{  padding: "1em", width: "85%",
+                margin: "0 auto"  }}
                 component="img"
                 image={image}
                 alt="Enzymatic degredation gif"

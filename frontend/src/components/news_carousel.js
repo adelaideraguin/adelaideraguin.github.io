@@ -135,7 +135,6 @@ const LatestNewsCard = () => {
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 300,
                                     width: "auto",
-                                    height: "auto",
                                 }}
                                     component="img" 
                                     image={LiannePhoto}

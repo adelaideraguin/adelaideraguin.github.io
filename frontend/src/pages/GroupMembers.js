@@ -9,7 +9,7 @@ import ParthoCard from '../components/people_cards/parthoCard';
 import TorbenCard from '../components/people_cards/torbenCard';
 
 import background from '../components/images/background.png';
-import groupphoto from  '../components/images/group2.jpg';
+import groupphoto from  '../components/images/group3.jpg';
 import EricCard from '../components/people_cards/ericCard';
 import LauraCard from '../components/people_cards/lauraCard';
 

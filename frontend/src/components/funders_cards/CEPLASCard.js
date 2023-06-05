@@ -25,14 +25,14 @@ const CEPLASCard = () => {
     return (
         <Card style={{ minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
 
-            <CardMedia sx={{ display: 'flex', color: "white", textAlign: "center", padding: "2em", margin: "auto" }}
+            <CardMedia sx={{ display: 'flex', width: { xs: "75%", sm: "60%", md: "60%" },  color: "white", textAlign: "center", padding: "2em", margin: "auto" }}
                 component="img"
-                image="https://www.ceplas.eu/fileadmin/Resources/Public/Bootstrap/img/CEPLAS-Logo.svg"
+                image="https://pmi.mpipz.mpg.de/wp-content/uploads/2018/08/CEPLAS_Logo2.jpg"
                 alt="Logo for CEPLAS"
             />
             <CardContent>
                 <Typography align="left" variant="body1" >
-                    To learn more about CEPLAS you can visit their homepage linked below.
+                    To learn more about the CEPLAS you can visit their homepage linked below.
                 </Typography>
             </CardContent>
             <Box>

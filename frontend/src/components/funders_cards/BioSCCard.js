@@ -32,7 +32,7 @@ const BioSCCard = () => {
             />
             <CardContent>
                 <Typography align="left" variant="body1" >
-                    To learn more about BioSC you can visit their homepage linked below.
+                    To learn more abou the BioSC you can visit their homepage linked below.
                 </Typography>
             </CardContent>
             <Box>

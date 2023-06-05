@@ -24,14 +24,14 @@ const DFGCard = () => {
 
     return (
         <Card style={{ minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
-            <CardMedia sx={{ display: 'flex', color: "white", textAlign: "center", padding: "2em", margin: "auto" }}
+            <CardMedia sx={{ display: 'flex', color: "white", textAlign: "center", padding: "2em", margin: "auto"}}
                 component="img"
-                image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/DFG-logo-blau.svg/2000px-DFG-logo-blau.svg.png"
+                image="https://www.uni-bonn.de/en/research-and-teaching/research-profile/transdisciplinary-research-areas/tra-1-modelling/programs/german-research-foundation/logo-dfg.jpg/@@images/image/leadimagesize"
                 alt="Logo for the DFG"
             />
             <CardContent>
                 <Typography align="left" variant="body1" >
-                    To learn more about DFG you can visit their homepage linked below.
+                    To learn more about the DFG you can visit their homepage linked below.
                 </Typography>
             </CardContent>
             <Box>
