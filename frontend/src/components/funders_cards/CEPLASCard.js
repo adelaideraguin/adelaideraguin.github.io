@@ -25,7 +25,8 @@ const CEPLASCard = () => {
     return (
         <Card style={{ minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
 
-            <CardMedia sx={{ display: 'flex', width: { xs: "75%", sm: "60%", md: "60%" },  color: "white", textAlign: "center", padding: "2em", margin: "auto" }}
+            <CardMedia sx={{ display: 'flex', width: { xs: "65%", sm: "60%", md: "60%" },  padding: "2em", maxWidth: {xs: "100", sm: "100", md:"400" },
+                margin: "auto" }}
                 component="img"
                 image="https://pmi.mpipz.mpg.de/wp-content/uploads/2018/08/CEPLAS_Logo2.jpg"
                 alt="Logo for CEPLAS"
