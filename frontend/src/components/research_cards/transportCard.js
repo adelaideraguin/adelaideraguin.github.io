@@ -36,7 +36,7 @@ const TransportCard = () => {
                 <Divider />
             </Box>
             <CardMedia sx={{
-                padding: "1em", width: "80%",
+               padding: "2em", maxWidth: 400,
                 margin: "0 auto", display: { xs: "flex", sm: "flex", md: "none" }}}
             
                 component="img"
