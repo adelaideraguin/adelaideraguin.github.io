@@ -39,7 +39,7 @@ const BMBFCard = () => {
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
-                    <Button variant="contained" href="https://www.ceplas.eu/en/home/">
+                    <Button variant="contained" href="https://www.bmbf.de/bmbf/de/home/home_node.html">
                         Learn More
                     </Button>
                     <ExpandMore

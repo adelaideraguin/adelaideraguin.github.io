@@ -42,7 +42,7 @@ function Hiring(){
 
                 <Card sx={{ marginTop: "2em", position:"relative" }}>
                     <Typography variant="h5" sx={{ textAlign: "left", margin: "1em" }}>
-                    PhD Candidate for EtransColi: A multidisciplinary study of Escherichia coli’s trans-translation regulation under stress conditions
+                    PhD Candidate for EtransColi: A multidisciplinary study of Escherichia coli’s trans-translation regulation under stress conditions [POSITION FILLED]
 
                     </Typography>
                     <Typography  paragraph variant="body1" sx={{ textAlign: "left", margin: "1em" }}>
@@ -76,7 +76,7 @@ function Hiring(){
 
                 <Card sx={{ marginTop: "2em", position:"relative" }}>
                     <Typography variant="h5" sx={{ textAlign: "left", margin: "1em" }}>
-                    Research Assistant Position: Simulating biomolecules
+                    Research Assistant Position: Simulating biomolecules [POSITION FILLED]
 
                     </Typography>
                     <Typography  paragraph variant="body1" sx={{ textAlign: "left", margin: "1em" }}>

@@ -7,7 +7,7 @@ const Footer = () => {
         <>
             <Toolbar disableGutters  >
             <Typography align="center" variant="body1" margin="1em">
-                    Website built and maintained by Dr Lianne Gahan
+                    Website built and maintained by Lianne Gahan
                     </Typography>
                 <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: "flex-end", }}>
                     
