@@ -9,6 +9,7 @@ import Raguin2013Card from "../components/paper_cards/Raguin2013";
 import Foko2023Card from '../components/paper_cards/Foko2023';
 import Raguin2023Card from '../components/paper_cards/Raguin2023';
 import Rousset2023Card from '../components/paper_cards/Rousset2023';
+import SakhaDe2023Card from '../components/paper_cards/Sakhade2023';
 import background from '../components/images/background.png';
 
 
@@ -28,6 +29,9 @@ function Publications(){
                         </Typography></CardMedia>
 
             </Card>
+            <p>
+                <SakhaDe2023Card/>
+            </p>
             <p>
                 <Rousset2023Card/>
             </p>

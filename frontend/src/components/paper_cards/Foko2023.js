@@ -27,21 +27,21 @@ const Foko2023Card = () => {
         <Card  style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader align="left"
-                    title="Kinetic modeling of the enzymes involved in animal fatty acid synthesis"
+                    title="Kinetic data for modeling the dynamics of the enzymes involved in animal fatty acid synthesis"
                 />
                 <Divider />
             </Box>
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Foko Kuate CA, Ebenhöh O, Bakker BM, Raguin A (2022) Kinetic modeling of the enzymes involved in animal 
-                fatty acid synthesis. Bioscience Reports (Accepted)
+                Foko Kuate CA, Ebenhöh O, Bakker BM, Raguin A. Kinetic data for modeling the dynamics of the
+enzymes involved in animal fatty acid synthesis. Bioscience Reports (2023) 43 BSR20222496
                 </Typography>
             </CardContent>
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
-                    <Button variant="contained" href="https://www.researchgate.net/publication/364921412_Kinetic_modeling_of_the_enzymes_involved_in_animal_fatty_acid_synthesis">
+                    <Button variant="contained" href="https://doi.org/10.1042/BSR20222496s">
                         Learn More
                     </Button>
                     <ExpandMore
