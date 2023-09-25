@@ -5,6 +5,7 @@ import ArrowBack from '@mui/icons-material/ArrowBackIos';
 import ArrowForward from '@mui/icons-material/ArrowForwardIos';
 import MerleSanDiego from '../components/images/Merle_BPS.jpg';
 import AsmaPhoto from '../components/people_cards/Asma-portraitformat.jpg';
+import MarcoPhoto from '../components/people_cards/Marco.jpg';
 import MerlePhoto from '../components/people_cards/Merle-portraitformat.jpg';
 import LiannePhoto from '../components/people_cards/Lianne-portraitformat.jpg';
 import TorbenPhoto from '../components/people_cards/torben.jpg';
@@ -25,6 +26,26 @@ const LatestNewsCard = () => {
                     <Divider />
                     <Carousel animation="slide" sx={{ margin: "2em"}}>
                     <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
+                    <Grid item xs={12} sm={12} md={4}>
+                        <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                        <CardMedia sx={{
+                            margin: "0 auto", maxHeight: 300,
+                            width: "auto",
+                            height: "auto",
+                            
+                        }}
+                            component="img"
+                            image={MarcoPhoto}
+                            alt="A smart photo of Marco Lapsien"
+                        />
+                        <CardContent>
+                            <Typography align='left' padding="1em" variant="h5" >
+                            September 2023: Marco Lapsien joins the group as a Master's student to use molecular dynamics for simulations of lignin
+                            </Typography>
+                        </CardContent>
+                        </Card >
+                        </Grid>
+
                     <Grid item xs={12} sm={12} md={4}>
                         <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{
@@ -66,6 +87,13 @@ const LatestNewsCard = () => {
                         </Grid>
 
 
+
+
+                        </Grid>   
+
+
+
+                        <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
                         <Grid item xs={12} sm={12} md={4}>
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
@@ -84,12 +112,6 @@ const LatestNewsCard = () => {
                                 </CardContent>
                             </Card >
                         </Grid>
-
-                        </Grid>   
-
-
-
-                        <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
                         <Grid item xs={12} sm={12} md={4} >
                         <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{

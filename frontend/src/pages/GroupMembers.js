@@ -12,6 +12,7 @@ import background from '../components/images/background.png';
 import groupphoto from  '../components/images/group3.jpg';
 import EricCard from '../components/people_cards/ericCard';
 import LauraCard from '../components/people_cards/lauraCard';
+import MarcoCard from '../components/people_cards/marcoCard';
 
 function GroupMembers(){
     return(
@@ -88,7 +89,8 @@ function GroupMembers(){
                         <MerleCard />
                     </Grid>
                     <Grid item xs={12} sm={12} md={6}>
-                    <TorbenCard />
+                    <AsmaCard />
+
                     </Grid>
                 </Grid>
 
@@ -98,9 +100,12 @@ function GroupMembers(){
                         <JasminCard />
                     </Grid>
                     <Grid item xs={12} sm={12} md={6}>
-                        <AsmaCard />
+                    <MarcoCard />
+
                     </Grid>
                 </Grid>
+
+
 
                 <Grid container justifyContent="space-around" marginBottom={"2em"} spacing={3} sx={{position:"relative", marginTop:"2em"}} >
                     <Grid item xs={12} sm={12} md={6}>
@@ -108,6 +113,12 @@ function GroupMembers(){
                     </Grid>
                     <Grid item xs={12} sm={12} md={6}>
                         <LauraCard />
+                    </Grid>
+                </Grid>
+
+                <Grid container justifyContent="space-around" spacing={3} sx={{position:"relative", marginTop:"2em"}} >
+                    <Grid item xs={12} sm={12} md={6}>
+                    <TorbenCard />
                     </Grid>
                 </Grid>
 

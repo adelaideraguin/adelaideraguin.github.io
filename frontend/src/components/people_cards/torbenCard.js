@@ -31,7 +31,7 @@ const TorbenCard = () => {
         <Card style={{position:"relative",  minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
-                    title="Torben Glass"
+                    title="Torben Glass (Alumni)"
                 />
                 <Divider />
             </Box>
