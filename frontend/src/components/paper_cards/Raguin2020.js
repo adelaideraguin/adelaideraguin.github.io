@@ -36,7 +36,7 @@ const Raguin2020Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Raguin, A., Kern, N., & Parmeggiani, A. (2020). Stochastic modelling of collective motor protein transport through a crossing 
+                A Raguin, N Kern, & A Parmeggiani, (2020). Stochastic modelling of collective motor protein transport through a crossing 
                 of microtubules. Journal of theoretical biology, 505, 110370.
                 </Typography>
             </CardContent>

@@ -34,7 +34,7 @@ const Raguin2023Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Raguin, A., Stansfield, I. and Romano, M.C., 2023. ExpressInHost: A Codon Tuning Tool for the Expression of 
+                A Raguin, I Stansfield, and M C Romano, 2023. ExpressInHost: A Codon Tuning Tool for the Expression of 
                 Recombinant Proteins in Host Microorganisms. Journal of Open Research Software, 11(1), p.2
                 </Typography>
             </CardContent>

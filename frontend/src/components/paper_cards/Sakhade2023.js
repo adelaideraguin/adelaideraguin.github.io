@@ -35,7 +35,7 @@ const SakhaDe2023Card = () => {
             </Box>
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Partho Sakha De, Torben Glass, Merle Stein, Thomas Spitzlei, Adelaıde Raguin (2023) PREDIG: web application to model and predict the enzymatic saccharification of plant cell wall. (Preprint)
+                P S De, T Glass, M Stein, T Spitzlei, A Raguin (2023) PREDIG: web application to model and predict the enzymatic saccharification of plant cell wall. Computational and Structural Biotechnology Journal. (Accepted)
                 </Typography>
             </CardContent>
             <Box>

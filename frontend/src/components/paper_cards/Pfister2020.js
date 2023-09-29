@@ -34,7 +34,7 @@ const Pfister2020Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Pfister, B., Zeeman, S.C., Rugen, M.D. et al. Theoretical and experimental approaches to understand the 
+                B Pfister, S C Zeeman, M D Rugen et al. Theoretical and experimental approaches to understand the 
                 biosynthesis of starch granules in a physiological context. Photosynth Res 145, 55–70 (2020).
                 </Typography>
             </CardContent>

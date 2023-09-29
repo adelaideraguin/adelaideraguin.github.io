@@ -35,8 +35,8 @@ const McFarland2020Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Matthew R McFarland, Corina D Keller, Brandon M Childers, Stephen A Adeniyi, Holly Corrigall, Adélaïde Raguin, M Carmen Romano, 
-                Ian Stansfield, The molecular aetiology of tRNA synthetase depletion: induction of a GCN4 amino acid starvation response despite 
+                M R McFarland, C D Keller, B M Childers, S A Adeniyi, H Corrigall, A Raguin, M Romano, 
+                I Stansfield, The molecular aetiology of tRNA synthetase depletion: induction of a GCN4 amino acid starvation response despite 
                 homeostatic maintenance of charged tRNA levels, Nucleic Acids Research, Volume 48, Issue 6, 06 April 2020, Pages 3071–3088
                 </Typography>
             </CardContent>

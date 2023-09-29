@@ -34,7 +34,7 @@ const Raguin2013Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Adélaïde Raguin, Andrea Parmeggiani, and Norbert Kern. Role of network junctions for the totally asymmetric simple exclusion process.
+                A Raguin, A Parmeggiani, and N Kern. Role of network junctions for the totally asymmetric simple exclusion process.
                  Phys. Rev. E 88, 042104
                 </Typography>
             </CardContent>

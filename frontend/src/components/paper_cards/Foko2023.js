@@ -34,7 +34,7 @@ const Foko2023Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Foko Kuate CA, Ebenhöh O, Bakker BM, Raguin A. Kinetic data for modeling the dynamics of the
+                CA Foko Kuate, O Ebenhöh, B M Bakker and A Raguin. Kinetic data for modeling the dynamics of the
 enzymes involved in animal fatty acid synthesis. Bioscience Reports (2023) 43 BSR20222496
                 </Typography>
             </CardContent>

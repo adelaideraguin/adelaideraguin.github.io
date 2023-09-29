@@ -32,7 +32,7 @@ const Behle2021Card = () => {
             </Box>
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Behle E, Raguin A (2021) Stochastic model of lignocellulosic material saccharification. PLOS Computational Biology 17(9): e1009262.
+                E Behle, A Raguin (2021) Stochastic model of lignocellulosic material saccharification. PLOS Computational Biology 17(9): e1009262.
                 </Typography>
             </CardContent>
             <Box>

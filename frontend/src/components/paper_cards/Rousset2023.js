@@ -34,7 +34,7 @@ const Rousset2023Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Rousset Y, Ebenhöh O, Raguin A (2023) Stochastic modelling of a three-dimensional glycogen granule synthesis and impact of the branching enzyme. PLoS Computational Biology. 19(5): e1010694.
+                Y Rousset, O Ebenhöh, A Raguin (2023) Stochastic modelling of a three-dimensional glycogen granule synthesis and impact of the branching enzyme. PLoS Computational Biology. 19(5): e1010694.
                 </Typography>
             </CardContent>
             <Box>

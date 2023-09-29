@@ -34,7 +34,7 @@ const Raguin2017Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Adélaïde Raguin, Oliver Ebenhöh; Design starch: stochastic modeling of starch granule biogenesis. 
+                A Raguin, O Ebenhöh; Design starch: stochastic modeling of starch granule biogenesis. 
                 Biochem Soc Trans 15 August 2017; 45 (4): 885–893.
                 </Typography>
             </CardContent>
