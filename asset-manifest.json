@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.797418dd.css",
-    "main.js": "/static/js/main.64e2af8d.js",
+    "main.js": "/static/js/main.27e0cd2e.js",
     "static/media/starch.png": "/static/media/starch.9f34cf9c369554a5de93.png",
+    "static/media/saarbrucken_conference.jpg": "/static/media/saarbrucken_conference.798a5d24a82d6fc3901e.jpg",
     "static/media/digest_animation2.gif": "/static/media/digest_animation2.bfeb0e1057e99619e8da.gif",
     "static/media/Jasmin-portraitformat.jpg": "/static/media/Jasmin-portraitformat.cff70d73d9c6894e2b92.jpg",
     "static/media/Merle-portraitformat.jpg": "/static/media/Merle-portraitformat.f270eccfeb7839e15bc7.jpg",
@@ -47,10 +48,10 @@
     "static/media/email.png": "/static/media/email.2c378c9ee25927123f7d.png",
     "index.html": "/index.html",
     "main.797418dd.css.map": "/static/css/main.797418dd.css.map",
-    "main.64e2af8d.js.map": "/static/js/main.64e2af8d.js.map"
+    "main.27e0cd2e.js.map": "/static/js/main.27e0cd2e.js.map"
   },
   "entrypoints": [
     "static/css/main.797418dd.css",
-    "static/js/main.64e2af8d.js"
+    "static/js/main.27e0cd2e.js"
   ]
 }
