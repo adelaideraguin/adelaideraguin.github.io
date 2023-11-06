@@ -15,6 +15,7 @@ import ElvadasPhoto from '../components/images/elvadas.jpeg';
 import MerleAdelaideCroatia from "../components/images/croatia_merleadelaide.jpg"
 import LianneSoapboxScience from "../components/images/Lianne_soapbox.jpg"
 import SaarbruckenCellPhysics from "../components/images/saarbrucken_conference.jpg"
+import ECRRetreat from "../components/images/CEPLAS_retreat.jpg"
 
 
 const LatestNewsCard = () => {
@@ -27,6 +28,25 @@ const LatestNewsCard = () => {
                     <Divider />
                     <Carousel animation="slide" sx={{ margin: "2em"}}>
                     <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
+                    <Grid item xs={12} sm={12} md={4}>
+                        <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+                        <CardMedia sx={{
+                            margin: "0 auto", maxHeight: 300,
+                            width: "100%",
+                            height: "auto",
+                            
+                        }}
+                            component="img"
+                            image={ECRRetreat}
+                            alt="Lianne and Merle standing infront of some nice natural scenery at the ECR retreat in Eifel national park"
+                        />
+                        <CardContent>
+                            <Typography align='left' padding="1em" variant="h5" >
+                            November 2023: CEPLAS funded group members attend the early career researcher retreat in Eifel
+                            </Typography>
+                        </CardContent>
+                        </Card >
+                        </Grid>
                     <Grid item xs={12} sm={12} md={4}>
                         <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{
@@ -69,7 +89,14 @@ const LatestNewsCard = () => {
                         </Card >
                         </Grid>
 
-                    <Grid item xs={12} sm={12} md={4}>
+                    
+
+                        </Grid>   
+
+
+
+                        <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
+                        <Grid item xs={12} sm={12} md={4}>
                         <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{
                             margin: "0 auto", maxHeight: 300,
@@ -89,11 +116,6 @@ const LatestNewsCard = () => {
                         </Card >
                         </Grid>
 
-                        </Grid>   
-
-
-
-                        <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
 
                         <Grid item xs={12} sm={12} md={4}>
                         <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
@@ -135,7 +157,16 @@ const LatestNewsCard = () => {
                             </Card >
                         </Grid>
 
-                        <Grid item xs={12} sm={12} md={4} >
+
+
+                 
+                
+
+                        </Grid>   
+                    
+                    
+                    <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
+                    <Grid item xs={12} sm={12} md={4} >
                         <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                         <CardMedia sx={{
                             margin: "0 auto", maxHeight: 300,
@@ -156,14 +187,6 @@ const LatestNewsCard = () => {
                     </Card >
 
                         </Grid>
-
-                 
-                
-
-                        </Grid>   
-                    
-                    
-                    <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
 
                     <Grid item xs={12} sm={12} md={4} >
                         <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
@@ -204,6 +227,12 @@ const LatestNewsCard = () => {
                         </CardContent>
                     </Card >
                         </Grid>
+
+
+                        </Grid>   
+                    
+                    
+                        <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
                         <Grid item xs={12} sm={12} md={4} >
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
@@ -223,11 +252,6 @@ const LatestNewsCard = () => {
                             </Card >
 
                         </Grid>
-
-                        </Grid>   
-                    
-                    
-                        <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
                         <Grid item xs={12} sm={12} md={4} >
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
@@ -269,7 +293,12 @@ const LatestNewsCard = () => {
                             </Card >
                         </Grid>
 
-                        <Grid item xs={12} sm={12} md={4} >
+
+
+                        
+                    </Grid>
+                    <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
+                    <Grid item xs={12} sm={12} md={4} >
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
                                     margin: "0 auto", maxHeight: 300,
@@ -290,10 +319,6 @@ const LatestNewsCard = () => {
                             </Card >
 
                         </Grid>
-
-                        
-                    </Grid>
-                    <Grid container justifyContent="space-around" spacing={3} sx={{marginBottom: "2em"}} >
                     <Grid item xs={12} sm={12} md={4} >
                             <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
                                 <CardMedia sx={{
