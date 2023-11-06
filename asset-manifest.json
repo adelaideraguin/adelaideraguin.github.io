@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.797418dd.css",
-    "main.js": "/static/js/main.27e0cd2e.js",
+    "main.js": "/static/js/main.6e35efa1.js",
     "static/media/starch.png": "/static/media/starch.9f34cf9c369554a5de93.png",
     "static/media/saarbrucken_conference.jpg": "/static/media/saarbrucken_conference.798a5d24a82d6fc3901e.jpg",
     "static/media/digest_animation2.gif": "/static/media/digest_animation2.bfeb0e1057e99619e8da.gif",
+    "static/media/CEPLAS_retreat.jpg": "/static/media/CEPLAS_retreat.6adaf9f7a83a13104867.jpg",
     "static/media/Jasmin-portraitformat.jpg": "/static/media/Jasmin-portraitformat.cff70d73d9c6894e2b92.jpg",
     "static/media/Merle-portraitformat.jpg": "/static/media/Merle-portraitformat.f270eccfeb7839e15bc7.jpg",
     "static/media/Lianne-portraitformat2.jpg": "/static/media/Lianne-portraitformat2.e813b6574a3e649c48e4.jpg",
@@ -48,10 +49,10 @@
     "static/media/email.png": "/static/media/email.2c378c9ee25927123f7d.png",
     "index.html": "/index.html",
     "main.797418dd.css.map": "/static/css/main.797418dd.css.map",
-    "main.27e0cd2e.js.map": "/static/js/main.27e0cd2e.js.map"
+    "main.6e35efa1.js.map": "/static/js/main.6e35efa1.js.map"
   },
   "entrypoints": [
     "static/css/main.797418dd.css",
-    "static/js/main.27e0cd2e.js"
+    "static/js/main.6e35efa1.js"
   ]
 }
