@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.797418dd.css",
-    "main.js": "/static/js/main.6e35efa1.js",
+    "main.js": "/static/js/main.27176c90.js",
     "static/media/starch.png": "/static/media/starch.9f34cf9c369554a5de93.png",
     "static/media/saarbrucken_conference.jpg": "/static/media/saarbrucken_conference.798a5d24a82d6fc3901e.jpg",
     "static/media/digest_animation2.gif": "/static/media/digest_animation2.bfeb0e1057e99619e8da.gif",
@@ -49,10 +49,10 @@
     "static/media/email.png": "/static/media/email.2c378c9ee25927123f7d.png",
     "index.html": "/index.html",
     "main.797418dd.css.map": "/static/css/main.797418dd.css.map",
-    "main.6e35efa1.js.map": "/static/js/main.6e35efa1.js.map"
+    "main.27176c90.js.map": "/static/js/main.27176c90.js.map"
   },
   "entrypoints": [
     "static/css/main.797418dd.css",
-    "static/js/main.6e35efa1.js"
+    "static/js/main.27176c90.js"
   ]
 }
