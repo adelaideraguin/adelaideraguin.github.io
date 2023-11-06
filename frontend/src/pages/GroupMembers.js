@@ -96,16 +96,21 @@ function GroupMembers(){
 
         
                 <Grid container justifyContent="space-around" marginBottom={"2em"} spacing={3} sx={{position:"relative", marginTop:"2em"}} >
-                    <Grid item xs={12} sm={12} md={6}>
-                        <JasminCard />
-                    </Grid>
+
                     <Grid item xs={12} sm={12} md={6}>
                     <MarcoCard />
 
                     </Grid>
                 </Grid>
 
-
+                <Grid container justifyContent="space-around" spacing={3} sx={{position:"relative", marginTop:"2em"}} >
+                    <Grid item xs={12} sm={12} md={6}>
+                        <JasminCard />
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={6}>
+                    <TorbenCard />
+                    </Grid>
+                </Grid>
 
                 <Grid container justifyContent="space-around" marginBottom={"2em"} spacing={3} sx={{position:"relative", marginTop:"2em"}} >
                     <Grid item xs={12} sm={12} md={6}>
@@ -116,11 +121,7 @@ function GroupMembers(){
                     </Grid>
                 </Grid>
 
-                <Grid container justifyContent="space-around" spacing={3} sx={{position:"relative", marginTop:"2em"}} >
-                    <Grid item xs={12} sm={12} md={6}>
-                    <TorbenCard />
-                    </Grid>
-                </Grid>
+
 
 
 
