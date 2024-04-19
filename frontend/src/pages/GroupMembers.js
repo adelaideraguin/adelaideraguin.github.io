@@ -36,7 +36,7 @@ function GroupMembers(){
                 <Card sx={{ marginTop: "2em", position:"relative", display: { xs: "none", sm: "none", md: "flex" } }}>
                     <CardMedia
                         sx={{ display: 'flex', color: "white", textAlign: "center", padding: "2.75em", margin: "0" }}
-                        image={groupphoto}>
+                        image={}>
                         <Typography variant="h4" sx={{ textAlign: "center", paddingTop: "3em", paddingBottom: "1em", margin: "1em" }}>
                             <p>
                                 If you are interested in working with us then please get in touch! 
@@ -54,7 +54,7 @@ function GroupMembers(){
                         height="600"
                         component="h1"
                         sx={{ color: "white", textAlign: "center", padding: "1.5em",  margin: "0" }}
-                         image={groupphoto}
+                         image={}
                         alt="binary"
                     >
                     </CardMedia>
