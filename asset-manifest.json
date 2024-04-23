@@ -1,17 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.797418dd.css",
-    "main.js": "/static/js/main.9305e1dd.js",
+    "main.js": "/static/js/main.ff98ec51.js",
     "static/media/starch.png": "/static/media/starch.9f34cf9c369554a5de93.png",
-    "static/media/saarbrucken_conference.jpg": "/static/media/saarbrucken_conference.798a5d24a82d6fc3901e.jpg",
     "static/media/digest_animation2.gif": "/static/media/digest_animation2.bfeb0e1057e99619e8da.gif",
-    "static/media/CEPLAS_retreat.jpg": "/static/media/CEPLAS_retreat.6adaf9f7a83a13104867.jpg",
     "static/media/Jasmin-portraitformat.jpg": "/static/media/Jasmin-portraitformat.cff70d73d9c6894e2b92.jpg",
     "static/media/Merle-portraitformat.jpg": "/static/media/Merle-portraitformat.f270eccfeb7839e15bc7.jpg",
     "static/media/Lianne-portraitformat2.jpg": "/static/media/Lianne-portraitformat2.e813b6574a3e649c48e4.jpg",
-    "static/media/Lianne-portraitformat.jpg": "/static/media/Lianne-portraitformat.5a8e9d69fb8e7e38c973.jpg",
     "static/media/Asma-portraitformat.jpg": "/static/media/Asma-portraitformat.440b08bbf3a102455028.jpg",
-    "static/media/Lianne_soapbox.jpg": "/static/media/Lianne_soapbox.3f04758e0a2dcd5878f1.jpg",
     "static/media/group.jpg": "/static/media/group.9d21190621807ce03b37.jpg",
     "static/media/group3.jpg": "/static/media/group3.4a5665ceea098de2cc48.jpg",
     "static/media/digestion_light2.gif": "/static/media/digestion_light2.8c0cae5f82ebb0690850.gif",
@@ -19,18 +15,13 @@
     "static/media/torben.jpg": "/static/media/torben.b8d0cd4bcc4f872978cd.jpg",
     "static/media/McFarlandfig.jpeg": "/static/media/McFarlandfig.a177c3848c2433e94708.jpeg",
     "static/media/Foko2023.png": "/static/media/Foko2023.e0247249512443da084d.png",
-    "static/media/croatia_merleadelaide.jpg": "/static/media/croatia_merleadelaide.40573cc086ecb02a02bc.jpg",
-    "static/media/Manchester.jpg": "/static/media/Manchester.0d0ba2ad50af72504756.jpg",
     "static/media/Rousset2023.png": "/static/media/Rousset2023.e6f7ba475a277a739733.png",
-    "static/media/Merle_BPS.jpg": "/static/media/Merle_BPS.e8f5abab2e0064424e2e.jpg",
     "static/media/Pfister2020.png": "/static/media/Pfister2020.30237f0d59afcdf5d36c.png",
     "static/media/SakhaDeB.jpg": "/static/media/SakhaDeB.feaa1b6cf15a19403b84.jpg",
     "static/media/SakhaDe2023.png": "/static/media/SakhaDe2023.ba72d4175f68790addb3.png",
     "static/media/glycogen.png": "/static/media/glycogen.10e64e66ca27191bc19d.png",
-    "static/media/Heidelberg2023.jpg": "/static/media/Heidelberg2023.e2f2cc44fac486bcddda.jpg",
     "static/media/Raguin_expressioninhost_light.png": "/static/media/Raguin_expressioninhost_light.c6ff92b5b7b2330fd21e.png",
     "static/media/fatty_acids1.png": "/static/media/fatty_acids1.7a852a4001dead160cfd.png",
-    "static/media/elvadas.jpeg": "/static/media/elvadas.25636536f3df28e62763.jpeg",
     "static/media/Raguin2020b.png": "/static/media/Raguin2020b.4a34ddd78f65173e47bf.png",
     "static/media/cytoskeleton1.png": "/static/media/cytoskeleton1.97261cb3b426f8417fd2.png",
     "static/media/Raguin2017.png": "/static/media/Raguin2017.f7de6a0475703f3eb569.png",
@@ -50,10 +41,10 @@
     "static/media/email.png": "/static/media/email.2c378c9ee25927123f7d.png",
     "index.html": "/index.html",
     "main.797418dd.css.map": "/static/css/main.797418dd.css.map",
-    "main.9305e1dd.js.map": "/static/js/main.9305e1dd.js.map"
+    "main.ff98ec51.js.map": "/static/js/main.ff98ec51.js.map"
   },
   "entrypoints": [
     "static/css/main.797418dd.css",
-    "static/js/main.9305e1dd.js"
+    "static/js/main.ff98ec51.js"
   ]
 }
