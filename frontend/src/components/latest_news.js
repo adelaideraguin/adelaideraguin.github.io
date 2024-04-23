@@ -34,16 +34,20 @@ const LatestNewsCard = () => {
                     </Button>
         </ListItem>
 
+
         <ListItem>
             <ListItemAvatar>
             <CampaignOutlinedIcon />
             </ListItemAvatar>
-            <ListItemText primary="Paper published: A detailed sensitivity analysis identifies the key factors influencing the enzymatic saccharification of lignocellulosic biomass" secondary="January 2024" />
+            <ListItemText primary={
+                            <React.Fragment>
+                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"A detailed sensitivity analysis identifies the key factors influencing the enzymatic saccharification of lignocellulosic biomass" }
+            </React.Fragment>}
+            secondary="January 2024" />
             <Button variant="contained"  href="https://doi.org/10.1016/j.csbj.2024.01.006">
                         Learn More
                     </Button>
         </ListItem>
-
 
         <ListItem>
             <ListItemAvatar>
@@ -72,7 +76,11 @@ const LatestNewsCard = () => {
             <ListItemAvatar>
             <CampaignOutlinedIcon />
             </ListItemAvatar>
-            <ListItemText primary="Paper published: PREDIG web application to model and predict the enzymatic saccharification of plant cell wall" secondary="September 2023" />
+            <ListItemText primary={
+                            <React.Fragment>
+                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}> Paper published:  </Typography> { "PREDIG web application to model and predict the enzymatic saccharification of plant cell wall"} 
+                            </React.Fragment>}
+                                secondary="September 2023" />
             <Button variant="contained"  href="https://doi.org/10.1016/j.csbj.2023.09.026">
                         Learn More
                     </Button>
@@ -94,6 +102,20 @@ const LatestNewsCard = () => {
 
         <ListItem>
             <ListItemAvatar>
+            <CampaignOutlinedIcon />
+            </ListItemAvatar>
+            <ListItemText primary={
+                            <React.Fragment>
+                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"Kinetic data for modeling the dynamics of the enzymes involved in animal fatty acid synthesis"}
+                            </React.Fragment>}
+                            secondary="July 2023" />
+            <Button variant="contained"  href="https://doi.org/10.1042/BSR20222496">
+                        Learn More
+                    </Button>
+        </ListItem>
+
+        <ListItem>
+            <ListItemAvatar>
             <Groups2OutlinedIcon />
             </ListItemAvatar>
             <ListItemText primary='Adélaïde and Merle attend the "RNA meets protein decay" EMBO workshop in Cavtat, Croatia' secondary="May 2023" />
@@ -104,12 +126,29 @@ const LatestNewsCard = () => {
             <ListItemAvatar>
             <CampaignOutlinedIcon />
             </ListItemAvatar>
-            <ListItemText primary="Paper published: Stochastic modelling of a three-dimensional glycogen granule synthesis and impact of the branching enzyme" secondary="May 2023" />
+            <ListItemText primary={
+                            <React.Fragment>
+                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}> Paper published:  </Typography> { "Stochastic modelling of a three-dimensional glycogen granule synthesis and impact of the branching enzyme" }
+                            </React.Fragment>}
+                                secondary="May 2023" />
             <Button variant="contained"  href="https://doi.org/10.1371/journal.pcbi.1010694">
                         Learn More
                     </Button>
         </ListItem>
         
+        <ListItem>
+            <ListItemAvatar>
+            <CampaignOutlinedIcon />
+            </ListItemAvatar>
+            <ListItemText primary={
+                            <React.Fragment>
+                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"ExpressInHost, A Codon Tuning Tool for the Expression of Recombinant Proteins in Host Microorganisms"}
+                            </React.Fragment>}
+                            secondary="February 2023" />
+            <Button variant="contained"  href="https://doi.org/10.5334/jors.385">
+                        Learn More
+                    </Button>
+        </ListItem>
 
 
 

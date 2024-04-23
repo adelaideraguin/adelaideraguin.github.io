@@ -41,7 +41,7 @@ enzymes involved in animal fatty acid synthesis. Bioscience Reports (2023) 43 BS
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
-                    <Button variant="contained" href="https://doi.org/10.1042/BSR20222496s">
+                    <Button variant="contained" href="https://doi.org/10.1042/BSR20222496">
                         Learn More
                     </Button>
                     <ExpandMore
