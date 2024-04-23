@@ -35,7 +35,7 @@ const SakhaDe2023Card = () => {
             </Box>
             <CardContent>
                 <Typography align="left" variant="body1" >
-                P S De, T Glass, M Stein, T Spitzlei, A Raguin (2023) PREDIG: web application to model and predict the enzymatic saccharification of plant cell wall. Computational and Structural Biotechnology Journal.
+                P S De, T Glass, M Stein, T Spitzlei, A Raguin (2023) PREDIG: web application to model and predict the enzymatic saccharification of plant cell wall. Computational and Structural Biotechnology Journal. (23) 5463-5475.
                 </Typography>
             </CardContent>
             <Box>

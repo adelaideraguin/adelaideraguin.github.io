@@ -5,7 +5,7 @@ import { List, ListItem, ListItemText } from '@mui/material';
 import MeetUsCard from '../components/MeetUsCard';
 import SoftwareCard from './research/softwareCard';
 import background from '../components/images/background.png';
-import LatestNewsCard from '../components/news_carousel';
+import LatestNewsCard from '../components/latest_news';
 
 
 function Home(){
@@ -98,10 +98,9 @@ function Home(){
                     </Grid>
 
                 </Grid>
-                <box sx={{display: { xs: "none", sm: "none", md: "flex" }}}>
+
                 <LatestNewsCard sx={{marginTop:"2em", marginBottom:"3em"}}/>
-                </box>
-                
+                <p></p>
                 
                 
                 </Card>

@@ -34,7 +34,7 @@ const SakhaDeB2023Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                P S De, J Theilmann, and A Raguin (2024) A detailed sensitivity analysis identifies the key factors influencing the enzymatic saccharification of lignocellulosic biomass. Computational and Structural Biotechnology Journal. (23)
+                P S De, J Theilmann, and A Raguin (2024) A detailed sensitivity analysis identifies the key factors influencing the enzymatic saccharification of lignocellulosic biomass. Computational and Structural Biotechnology Journal. (23), 1005-1015
                 </Typography>
             </CardContent>
             <Box>

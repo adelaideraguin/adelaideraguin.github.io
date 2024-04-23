@@ -37,7 +37,7 @@ const McFarland2020Card = () => {
                 <Typography align="left" variant="body1" >
                 M R McFarland, C D Keller, B M Childers, S A Adeniyi, H Corrigall, A Raguin, M Romano, 
                 I Stansfield, The molecular aetiology of tRNA synthetase depletion: induction of a GCN4 amino acid starvation response despite 
-                homeostatic maintenance of charged tRNA levels, Nucleic Acids Research, Volume 48, Issue 6, 06 April 2020, Pages 3071–3088
+                homeostatic maintenance of charged tRNA levels. Nucleic Acids Research. 48(6). 2020. 3071–3088
                 </Typography>
             </CardContent>
             <Box>
