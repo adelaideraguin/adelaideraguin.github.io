@@ -7,8 +7,9 @@ import ArrowBack from '@mui/icons-material/ArrowBackIos';
 import ArrowForward from '@mui/icons-material/ArrowForwardIos';
 
 import Groups2OutlinedIcon from '@mui/icons-material/Groups2Outlined';
+import CelebrationOutlinedIcon from '@mui/icons-material/CelebrationOutlined';
 import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined';
-
+import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
 
 const LatestNewsCard = () => {
 
@@ -25,10 +26,20 @@ const LatestNewsCard = () => {
 
         <ListItem>
             <ListItemAvatar>
-            <Groups2OutlinedIcon />
+            <CampaignOutlinedIcon />
             </ListItemAvatar>
-            <ListItemText primary="The BioSC funded OptiCellu project has begun! Click to read more." secondary="April 2024" />
+            <ListItemText primary="The BioSC funded OptiCellu project has begun! A multidisciplinary approach towards the sustainable production of cellulose fibres" secondary="April 2024" />
             <Button variant="contained"  href="https://www.biosc.de/OptiCellu_EN">
+                        Learn More
+                    </Button>
+        </ListItem>
+
+        <ListItem>
+            <ListItemAvatar>
+            <CampaignOutlinedIcon />
+            </ListItemAvatar>
+            <ListItemText primary="Paper published: A detailed sensitivity analysis identifies the key factors influencing the enzymatic saccharification of lignocellulosic biomass" secondary="January 2024" />
+            <Button variant="contained"  href="https://doi.org/10.1016/j.csbj.2024.01.006">
                         Learn More
                     </Button>
         </ListItem>
@@ -41,9 +52,10 @@ const LatestNewsCard = () => {
             <ListItemText primary="CEPLAS funded group members attend the early career researcher retreat in Eifel" secondary="November 2023" />
         </ListItem>
 
+
         <ListItem>
             <ListItemAvatar>
-            <Groups2OutlinedIcon />
+            <CelebrationOutlinedIcon />
             </ListItemAvatar>
             <ListItemText primary="Congratulations to Jasmin Theilmann for successfully completing her Master's thesis" secondary="October 2023" />
         </ListItem>
@@ -55,6 +67,17 @@ const LatestNewsCard = () => {
             <ListItemText primary="The group attends the Cell Physics conference in Saarbrücken" secondary="October 2023" />
         </ListItem>
 
+
+        <ListItem>
+            <ListItemAvatar>
+            <CampaignOutlinedIcon />
+            </ListItemAvatar>
+            <ListItemText primary="Paper published: PREDIG web application to model and predict the enzymatic saccharification of plant cell wall" secondary="September 2023" />
+            <Button variant="contained"  href="https://doi.org/10.1016/j.csbj.2023.09.026">
+                        Learn More
+                    </Button>
+        </ListItem>
+
         <ListItem>
             <ListItemAvatar>
             <PersonAddAltOutlinedIcon />
@@ -64,7 +87,7 @@ const LatestNewsCard = () => {
 
         <ListItem>
             <ListItemAvatar>
-            <Groups2OutlinedIcon />
+            <CampaignOutlinedIcon />
             </ListItemAvatar>
             <ListItemText primary="Lianne speaks at the Soapbox Rheinland event in Düsseldorf" secondary="August 2023" />
         </ListItem>
@@ -76,70 +99,19 @@ const LatestNewsCard = () => {
             <ListItemText primary='Adélaïde and Merle attend the "RNA meets protein decay" EMBO workshop in Cavtat, Croatia' secondary="May 2023" />
         </ListItem>
 
-        <ListItem>
-            <ListItemAvatar>
-            <Groups2OutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary='Lianne Gahan presented her PhD research at the Manchester Multiscale Modelling conference' secondary="April 2023" />
-        </ListItem>
 
         <ListItem>
             <ListItemAvatar>
-            <Groups2OutlinedIcon />
+            <CampaignOutlinedIcon />
             </ListItemAvatar>
-            <ListItemText primary='Partho Sakha De attended the EMBO Workshop on Cryo-EM in Heidelberg' secondary="February 2023" />
+            <ListItemText primary="Paper published: Stochastic modelling of a three-dimensional glycogen granule synthesis and impact of the branching enzyme" secondary="May 2023" />
+            <Button variant="contained"  href="https://doi.org/10.1371/journal.pcbi.1010694">
+                        Learn More
+                    </Button>
         </ListItem>
-
-        <ListItem>
-            <ListItemAvatar>
-            <Groups2OutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary='Merle Stein is attending the Annual Biophysical Society Meeting in San Diego' secondary="February 2023" />
-        </ListItem>
-
-        <ListItem>
-            <ListItemAvatar>
-            <PersonAddAltOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary='We welcome Evaldas Simanavicius from Manchester University for an internship in the group!' secondary="February 2023" />
-        </ListItem>
-
-        <ListItem>
-            <ListItemAvatar>
-            <PersonAddAltOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary='Dr Lianne Gahan joined the group as a post doctoral researcher after defending her PhD at the University of Sheffield, UK' secondary="January 2023" />
-        </ListItem>
-
-        <ListItem>
-            <ListItemAvatar>
-            <PersonAddAltOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary=' Merle Stein joined our group as a CEPLAS graduate school PhD student' secondary="October 2022" />
-        </ListItem>
-
-        <ListItem>
-            <ListItemAvatar>
-            <PersonAddAltOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary='Torben Glass joined our group as a research assistant to build an interface for our PREDIG software' secondary="October 2022" />
-        </ListItem>
+        
 
 
-        <ListItem>
-            <ListItemAvatar>
-            <PersonAddAltOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary="Asma Ben Janete joined our group as a Master's student to research cytoskeletal transport" secondary="October 2022" />
-        </ListItem>
-
-
-        <ListItem>
-            <ListItemAvatar>
-            <PersonAddAltOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary='Dr Partho Sakha De joined the group as a postdoctoral researcher' secondary="April 2022" />
-        </ListItem>
 
 
        

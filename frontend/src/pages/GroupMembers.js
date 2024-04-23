@@ -1,5 +1,9 @@
 import React from 'react';
-import { Card, CardMedia, Grid, Typography } from '@mui/material';
+import { Card, CardHeader, CardMedia, Divider, Grid, Typography } from '@mui/material';
+import {List, ListItem, ListItemText, ListItemAvatar, Avatar} from "@mui/material"
+import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined';
+
+
 import LianneCard from '../components/people_cards/lianneCard';
 import AdelaideCard from '../components/people_cards/adelaideCard';
 import MerleCard from '../components/people_cards/merleCard';
@@ -87,6 +91,24 @@ function GroupMembers(){
                         <LauraCard />
                     </Grid>
                 </Grid>
+
+
+                <Card>
+                <CardHeader
+                       title="Visiting Researchers"/>
+        <Divider />
+
+                <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+
+                <ListItem>
+                    <ListItemAvatar>
+                    <PersonAddAltOutlinedIcon />
+                    </ListItemAvatar>
+                    <ListItemText primary="Evaldas Simanavicius, University of Manchester, United Kingdom" secondary="February 2023" />
+
+                </ListItem>
+                </List>
+                </Card>
 
 
 
