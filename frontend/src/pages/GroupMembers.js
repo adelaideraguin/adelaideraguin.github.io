@@ -32,30 +32,11 @@ function GroupMembers(){
                         </Typography>
                     </CardMedia>
                 </Card>
-
-
-
-                <Card sx={{ marginTop: "2em", position:"relative", display: { xs: "stretch", sm: "stretch", md: "none" } }}>
-                    <CardMedia
-                        height="600"
-                        component="h1"
-                        sx={{ color: "white", textAlign: "center", padding: "1.5em",  margin: "0" }}
-                         image={groupphoto}
-                        alt="binary"
-                    >
-                    </CardMedia>
-                </Card>
-                <Card sx={{ marginTop: "2em", position:"relative", display: { xs: "flex", sm: "flex", md: "none" } }}>
-                <Typography variant="body1" sx={{ textAlign: "left",  margin: "1em" }}>
-                            <p>
-                                If you are interested in working with us then please get in touch! 
-                            </p>
-                            <p>
-                            Master's degree students from Physics, Computer Sciences, and Quantitative Biology that are interested in an internship are encouraged to contact Dr Adélaïde Raguin.
-                            </p>
-                        </Typography>
-                </Card>
             
+
+
+
+
                 <p>
                     <AdelaideCard />
                 </p>
