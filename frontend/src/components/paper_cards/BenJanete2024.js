@@ -39,7 +39,7 @@ const BenJanete2024Card = () => {
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
-                    <Button variant="contained" href="10.13140/RG.2.2.35661.04326">
+            <Button variant="contained"  href="http://dx.doi.org/10.13140/RG.2.2.35661.04326">
                         Learn More
                     </Button>
                     <ExpandMore

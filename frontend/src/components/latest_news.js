@@ -23,7 +23,19 @@ const LatestNewsCard = () => {
         <Divider />
 
         <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
-
+        <ListItem>
+            <ListItemAvatar>
+            <CampaignOutlinedIcon />
+            </ListItemAvatar>
+            <ListItemText primary={
+                            <React.Fragment>
+                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"Transport at a complex multiple-input-multiple-output TASEP junction" }
+            </React.Fragment>}
+            secondary="June 2024" />
+            <Button variant="contained"  href="http://dx.doi.org/10.13140/RG.2.2.35661.04326">
+                        Learn More
+                    </Button>
+        </ListItem>
         <ListItem>
             <ListItemAvatar>
             <CampaignOutlinedIcon />
