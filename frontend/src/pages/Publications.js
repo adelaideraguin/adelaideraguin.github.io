@@ -12,6 +12,7 @@ import Rousset2023Card from '../components/paper_cards/Rousset2023';
 import SakhaDe2023Card from '../components/paper_cards/Sakhade2023';
 import SakhaDeB2023Card from '../components/paper_cards/SakhaDe_B2023';
 import background from '../components/images/background.png';
+import BenJanete2024Card from '../components/paper_cards/BenJanete2024';
 
 
 function Publications(){
@@ -30,6 +31,9 @@ function Publications(){
                         </Typography></CardMedia>
 
             </Card>
+            <p>
+                <BenJanete2024Card/>
+            </p>
             <p>
                 <SakhaDeB2023Card/>
             </p>
