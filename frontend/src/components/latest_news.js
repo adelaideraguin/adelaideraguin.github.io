@@ -29,6 +29,19 @@ const LatestNewsCard = () => {
             </ListItemAvatar>
             <ListItemText primary={
                             <React.Fragment>
+                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"Stochastic model highlights the impact of crystallinity on saccharification dynamics depending on plant chemotype and pre-treatment" }
+            </React.Fragment>}
+            secondary="July 2024" />
+            <Button variant="contained"  href="http://dx.doi.org/10.13140/RG.2.2.26381.96489">
+                        Learn More
+                    </Button>
+        </ListItem>
+        <ListItem>
+            <ListItemAvatar>
+            <CampaignOutlinedIcon />
+            </ListItemAvatar>
+            <ListItemText primary={
+                            <React.Fragment>
                                 <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"Transport at a complex multiple-input-multiple-output TASEP junction" }
             </React.Fragment>}
             secondary="June 2024" />
