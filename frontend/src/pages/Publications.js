@@ -34,7 +34,7 @@ function Publications(){
             </Card>
             <p>
                 <SakhaDe2024Card/>
-            </p>
+            </p> 
             <p>
                 <BenJanete2024Card/>
             </p>
