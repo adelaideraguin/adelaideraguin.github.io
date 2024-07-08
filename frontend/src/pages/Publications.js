@@ -41,7 +41,7 @@ function Publications(){
             <p>
                 <SakhaDeB2023Card/>
             </p>
-            <p>
+            <p> 
                 <SakhaDe2023Card/>
             </p>
             <p>
