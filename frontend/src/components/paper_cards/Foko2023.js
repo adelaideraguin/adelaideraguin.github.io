@@ -27,7 +27,7 @@ const Foko2023Card = () => {
         <Card  style={{ position:"relative", minHeight: "10px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader align="left"
-                    title="Kinetic data for modeling the dynamics of the enzymes involved in animal fatty acid synthesis"
+                    title="Kinetic data for modeling the dynamics of the enzymes involved in animal fatty acid synthesis "
                 />
                 <Divider />
             </Box>
