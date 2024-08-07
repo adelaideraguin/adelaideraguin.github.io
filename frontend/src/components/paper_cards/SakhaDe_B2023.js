@@ -15,7 +15,7 @@ const ExpandMore = styled((props) => {
 }));
 
 
-const SakhaDeB2023Card = () => {
+const SakhaDeB2023Card = () => { 
 
     const [expanded, setExpanded] = useState(false);
 
