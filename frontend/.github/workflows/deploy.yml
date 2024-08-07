@@ -1,0 +1,34 @@
+name: Deploy React App
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's not 'main'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.20.4'  # Specify your Node.js version here
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Build React app
+        run: |
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        run: |
+          npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
