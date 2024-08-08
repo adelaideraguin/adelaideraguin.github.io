@@ -28,7 +28,7 @@ jobs:
           npm run build
       - name: Deploy to GitHub Pages
         env:
-          PAT_TOKEN: ${{ secrets.LIANNE_PAT}}
+          PAT_TOKEN: ${{ secrets.LIANNE_PAT }}
         run: |
           git config --global user.email "liannegahan@gmail.com"
           git config --global user.name "LianneGahan"
