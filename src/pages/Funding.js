@@ -21,7 +21,7 @@ function Funding(){
                         sx={{ color: "white", textAlign: "center", padding: "1.5em", margin: "0" }}
                         image={background}
                     ><Typography variant="h2"> 
-                        Our work is supported by ...
+                        Our work is supported by ... 
                         </Typography></CardMedia>
 
             </Card>
