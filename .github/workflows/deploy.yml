@@ -36,7 +36,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
+          git config --global user.email "liannegahan@gmail.com"
+          git config --global user.name "LianneGahan"
           git remote set-url origin git@github.com:${{ github.repository }}.git  # Use SSH URL
           npm run deploy
