@@ -2,6 +2,7 @@ import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Col
 import { useState } from "react";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from "react-router-dom";
+import photo from "./Raguin.jpg"
 
 
 
@@ -41,7 +42,7 @@ const AdelaideCard = () => {
                     margin: "0 auto",
                 }}
                     component="img"
-                    image="https://www.cs.hhu.de/fileadmin/_processed_/1/4/csm_raguin_2022_e033e28c17.jpg"
+                    image={photo}
                     alt="A smart photo of Dr Adelaide Raguin"
                 />
                 </Grid>
@@ -53,10 +54,9 @@ const AdelaideCard = () => {
                 transport, under the supervision of Prof. Andrea Parmeggiani and Dr Norbert Kern. For her postdoctoral studies she first 
                 joined the team of Prof. Carmen Romano at King's College, University of Aberdeen, and then the group of Prof. Oliver Ebenhöh 
                 in Düsseldorf. Since 2021, she established her independent research team, funded on third party funding, at Heinrich-Heine 
-                University Düsseldorf.</p>
-                <p>In parallel with her research and supervision activities, Dr Adélaïde Raguin has been involved in large amounts of Physics 
-                and Mathematics teaching, including a  <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>Monitorat </Typography> during the three years of her PhD. She currently leads the 
-                module "Stochastic Models of Biological Systems" in the Master's degree of Computer Sciences at Heinrich-Heine University Düsseldorf.</p>
+                University Düsseldorf. She obtained her Habilitation in January, 2025 in Physics, University of Montpellier, France</p>
+                <p> Currently, she is Junior Professor Chair in Health Data Sciences (CNRS Institute for Computer Sciences) at Laboratoire Bordelais de Recherche en Informatique (LaBRI, CNRS UMR 5800), University of Bordeaux. </p> 
+                <p>In parallel with her research and supervision activities, Dr Adélaïde Raguin has been involved in large amounts of Physics and Mathematics teaching, including a  <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>Monitorat </Typography> during the three years of her PhD. She led the module "Stochastic Models of Biological Systems" in the Master's degree of Computer Sciences at Heinrich Heine University Düsseldorf. At University of Bordeaux, she is a techer of the module "Methodology", <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}> Introduction to logical and scientific reasoning </Typography>, in the Computer Science Bachelor Programme.</p>
 
                 </Typography>
                 <Grid container  spacing={1} alignItems="center" justifyContent="center" marginTop={"1em"}>

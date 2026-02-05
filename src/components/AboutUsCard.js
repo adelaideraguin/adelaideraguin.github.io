@@ -28,7 +28,7 @@ const AboutUsCard = () => {
         <Card style={{ minHeight: "550px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
-                    title="Computational Cell Biology Institute"
+                    title="LaBRI"
                 />
                 <Divider />
             </Box>
@@ -36,26 +36,31 @@ const AboutUsCard = () => {
 
 
 
-            <CardMedia sx={{
-                padding: "1em", maxHeight: 400,
-                margin: "0 auto",
-                width: "auto",
-                height: "auto"
-            }}
+            <CardMedia
                 component="img"
-                image="https://www.cs.hhu.de/fileadmin/_processed_/3/a/csm_ccb_logo-2.1.1_p_2100x2970_828f919ad0.png"
+                image="https://www.labri.fr/sites/default/files/2021-04/LOGO_LABRI-INTITULE-BIG_0.png?h=d2365be5&itok=lRNoBEsl"
                 alt="CCB Logo"
+                sx={{
+                padding: "1em",
+                maxHeight: 400,      // won't exceed 400px tall
+                maxWidth: "100%",    // won't overflow card width
+                height: "auto",      // scales height proportionally
+                width: "auto",       // scales width proportionally
+                objectFit: "contain",
+                display: "block",
+                margin: "0 auto",    // center horizontally
+            }}
             />
             <CardContent>
-                <Typography variant="body1" align="left" >
-                    We are hosted by the Computational Cell Biology Institute, which is located in the Computer Science Department at Heinrich-Heine University Düsseldorf.
+                <Typography variant="body1" align="center" >
+                    You can find us in the Laboratoire Bordelais de Recherche en Informatique (LaBRI, CNRS UMR 5800)
                 </Typography>
             </CardContent>
 
             <Box>
                 <Divider />
                 <CardActions >
-                    <Button variant="contained" href="https://www.cs.hhu.de/lehrstuehle-und-arbeitsgruppen/computational-cell-biology">
+                    <Button variant="contained" href="https://www.labri.fr/en">
                         Learn More
                     </Button>
 

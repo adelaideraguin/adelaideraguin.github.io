@@ -28,7 +28,7 @@ const LinkedInCard = () => {
         <Card style={{ minHeight: "550px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
             <Box>
                 <CardHeader
-                    title="Linked In"
+                    title="LinkedIn"
                 />
                 <Divider />
             </Box>
@@ -42,7 +42,7 @@ const LinkedInCard = () => {
             />
             <CardContent>
                 <Typography variant="body 1" >
-                You can contact Dr Raguin <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography> linked in by clicking here. 
+                You can contact Dr Raguin <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography> LinkedIn by clicking here. 
                 </Typography>
             </CardContent>
             <Box>

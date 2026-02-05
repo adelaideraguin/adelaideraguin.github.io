@@ -2,9 +2,8 @@ import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Col
 import { useState } from "react";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ComputerIcon from '@mui/icons-material/ComputerTwoTone';
-
 import { Link } from "react-router-dom";
-
+import photo from "./PSD.jpg"
 
 
 const ExpandMore = styled((props) => {
@@ -38,14 +37,14 @@ const ParthoCard = () => {
 
 
             <CardContent>
-            <Grid container  spacing={1} alignItems="center"  justifyContent="space-around">
+            <Grid container  spacing={1} alignItems="top"  justifyContent="space-around">
                 <Grid item xs={7} sm={12} md={3.5}>
                 <CardMedia sx={{
                     padding: "1em", maxWidth: 350,
                     margin: "0 auto",
                 }}
                     component="img"
-                    image="https://www.cs.hhu.de/fileadmin/_processed_/a/e/csm_Partho_2022_da300fefee.jpg"
+                    image={photo}
                 alt="A smart photo of Dr Partho Sakha De"
                 />
                 </Grid>

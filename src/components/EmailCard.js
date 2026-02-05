@@ -43,7 +43,7 @@ const EmailCard = () => {
             />
             <CardContent>
                 <Typography variant="body1" >
-                You can contact Dr Raguin <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography> email at adelaide.raguin@hhu.de
+                adelaide.raguin@u-bordeaux.fr
                 </Typography>
             </CardContent>
             <Box>
