@@ -42,10 +42,10 @@ function Contact() {
                 {/* Contact Info Card with Map Pin */}
                 <Card sx={{ position: "relative", textAlign: "center", padding: "1em" }}>
                     <Typography variant="h5" sx={{ margin: "1em" }}>
-                        You can find us in the Laboratoire Bordelais de Recherche en Informatique (LaBRI, CNRS UMR 5800)
+                        We are located in the LaBRI Building at the
                     </Typography>
                     <Typography variant="h5" sx={{ margin: "1em" }}>
-                        University of Bordeaux - Campus Talence
+                        University of Bordeaux, Talence Campus, 
                         33405 Talence, France
                     </Typography>
 

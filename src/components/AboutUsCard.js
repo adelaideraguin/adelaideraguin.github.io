@@ -41,7 +41,7 @@ const AboutUsCard = () => {
                 <CardMedia
                     component="img"
                     image="https://www.labri.fr/sites/default/files/2021-04/LOGO_LABRI-INTITULE-BIG_0.png?h=d2365be5&itok=lRNoBEsl"
-                    alt="CCB Logo"
+                    alt="LaBRI Logo"
                     sx={{
                         padding: "1em",
                         maxHeight: 400,
