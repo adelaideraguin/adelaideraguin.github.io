@@ -1,62 +1,59 @@
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Divider, Typography } from "@mui/material";
 import { useState } from "react";
-import LinkedInIcon from '../components/linkedin.png';
-
-
-const ExpandMore = styled((props) => {
-    const { expand, ...other } = props;
-    return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-    transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest,
-    }),
-}));
-
+import LinkedInIcon from '../components/LinkedIn_icon.png';
 
 const LinkedInCard = () => {
-
     const [expanded, setExpanded] = useState(false);
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
-
     return (
-        <Card style={{ minHeight: "550px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
+        <Card
+            elevation={5}
+            sx={{
+                minHeight: "400px",
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                position: "relative",
+                textAlign: 'center'
+            }}
+        >
+            {/* Header */}
             <Box>
-                <CardHeader
-                    title="LinkedIn"
-                />
+                <CardHeader none />
                 <Divider />
             </Box>
-            <CardMedia sx={{
-                padding: "1em", maxWidth: 230,
-                margin: "0 auto",
-            }}
-                component="img"
-                image={LinkedInIcon}
-                alt="Linked In Logo"
-            />
-            <CardContent>
-                <Typography variant="body 1" >
-                You can contact Dr Raguin <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography> LinkedIn by clicking here. 
-                </Typography>
-            </CardContent>
-            <Box>
-            <Divider/>
-                <CardActions >
-                    <Button variant="contained" href="http://linkedin.com/in/ad%C3%A9la%C3%AFde-raguin">
-                        To website
-                    </Button>
 
-                </CardActions>
+            {/* Centered Logo */}
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2 }}>
+                <CardMedia
+                    component="img"
+                    image={LinkedInIcon}
+                    alt="Linked In Logo"
+                    sx={{
+                        maxWidth: 200,
+                        width: '100%',
+                        height: 'auto'
+                    }}
+                />
             </Box>
 
-        
-        </Card >
+            {/* Text pinned near bottom */}
+            <CardContent sx={{ mt: 'auto' }}>
+                <Typography variant="body1">
+                    You can contact Dr Raguin <Typography component="span" sx={{ fontStyle: 'italic' }}>via </Typography> LinkedIn by clicking here.
+                </Typography>
+            </CardContent>
+
+            {/* Button at bottom */}
+            <Box>
+                <Divider />
+                <CardActions sx={{ justifyContent: 'center' }}>
+                    <Button variant="contained" href="http://linkedin.com/in/ad%C3%A9la%C3%AFde-raguin">
+                        To LinkedIn
+                    </Button>
+                </CardActions>
+            </Box>
+        </Card>
     );
 };
 

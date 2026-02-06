@@ -1,8 +1,7 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Divider, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -15,9 +14,7 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-
 const AboutUsCard = () => {
-
     const [expanded, setExpanded] = useState(false);
 
     const handleExpandClick = () => {
@@ -25,49 +22,56 @@ const AboutUsCard = () => {
     };
 
     return (
-        <Card style={{ minHeight: "550px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+        <Card 
+            style={{ 
+                minHeight: "400px", 
+                display: 'flex', 
+                flexDirection: 'column',
+                justifyContent: 'space-between'   // ⬅ ensures bottom button
+            }} 
+            elevation={5}
+        >
             <Box>
-                <CardHeader
-                    title="LaBRI"
-                />
+                <CardHeader none />
                 <Divider />
             </Box>
 
+            {/* Centered Logo */}
+            <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <CardMedia
+                    component="img"
+                    image="https://www.labri.fr/sites/default/files/2021-04/LOGO_LABRI-INTITULE-BIG_0.png?h=d2365be5&itok=lRNoBEsl"
+                    alt="CCB Logo"
+                    sx={{
+                        padding: "1em",
+                        maxHeight: 400,
+                        maxWidth: "100%",
+                        height: "auto",
+                        width: "auto",
+                        objectFit: "contain",
+                        display: "block",
+                    }}
+                />
+            </Box>
 
-
-
-            <CardMedia
-                component="img"
-                image="https://www.labri.fr/sites/default/files/2021-04/LOGO_LABRI-INTITULE-BIG_0.png?h=d2365be5&itok=lRNoBEsl"
-                alt="CCB Logo"
-                sx={{
-                padding: "1em",
-                maxHeight: 400,      // won't exceed 400px tall
-                maxWidth: "100%",    // won't overflow card width
-                height: "auto",      // scales height proportionally
-                width: "auto",       // scales width proportionally
-                objectFit: "contain",
-                display: "block",
-                margin: "0 auto",    // center horizontally
-            }}
-            />
-            <CardContent>
-                <Typography variant="body1" align="center" >
-                    You can find us in the Laboratoire Bordelais de Recherche en Informatique (LaBRI, CNRS UMR 5800)
+            {/* Centered bottom text */}
+            <CardContent sx={{ textAlign: 'center' }}>
+                <Typography variant="body1">
+                    We are a part of the Laboratoire Bordelais de Recherche en Informatique 
+                    (LaBRI, CNRS UMR 5800) at the University of Bordeaux, France.
                 </Typography>
             </CardContent>
 
+            {/* Bottom Button */}
             <Box>
                 <Divider />
-                <CardActions >
+                <CardActions sx={{ justifyContent: 'center' }}>
                     <Button variant="contained" href="https://www.labri.fr/en">
                         Learn More
                     </Button>
-
                 </CardActions>
             </Box>
-
-        </Card >
+        </Card>
     );
 };
 
