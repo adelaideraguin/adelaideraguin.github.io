@@ -29,12 +29,29 @@ const Navbar = () => {
             <Container maxWidth="xl">
                 <Toolbar disableGutters  >
                 
-                    <Box sx={{ padding: "1em", paddingBottom: "1em",  display: { xs: "flex", sm: "flex", md: "none" } }}>
-                        <img src="https://www.hhu.de/typo3conf/ext/wiminno/Resources/Public/img/hhu_logo.png" alt="hhu" width="150px" />
-                    </Box>
-                    <Box sx={{ padding: "1em", paddingBottom: "1em",  display: { xs: "none", sm: "none", md: "flex" } }}>
-                        <img src="https://www.hhu.de/typo3conf/ext/wiminno/Resources/Public/img/hhu_logo.png" alt="hhu" width="250px" />
-                    </Box>
+                {/* MOBILE CLICKABLE LOGO */}
+                  <Box sx={{ padding: "1em", paddingBottom: "1em", display: { xs: "flex", sm: "flex", md: "none" } }}>
+                    <a href="https://www.labri.fr/en" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src="https://www.labri.fr/sites/default/files/2021-04/LOGO_LABRI-INTITULE-BIG_0.png?h=d2365be5&itok=lRNoBEsl"
+                        alt="LaBRI Logo"
+                        width="150px"
+                        style={{ cursor: "pointer" }}
+                      />
+                    </a>
+                  </Box>
+
+              {/* DESKTOP CLICKABLE LOGO */}
+                <Box sx={{ padding: "1em", paddingBottom: "1em", display: { xs: "none", sm: "none", md: "flex" } }}>
+                  <a href="https://www.labri.fr/en" target="_blank" rel="noopener noreferrer">
+                    <img
+                      src="https://www.labri.fr/sites/default/files/2021-04/LOGO_LABRI-INTITULE-BIG_0.png?h=d2365be5&itok=lRNoBEsl"
+                      alt="LaBRI Logo"
+                      width="250px"
+                      style={{ cursor: "pointer" }}
+                    />
+                  </a>
+                </Box>
                     <Typography
                         variant="h6"
                         noWrap

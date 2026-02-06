@@ -35,7 +35,7 @@ const AdelaideCard = () => {
                 <Divider />
             </Box>
             <CardContent>
-            <Grid container  spacing={1} alignItems="center" justifyContent="center">
+            <Grid container  spacing={1} alignItems="top" justifyContent="center">
                 <Grid item xs={7} sm={12} md={3.5}>
                 <CardMedia sx={{
                     padding: "1em", maxWidth: 280,
