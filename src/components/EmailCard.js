@@ -29,11 +29,6 @@ const EmailCard = () => {
             }}
             elevation={5}
         >
-            {/* Header */}
-            <Box>
-                <CardHeader none />
-                <Divider />
-            </Box>
 
             {/* Centered Logo */}
             <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

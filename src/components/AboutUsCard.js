@@ -31,10 +31,7 @@ const AboutUsCard = () => {
             }} 
             elevation={5}
         >
-            <Box>
-                <CardHeader none />
-                <Divider />
-            </Box>
+
 
             {/* Centered Logo */}
             <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

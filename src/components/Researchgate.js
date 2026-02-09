@@ -1,8 +1,8 @@
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Divider, Typography } from "@mui/material";
 import { useState } from "react";
-import LinkedInIcon from '../components/LinkedIn_icon.png';
+import ResearchGateIcon from '../components/RG_Logo.png';
 
-const LinkedInCard = () => {
+const ResearchGateCard = () => {
     const [expanded, setExpanded] = useState(false);
 
     return (
@@ -27,8 +27,8 @@ const LinkedInCard = () => {
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2 }}>
                 <CardMedia
                     component="img"
-                    image={LinkedInIcon}
-                    alt="Linked In Logo"
+                    image={ResearchGateIcon}
+                    alt="ResearchGate Logo"
                     sx={{
                         maxWidth: 200,
                         width: '100%',
@@ -40,16 +40,16 @@ const LinkedInCard = () => {
             {/* Text pinned near bottom */}
             <CardContent sx={{ mt: 'auto' }}>
                 <Typography variant="body1">
-                    You can contact Jun.-Prof. Adélaïde Raguin, PhD, Habil. <Typography component="span" sx={{ fontStyle: 'italic' }}>via </Typography> LinkedIn.
+                    You can connect with Jun.-Prof. Adélaïde Raguin, PhD, Habil. <Typography component="span" sx={{ fontStyle: 'italic' }}>via </Typography> ResearchGate.
                 </Typography>
             </CardContent>
 
-            {/* Button at bottom */}
+            {/* Bottom Button */}
             <Box>
                 <Divider />
                 <CardActions sx={{ justifyContent: 'center' }}>
-                    <Button variant="contained" href="http://linkedin.com/in/ad%C3%A9la%C3%AFde-raguin">
-                        To LinkedIn
+                    <Button variant="contained" href="https://www.researchgate.net/profile/Adelaide-Raguin">
+                        To ResearchGate
                     </Button>
                 </CardActions>
             </Box>
@@ -57,4 +57,4 @@ const LinkedInCard = () => {
     );
 };
 
-export default LinkedInCard;
+export default ResearchGateCard;
