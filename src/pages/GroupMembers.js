@@ -51,7 +51,7 @@ function GroupMembers(){
                         <ParthoCard />
                     </Grid>
                     <Grid item xs={12} sm={12} md={6}>
-                        <LianneCard />
+                        <AsmaCard/>
                     </Grid>
                 </Grid>
                
@@ -60,7 +60,7 @@ function GroupMembers(){
                         <MerleCard />
                     </Grid>
                     <Grid item xs={12} sm={12} md={6}>
-                    <AsmaCard />
+                    <LianneCard />
 
                     </Grid>
                 </Grid>

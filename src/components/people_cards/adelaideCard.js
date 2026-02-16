@@ -30,7 +30,7 @@ const AdelaideCard = () => {
         <Card sx={{ marginTop: "2em" }} style={{position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
-                    title="Dr Adélaïde Raguin"
+                    title="Jun.-Prof. Adélaïde Raguin, PhD, Habil."
                 />
                 <Divider />
             </Box>
@@ -49,7 +49,7 @@ const AdelaideCard = () => {
                 <Grid item xs={12} sm={12} md={6}>
                 
                 <Typography align='left' variant="body1" >
-                <p>Dr Adélaïde Raguin studied Physics at the University of Montpellier, where she received her PhD in theoretical Physics in 
+                <p>Adélaïde Raguin studied Physics at the University of Montpellier, where she received her PhD in theoretical Physics in 
                 December 2013, for her research on statistical methods to model transport at network junctions, motivated by the cytoskeletal 
                 transport, under the supervision of Prof. Andrea Parmeggiani and Dr Norbert Kern. For her postdoctoral studies she first 
                 joined the team of Prof. Carmen Romano at King's College, University of Aberdeen, and then the group of Prof. Oliver Ebenhöh 

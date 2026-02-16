@@ -6,6 +6,7 @@ import McFarland2020Card from '../components/paper_cards/McFarland2020';
 import Rousset2023Card from '../components/paper_cards/Rousset2023';
 import Raguin2023Card from '../components/paper_cards/Raguin2023';
 import ExpressInHostCard from '../components/software_cards/ExpressInHostCard';
+import ExpressInHostWEBCard from '../components/software_cards/ExpressInHostWEBCard';
 import ThreeDimGlycogenCard from '../components/software_cards/threedimGlycogenCard';
 import TASEPCard from '../components/software_cards/TASEPCard';
 import background from '../components/images/background.png';
@@ -38,6 +39,9 @@ function Teaching(){
             We have developed several softwares that are now available <Typography variant="h5" style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography>  web-servers and Github repositories. These softwares are open source and licensed.
             </Typography>
             </Card>
+            <p>
+            <ExpressInHostWEBCard/>
+            </p>
             <p>
             <ExpressInHostCard/>
             </p>

@@ -66,13 +66,13 @@ const PREDIGCard = () => {
             <Divider/>
                 <CardActions >
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} useFlexGap flexWrap="wrap">
-                <Button variant="contained" startIcon={<DescriptionIcon />} href="https://doi.org/10.1371/journal.pcbi.1009262">
+                <Button variant="contained" startIcon={<DescriptionIcon />} href="https://doi.org/10.1016/j.csbj.2023.09.026">
                         Publication
                 </Button>
                 <Button variant="contained" startIcon={<ComputerIcon />} href="https://predig.cs.hhu.de/">
                         Web App
                 </Button>
-                <Button variant="contained" startIcon={<GitHubIcon />} href="https://gitlab.com/erbeh/pcwsm">
+                <Button variant="contained" startIcon={<GitHubIcon />} href="https://github.com/Iamsecret/PREDIG-Web-Application">
                         GitHub
                 </Button>
                 </Stack>

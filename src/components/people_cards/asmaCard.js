@@ -49,10 +49,7 @@ const AsmaCard = () => {
                 <Grid item xs={12} sm={12} md={7} >
               
                 <Typography variant="body1" align='left' alignItems="center"  justifyContent="center">
-                Asma is a Master's student in the Department of Computer Science. The focus of her studies is data engineering 
-                and model simulations. Her Bachelor's thesis was about the dynamic motion of swarm robots and focussed on
-                developing algorithms for self-organisation. She is currently working on developing numerical methods to investigate transport properties 
-                at the crossing of one-dimensional lattices with complex kinetic rules at the junction.
+                Asma is a PhD student in the Department of Computer Science. The she is working developing a stochastc simulation model to simulate the dynamics of mRNA translation. She joined the group as Master's student in the Department of Computer Science, where she worked on developing numerical methods to investigate transport properties at the crossing of one-dimensional lattices with complex kinetic rules at the junction. The focus of her studies is data engineering and model simulations. Her Bachelor's thesis was about the dynamic motion of swarm robots and focussed on developing algorithms for self-organisation. 
 
                 </Typography>
                 <Grid container  spacing={1} alignItems="center" justifyContent="center" marginTop={"1em"} >
