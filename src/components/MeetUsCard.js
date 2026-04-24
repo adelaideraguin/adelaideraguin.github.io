@@ -44,8 +44,7 @@ const MeetUsCard = () => {
             />
             <CardContent>
                 <Typography align='left' padding="1em" variant="body1" >
-                We are a recently established and rapidly growing team of international researchers funded by third parties. 
-                Our home is within the Computational Cell Biology Group at Heinrich-Heine University.
+                After many years in the UK and Germany, we are back to France, at the National Center for Scientific Research (CNRS) in Bordeaux. In the context of our Junior Professor Chair of Computer Sciences for Health Data, we focus on modelling cancer development and therapy.
                 </Typography>
             </CardContent>
 

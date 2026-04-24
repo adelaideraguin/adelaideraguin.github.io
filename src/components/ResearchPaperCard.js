@@ -41,8 +41,7 @@ const ResearchPaperCard = () => {
             />
             <CardContent>
                 <Typography padding="1em" align='left' variant="body1" >
-                We study the plant cell wall synthesis and degredation, starch biogenesis, protein assembly, cytoskeletal transport, 
-                glycogen dynamics and fatty acid synthesis... Take a look at our research!
+                 We study a variety of biological systems ranging from macro-molecular to multi-cellular scales. Take a look at our research...
                 </Typography>
             </CardContent>
             <Box>

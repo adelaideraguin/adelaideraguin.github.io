@@ -90,7 +90,7 @@ class App extends Component {
             <Navbar sx={{zIndex: "1"}}/>
             <Box paddingBottom="1em" paddingTop="1em" sx={{
             minHeight: "calc(100vh - 164px)",
-            backgroundImage: "linear-gradient(to bottom, rgb(9, 29, 71), rgb(176, 247, 217));",
+            backgroundImage: "linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255));",
             width: "100%"
 
           }} >
