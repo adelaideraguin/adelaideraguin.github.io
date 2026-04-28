@@ -34,8 +34,7 @@ const Raguin2017Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                A Raguin, O Ebenhöh; Design starch: stochastic modeling of starch granule biogenesis. 
-                Biochem Soc Trans 15 August 2017; 45 (4): 885–893.
+                A Raguin, O Ebenhöh (2017) Design starch: stochastic modeling of starch granule biogenesis. Biochem Soc Trans 15; 45 (4): 885–893.
                 </Typography>
             </CardContent>
             <Box>

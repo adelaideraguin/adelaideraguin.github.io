@@ -33,7 +33,7 @@ const SakhaDe2024Card = () => {
             </Box>
             <CardContent>
                 <Typography align="left" variant="body1" >
-                P S De, P M Grande, H Heise, H Klose and A Raguin (2025) Stochastic model highlights the impact of crystallinity on saccharification dynamics depending on plant chemotype and pre-treatment. PLoS One 20(12): e0322367 
+                P S De, P M Grande, H Heise, H Klose, and A Raguin (2025) Stochastic model highlights the impact of crystallinity on saccharification dynamics depending on plant chemotype and pre-treatment. PLoS One 20(12): e0322367 
                 </Typography>
             </CardContent>
             <Box>

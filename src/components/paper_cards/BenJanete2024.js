@@ -33,7 +33,7 @@ const BenJanete2024Card = () => {
             </Box>
             <CardContent>
                 <Typography align="left" variant="body1" >
-                A Ben Janete, P S De, A Raguin (2026) Transport at a complex multiple-input-multiple-output TASEP junction. Physica A: Statistical Mechanics and its Applications
+                A Ben Janete, P S De, and A Raguin (2026) Transport at a complex multiple-input-multiple-output TASEP junction. Physica A: Statistical Mechanics and its Applications
                 </Typography>
             </CardContent>
             <Box>

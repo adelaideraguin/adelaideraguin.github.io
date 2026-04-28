@@ -6,7 +6,7 @@ import {
 } from "@mui/material";
 
 import { useState } from "react";
-import image from "../images/lapsein2025.jpeg"; // 👉 add your image here
+import image from "../images/lapsein2025.jpeg";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -50,7 +50,7 @@ const Lapsien2025Card = () => {
       {/* 📄 Citation */}
       <CardContent>
         <Typography align="left" variant="body1">
-          Lapsien M, Bonus M, Gahan L, Raguin A, Gohlke H (2025).
+          Lapsien M, Bonus M, Gahan L, Raguin A, and Gohlke H (2025)
           PyPE_RESP: A Tool to Facilitate and Standardize Derivation of RESP Charges.
           Journal of Chemical Information and Modeling 65(9), 4251–4256.
         </Typography>
