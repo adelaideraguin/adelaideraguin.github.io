@@ -33,13 +33,13 @@ const SakhaDe2024Card = () => {
             </Box>
             <CardContent>
                 <Typography align="left" variant="body1" >
-                P S De, P M Grande, H Heise, H Klose and A Raguin (2024) Stochastic model highlights the impact of crystallinity on saccharification dynamics depending on plant chemotype and pre-treatment (Preprint)
+                P S De, P M Grande, H Heise, H Klose and A Raguin (2025) Stochastic model highlights the impact of crystallinity on saccharification dynamics depending on plant chemotype and pre-treatment. PLoS One 20(12): e0322367 
                 </Typography>
             </CardContent>
             <Box>
                 <Divider />
                 <CardActions disableSpacing>
-            <Button variant="contained"  href="http://dx.doi.org/10.13140/RG.2.2.26381.96489">
+            <Button variant="contained"  href="https://doi.org/10.1371/journal.pone.0322367">
                         Learn More
                     </Button>
                     <ExpandMore
@@ -69,21 +69,7 @@ const SakhaDe2024Card = () => {
 
                 <CardContent>
                     <Typography align="left"  paddingLeft="2em" paddingRight="2em" variant="body 1" paragraph>
-                    Enzymatic saccharification of plant-sourced lignocellulosic biomass is a key step in biorefin-ery approaches. However, 
-                    these biomasses in their raw form are quite recalcitrant, which invokes the need for pre-treatment processes aimed at not 
-                    only increasing glucose conversion , but also better valorising non-carbohydrate biopolymers, such as lignin. Here, we use a 
-                    twofold computational and experimental approach to investigate enzymatic saccharification time-courses for a couple of purely 
-                    cellulosic substrates, and four plant-sourced lignocellu-losic biomasses following three different conditions: untreated, OrganoCat 
-                    pre-treated with and without swelling. Considering the specific composition of each substrate, the model successfully reproduces the 
-                    saccharification dynamics for each of the fifteen samples. It additionally provides values for the parameter Crystallinity Fraction
-                     that faithfully replicate the substrate Crystallinity Indices experimentally determined by ssNMR. Importantly, we show that the 
-                     Crystallinity Index of distinct biomasses is differently impacted by swelling, while the sugar release is consistently impacted 
-                     by pre-treatment across biomasses. Eventually , both artificial cellulosic and plant-sourced lignocellulosic biomasses demonstrate 
-                     that the sugar release is the result of the combination of the Crystallinity Fraction (the model parameter for experimentally measured 
-                     ssNMR Crystallinity Index) and the digestibility ratio, the model parameter that represents in a coarse-grained manner complex spatial 
-                     and structural features. Overall, our results stress the need for further experimental investigations that physically explain variations in 
-                     the digestibility of crystalline bonds across biomasses and pre-treatment conditions. Additionally, we supplemented our work 
-                    with theoretical investigations on a generic lignocellulosic substrate to highlight the roles of various model parameters in a qualitative manner.
+                    Enzymatic saccharification of plant-sourced lignocellulosic biomass is a key step in biorefin-ery approaches. However, these biomasses in their raw form are quite recalcitrant, which invokes the need for pre-treatment processes aimed at not only increasing glucose conversion , but also better valorising non-carbohydrate biopolymers, such as lignin. Here, we use a twofold computational and experimental approach to investigate enzymatic saccharification time-courses for a couple of purely cellulosic substrates, and four plant-sourced lignocellu-losic biomasses following three different conditions: untreated, OrganoCat pre-treated with and without swelling. Considering the specific composition of each substrate, the model successfully reproduces the saccharification dynamics for each of the fifteen samples. It additionally provides values for the parameter Crystallinity Fraction that faithfully replicate the substrate  crystallinity Indices experimentally determined by ssNMR. Importantly, we show that the Crystallinity Index of distinct biomasses is differently impacted by swelling, while the sugar release is consistently impacted by pre-treatment across biomasses. Eventually , both artificial cellulosic and plant-sourced lignocellulosic biomasses demonstrate that the sugar release is the result of the combination of the Crystallinity Fraction (the model parameter for experimentally measured ssNMR Crystallinity Index) and the digestibility ratio, the model parameter that represents in a coarse-grained manner complex spatial and structural features. Overall, our results stress the need for further experimental investigations that physically explain variations in the digestibility of crystalline bonds across biomasses and pre-treatment conditions. Additionally, we supplemented our work with theoretical investigations on a generic lignocellulosic substrate to highlight the roles of various model parameters in a qualitative manner.
                     </Typography>
                 </CardContent>
                 </Grid>

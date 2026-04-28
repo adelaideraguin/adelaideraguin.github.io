@@ -1,125 +1,129 @@
 import React from 'react';
-import { Card, CardHeader, CardMedia, Divider, Grid, Typography } from '@mui/material';
-import {List, ListItem, ListItemText, ListItemAvatar, Avatar} from "@mui/material"
+import {
+  Card, CardHeader, CardMedia, Divider,
+  Grid, Typography, List, ListItem,
+  ListItemText, ListItemAvatar
+} from '@mui/material';
+
 import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined';
 
-
-import LianneCard from '../components/people_cards/lianneCard';
+// 👥 Current member cards
 import AdelaideCard from '../components/people_cards/adelaideCard';
-import MerleCard from '../components/people_cards/merleCard';
-import JasminCard from '../components/people_cards/jasminCard';
-import AsmaCard from '../components/people_cards/asmaCard';
 import ParthoCard from '../components/people_cards/parthoCard';
-import TorbenCard from '../components/people_cards/torbenCard';
-
-import background from '../components/images/background.png';
-import groupphoto from  '../components/images/group3.jpg';
-import EricCard from '../components/people_cards/ericCard';
-import LauraCard from '../components/people_cards/lauraCard';
+import AsmaCard from '../components/people_cards/asmaCard';
+import GabrielCard from '../components/people_cards/gabrielCard';
 import MarcoCard from '../components/people_cards/marcoCard';
 
-function GroupMembers(){
-    return(
-        <section>
-            <div class="container-fluid">
+// 🖼️ Images
+import background from '../components/images/background.png';
 
-                <Card sx={{ marginTop: "1em", position:"relative" }}>
-                    <CardMedia
-                        height="300"
-                        component="h1"
-                        sx={{ color: "white", textAlign: "center", padding: "1.5em", margin: "0" }}
-                        image={background}
-                        alt="binary"
-                    >
-                        <Typography variant="h2"> 
-                        Group Members
-                        </Typography>
-                    </CardMedia>
-                </Card>
-            
+function GroupMembers() {
 
+  // 🎓 Alumni data (clean + maintainable)
+  const alumni = [
+    "Paul Soudon",
+    "Jagjot Arora",
+    "Merle Stein",
+    "Lianne Gahan",
+    "Jasmin Theilmann",
+    "Torben Glass",
+    "Eric Behle",
+    "Laura Randarevitch"
+  ];
 
+  return (
+    <section>
+      <div className="container-fluid">
 
+        {/* 🔝 HEADER */}
+        <Card sx={{ mt: 2 }}>
+          <CardMedia
+            component="div"
+            sx={{
+              height: 300,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "white",
+              backgroundImage: `url(${background})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}
+          >
+            <Typography variant="h2">
+              Group Members
+            </Typography>
+          </CardMedia>
+        </Card>
 
-                <p>
-                    <AdelaideCard />
-                </p>
+        {/* 👥 CURRENT MEMBERS */}
+        <Grid
+          container
+          spacing={3}
+          sx={{ mt: 3, mb: 4 }}
+          alignItems="stretch"
+        >
 
-              
-                <Grid container justifyContent="space-around" spacing={3} sx={{position:"relative", marginTop:"2em"}} >
-                    <Grid item xs={12} sm={12} md={6}>
-                        <ParthoCard />
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={6}>
-                        <AsmaCard/>
-                    </Grid>
-                </Grid>
-               
-                <Grid container justifyContent="space-around" spacing={3} sx={{position:"relative", marginTop:"2em"}} >
-                    <Grid item xs={12} sm={12} md={6}>
-                        <MerleCard />
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={6}>
-                    <LianneCard />
+          <Grid item xs={12}>
+            <AdelaideCard />
+          </Grid>
 
-                    </Grid>
-                </Grid>
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <ParthoCard />
+          </Grid>
 
-        
-                <Grid container justifyContent="space-around" marginBottom={"2em"} spacing={3} sx={{position:"relative", marginTop:"2em"}} >
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <AsmaCard />
+          </Grid>
 
-                    <Grid item xs={12} sm={12} md={6}>
-                    <MarcoCard />
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <GabrielCard />
+          </Grid>
 
-                    </Grid>
-                </Grid>
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <MarcoCard />
+          </Grid>
 
-                <Grid container justifyContent="space-around" spacing={3} sx={{position:"relative", marginTop:"2em"}} >
-                    <Grid item xs={12} sm={12} md={6}>
-                        <JasminCard />
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={6}>
-                    <TorbenCard />
-                    </Grid>
-                </Grid>
+        </Grid>
 
-                <Grid container justifyContent="space-around" marginBottom={"2em"} spacing={3} sx={{position:"relative", marginTop:"2em"}} >
-                    <Grid item xs={12} sm={12} md={6}>
-                        <EricCard />
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={6}>
-                        <LauraCard />
-                    </Grid>
-                </Grid>
+        {/* 🎓 ALUMNI */}
+        <Card sx={{ mb: 4 }}>
+          <CardHeader title="Alumni" />
+          <Divider />
 
+          <List sx={{ bgcolor: 'background.paper' }}>
+            {alumni.map((name, index) => (
+              <ListItem key={index}>
+                <ListItemAvatar>
+                  <PersonAddAltOutlinedIcon />
+                </ListItemAvatar>
+                <ListItemText primary={name} />
+              </ListItem>
+            ))}
+          </List>
+        </Card>
 
-                <Card>
-                <CardHeader
-                       title="Visiting Researchers"/>
-        <Divider />
+        {/* 👤 VISITING RESEARCHERS */}
+        <Card sx={{ mb: 4 }}>
+          <CardHeader title="Visiting Researchers" />
+          <Divider />
 
-                <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+          <List sx={{ bgcolor: 'background.paper' }}>
+            <ListItem>
+              <ListItemAvatar>
+                <PersonAddAltOutlinedIcon />
+              </ListItemAvatar>
+              <ListItemText
+                primary="Evaldas Simanavicius, University of Manchester, United Kingdom"
+                secondary="February 2023"
+              />
+            </ListItem>
+          </List>
+        </Card>
 
-                <ListItem>
-                    <ListItemAvatar>
-                    <PersonAddAltOutlinedIcon />
-                    </ListItemAvatar>
-                    <ListItemText primary="Evaldas Simanavicius, University of Manchester, United Kingdom" secondary="February 2023" />
-
-                </ListItem>
-                </List>
-                </Card>
-
-
-
-
-
-           
-            </div>
-        </section>
-    );
-
-
+      </div>
+    </section>
+  );
 }
 
 export default GroupMembers;
