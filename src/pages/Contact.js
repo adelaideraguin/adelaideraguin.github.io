@@ -9,14 +9,19 @@ import FlippingSocialCard from '../components/FlippingSocialCard';
 function Contact() {
     return (
         <section>
-            <div className="container-fluid" style={{ padding: 0 }}>
+            <div className="container-fluid">
 
                 {/* Header Card */}
-                <Card sx={{ marginTop: 16, marginBottom: 16, position: 'relative' }}>
+                <Card sx={{ marginTop: "1em", position:"relative"  }}>
                     <CardMedia
                         height="300"
                         component="h1"
-                        sx={{ color: 'white', textAlign: 'center', padding: '1.5em', margin: 0 }}
+                        sx={{
+                            color: 'white',
+                            textAlign: 'center',
+                            padding: '1.5em',
+                            margin: 0
+                        }}
                         image={background}
                         alt="Wavey Binary"
                     >
@@ -26,7 +31,7 @@ function Contact() {
                     </CardMedia>
                 </Card>
 
-                {/* Cards Grid with minimal spacing */}
+                {/* Cards Grid */}
                 <Grid container justifyContent="center" spacing={0.5} sx={{ margin: 1 }}>
 
                     <Grid item xs={12} sm={6} md={3} sx={{ padding: 1.5 }}>
@@ -43,7 +48,7 @@ function Contact() {
 
                 </Grid>
 
-                {/* Contact Info Card with Map Pin */}
+                {/* Contact Info Card */}
                 <Card sx={{ position: 'relative', textAlign: 'center', padding: 2, mt: 2 }}>
                     <Typography variant="h5" sx={{ margin: 1 }}>
                         We are located in the LaBRI Building at the
@@ -52,7 +57,6 @@ function Contact() {
                         University of Bordeaux, Talence Campus, 33405 Talence, France
                     </Typography>
 
-                    {/* Clickable Map Pin */}
                     <Box display="flex" justifyContent="center" mt={1} mb={1}>
                         <a
                             href="https://maps.app.goo.gl/CrFo2GUAMbPz25tTA"

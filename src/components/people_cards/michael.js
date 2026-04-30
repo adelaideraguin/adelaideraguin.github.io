@@ -1,13 +1,10 @@
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
     Box,
     Button,
     Card,
-    CardActions,
     CardContent,
     CardHeader,
     CardMedia,
-    Collapse,
     Divider,
     Grid,
     IconButton,
@@ -16,10 +13,9 @@ import {
 } from "@mui/material";
 
 import { useState } from "react";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { Link } from "react-router-dom";
+import photo from "./michael.JPG";
 
-import photo from "./Asma-portraitformat.jpeg";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -32,7 +28,7 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-const AsmaCard = () => {
+const MichaelCard = () => {
 
     const [expanded, setExpanded] = useState(false);
 
@@ -53,7 +49,7 @@ const AsmaCard = () => {
         >
             <Box>
                 <CardHeader
-                    title="Asma Ben Janete"
+                    title="Dr Michael Wulfert"
                 />
                 <Divider />
             </Box>
@@ -70,14 +66,14 @@ const AsmaCard = () => {
                         <CardMedia
                             sx={{
                                 padding: "1em",
-                                maxWidth: 280,
+                                maxWidth: 350,
                                 margin: "0 auto",
                                 display: "flex",
                                 alignItems: "flex-start"
                             }}
                             component="img"
                             image={photo}
-                            alt="A smart photo of Asma Ben Janete"
+                            alt="A smart photo of Dr Michael Wulfert"
                         />
                     </Grid>
 
@@ -87,7 +83,7 @@ const AsmaCard = () => {
                             variant="body1"
                             align='left'
                         >
-                            Asma is a PhD student working on developing a stochastic simulation model that captures the dynamics of mRNA translation at cellular scale, tracking large numbers of mRNAs, ribosomes, and tRNAs as well as the millions of molecular events that govern them. She joined Raguin's group for her Master's degree thesis focussing on the transport at a complex multiple-input-multiple-output TASEP junction. Her Bachelor's thesis investigated the dynamic motion of swarm robots and focussed on developing algorithms for self-organisation.
+                            Michael is a postdoctoral researcher with a PhD in biophysics. Long before joining the research group, he completed his PhD at the Institute of Physical Biology at Heinrich Heine University in Düsseldorf, using thermodynamic methods, combined with computer simulations, to find DNA mutations. Afterwards, he used such methods to search for heterolasmic mutations in the mitochondrial genome of precancerous hematological patients and managed a biobank. He joined Raguin's group during his Master's degree in Computer Sciences, contributing with his extensive experience in biochemistry. He has now started his Master's degree thesis in Computer Science focussing on improving protein expression systems with bioinformatics tools.
                         </Typography>
 
                         <Grid
@@ -100,19 +96,8 @@ const AsmaCard = () => {
                             <Grid item>
                                 <Button
                                     variant="outlined"
-                                    startIcon={<LinkedInIcon />}
                                     size="large"
-                                    href="https://www.linkedin.com/in/asma-ben-janete-05518a161"
-                                >
-                                    LinkedIn
-                                </Button>
-                            </Grid>
-
-                            <Grid item>
-                                <Button
-                                    variant="outlined"
-                                    size="large"
-                                    href="https://www.researchgate.net/profile/Asma-Ben-Janete"
+                                    href="https://www.researchgate.net/profile/Michael-Wulfert"
                                 >
                                     Research Gate
                                 </Button>
@@ -128,4 +113,4 @@ const AsmaCard = () => {
     );
 };
 
-export default AsmaCard;
+export default MichaelCard;

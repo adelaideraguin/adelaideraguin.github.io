@@ -8,6 +8,11 @@ import Raguin2023Card from '../components/paper_cards/Raguin2023';
 import ExpressInHostCard from '../components/software_cards/ExpressInHostCard';
 import ExpressInHostWEBCard from '../components/software_cards/ExpressInHostWEBCard';
 import ThreeDimGlycogenCard from '../components/software_cards/threedimGlycogenCard';
+import ComplexTASEPCard from '../components/software_cards/complexTASEPCard';
+import SaccharificationSensitivityCard from '../components/software_cards/sobolsensitivtyCard';
+import PCWSM2021Card from '../components/software_cards/pcwsmCard';
+import LigninFitCard from '../components/software_cards/ligninFit';
+import SaccharificationCrystallinityCard from '../components/software_cards/saccharificationcrystallinityCard';
 import TASEPCard from '../components/software_cards/TASEPCard';
 import background from '../components/images/background.png';
 
@@ -33,26 +38,38 @@ function Teaching(){
             </Card>
             <Card  sx={{marginTop: "2em", position:"relative" }}>
             <Typography variant="body1" sx={{ textAlign: "left", margin: "1em", position: "relative", display: { xs: "block", sm: "block", md: "none" } }}>
-            We have developed several softwares that are now available <Typography variant="body1" style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography>  web-servers and Github repositories. These softwares are open source and licensed.
+            We have developed several softwares that are now available <Typography variant="body1" style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography>  web-servers and Git repositories. These softwares are open source and licensed.
             </Typography>
             <Typography variant="h5" sx={{ textAlign: "left", margin: "1em", position: "relative", display: { xs: "none", sm: "none", md: "block" } }}>
-            We have developed several softwares that are now available <Typography variant="h5" style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography>  web-servers and Github repositories. These softwares are open source and licensed.
+            We have developed several softwares that are now available <Typography variant="h5" style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography>  web-servers and Git repositories. These softwares are open source and licensed.
             </Typography>
             </Card>
             <p>
-            <ExpressInHostWEBCard/>
+                <ExpressInHostWEBCard/>
             </p>
             <p>
-            <ExpressInHostCard/>
+                <LigninFitCard/>
+            </p>
+            <p>
+                <ComplexTASEPCard/>
+            </p>
+            <p>
+                <SaccharificationCrystallinityCard/>
+            </p>
+            <p>
+                <SaccharificationSensitivityCard/>
+            </p>
+            <p>
+                <ExpressInHostCard/>
             </p>
              <p>
-            <PREDIGCard/>
+                <PREDIGCard/>
             </p>
             <p>
-            <ThreeDimGlycogenCard/>
+                <ThreeDimGlycogenCard/>
             </p>
             <p>
-            <TASEPCard/>
+                <TASEPCard/>
             </p>
   
         

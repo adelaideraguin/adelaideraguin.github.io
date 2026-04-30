@@ -12,23 +12,26 @@ import AdelaideCard from '../components/people_cards/adelaideCard';
 import ParthoCard from '../components/people_cards/parthoCard';
 import AsmaCard from '../components/people_cards/asmaCard';
 import GabrielCard from '../components/people_cards/gabrielCard';
-import MarcoCard from '../components/people_cards/marcoCard';
+import MichaelCard from '../components/people_cards/michael';
+import OlivierCard from '../components/people_cards/olivierCard';
 
 // 🖼️ Images
 import background from '../components/images/background.png';
 
 function GroupMembers() {
 
-  // 🎓 Alumni data (clean + maintainable)
+  // 🎓 Alumni data
   const alumni = [
-    "Paul Soudon",
-    "Jagjot Arora",
-    "Merle Stein",
-    "Lianne Gahan",
-    "Jasmin Theilmann",
-    "Torben Glass",
-    "Eric Behle",
-    "Laura Randarevitch"
+    "Thierry Bonnabaud La Bruyère, Research engineer",
+    "Paul Soudon, Research engineer",
+    "Jagjot Arora, Research assistant (with Master's degree)",
+    "Marco Lapsein, Master's thesis student",
+    "Merle Stein, PhD student",
+    "Lianne Gahan, Postdoctoral researcher",
+    "Jasmin Theilmann, Master's thesis student",
+    "Torben Glass, Research engineer",
+    "Eric Behle, Master's thesis student and research assistant (with Master's degree)",
+    "Laura Randarevitch, Bachelor student internship"
   ];
 
   return (
@@ -64,10 +67,12 @@ function GroupMembers() {
           alignItems="stretch"
         >
 
+          {/* PI full width */}
           <Grid item xs={12}>
             <AdelaideCard />
           </Grid>
 
+          {/* Members */}
           <Grid item xs={12} md={6} sx={{ display: "flex" }}>
             <ParthoCard />
           </Grid>
@@ -81,7 +86,11 @@ function GroupMembers() {
           </Grid>
 
           <Grid item xs={12} md={6} sx={{ display: "flex" }}>
-            <MarcoCard />
+            <MichaelCard />
+          </Grid>
+
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <OlivierCard />
           </Grid>
 
         </Grid>

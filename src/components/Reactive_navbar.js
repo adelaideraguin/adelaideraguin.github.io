@@ -1,131 +1,150 @@
 import * as React from "react";
-import { AppBar, Box, Button, Container, Stack, Toolbar, Typography } from "@mui/material";
-import { HashRouter as Router, Route, Switch, Link} from 'react-router-dom';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import LogoDevIcon from "@mui/icons-material/LogoDev";
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  Stack,
+  Toolbar,
+  Typography
+} from "@mui/material";
+
+import { Link } from "react-router-dom";
+
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
-import Avatar from "@mui/material/Avatar";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-const pages = [<Link color="inherit" underline="none" to="/">Home</Link>, <Link underline="none" to="/group">Meet the Group</Link>, <Link to="/research">Research Projects</Link>,
-<Link to="/funding">Funding</Link>, <Link underline="none" to="/publications">Publications</Link>, <Link to="/software">Software</Link>, <Link to="/hiring">Join us!</Link>, <Link to="/contact-us">Get in touch</Link>]
+
+import cnrsLogo from "../components/images/cnrs_logo.png";
+import labrilogo from "../components/images/labri_logo.png";
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
+  // 🔵 UPDATED STYLE (bigger text)
+  const navButtonStyle = {
+    color: "black",
+    textTransform: "none",
+    fontWeight: 600,
+    fontSize: "1.1rem",        // 👈 increase this (try 1.2rem if you want bigger)
+    letterSpacing: "0.02em",
+    "&:hover": {
+      color: "primary.main",
+      backgroundColor: "rgba(0,0,255,0.05)"
+    }
+  };
 
-    return (
-        <>
-        
-            <AppBar position="sticky" sx={{flexGrow: 1, display: 'flex', background: "white", justifyContent: 'space-between', marginBottom: "0.5em", flexWrap: 'wrap', marginTop: "0" }} >
-            <Container maxWidth="xl">
-                <Toolbar disableGutters  >
-                
-                {/* MOBILE CLICKABLE LOGO */}
-                  <Box sx={{ padding: "1em", paddingBottom: "1em", display: { xs: "flex", sm: "flex", md: "none" } }}>
-                    <a href="https://www.labri.fr/en" target="_blank" rel="noopener noreferrer">
-                      <img
-                        src="https://www.labri.fr/sites/default/files/2021-04/LOGO_LABRI-INTITULE-BIG_0.png?h=d2365be5&itok=lRNoBEsl"
-                        alt="LaBRI Logo"
-                        width="150px"
-                        style={{ cursor: "pointer" }}
-                      />
-                    </a>
-                  </Box>
+  return (
+    <AppBar
+      position="sticky"
+      sx={{
+        background: "white",
+        marginBottom: "0.5em"
+      }}
+    >
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
 
-              {/* DESKTOP CLICKABLE LOGO */}
-                <Box sx={{ padding: "1em", paddingBottom: "1em", display: { xs: "none", sm: "none", md: "flex" } }}>
-                  <a href="https://www.labri.fr/en" target="_blank" rel="noopener noreferrer">
-                    <img
-                      src="https://www.labri.fr/sites/default/files/2021-04/LOGO_LABRI-INTITULE-BIG_0.png?h=d2365be5&itok=lRNoBEsl"
-                      alt="LaBRI Logo"
-                      width="250px"
-                      style={{ cursor: "pointer" }}
-                    />
-                  </a>
-                </Box>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="/"
-                        sx={{
-                            display: 'flex',
-                            fontWeight: 500,
-                            letterSpacing: '.2rem',
-                            color: 'black',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        Raguin Team 
-                    </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "flex", md: "none" } }}>
-                      <IconButton
-                        size="large"
-                        aria-label="account of current user"
-                        aria-controls="menu-appbar"
-                        aria-haspopup="true"
-                        onClick={handleOpenNavMenu}
-                        color="inherit"
-                      >
-                        <MenuIcon />
-                      </IconButton>
-                      <Menu
-                        id="menu-appbar"
-                        anchorEl={anchorElNav}
-                        anchorOrigin={{
-                          vertical: "bottom",
-                          horizontal: "right",
-                        }}
-                        keepMounted
-                        transformOrigin={{
-                          vertical: "top",
-                          horizontal: "right",
-                        }}
-                        open={Boolean(anchorElNav)}
-                        onClose={handleCloseNavMenu}
-                        sx={{
-                          display: { xs: "block", sm:"block", md: "none" },
-                        }}
-                      >
-                        {pages.map((page) => (
-                          <MenuItem divider="true"  key={page} onClick={handleCloseNavMenu}>
-                            <Typography  textAlign="center">{page}</Typography>
-                          </MenuItem>
-                        ))}
-                      </Menu>
-                    </Box>
-         
-          
-                    <Stack direction="row" sx={{display: { xs: "none", sm: "none", md: "flex" }, mr: 1, flexGrow: 1,  justifyContent: "space-evenly" }}>
-                        <Button component={Link} to="/" variant="outline" color="primary">Home</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/group" variant="outline" color="primary">Meet the Group</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/research" variant="outline" color="primary">Research Projects</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/funding" variant="outline" color="primary">Funding</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/publications" variant="outline" color="primary">Publications</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/software" variant="outline" color="primary">Software</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/hiring" variant="outline" color="primary">Join Us!</Button>
-                        <Button sx={{ color: "black" }} component={Link} to="/contact-us" variant="outline" color="primary">Get in touch</Button>
-                        
-                    </Stack>
+          {/* 🧠 LOGO AREA */}
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 2,
+              padding: "1em"
+            }}
+          >
+            {/* CNRS LOGO */}
+            <a href="https://www.cnrs.fr" target="_blank" rel="noopener noreferrer">
+              <img
+                src={cnrsLogo}
+                alt="CNRS Logo"
+                style={{
+                  height: 63,
+                  cursor: "pointer",
+                  objectFit: "contain"
+                }}
+              />
+            </a>
 
-                    
-   
+            {/* LABRI LOGO */}
+            <a href="https://www.labri.fr/en" target="_blank" rel="noopener noreferrer">
+              <img
+                src={labrilogo}
+                alt="LaBRI Logo"
+                style={{
+                  height: 57,
+                  cursor: "pointer",
+                  objectFit: "contain"
+                }}
+              />
+            </a>
+          </Box>
 
-                </Toolbar>
-                </Container>
-            </AppBar>
-            
-        </>
-    );
-}
+          {/* 📱 MOBILE MENU */}
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <IconButton size="large" onClick={handleOpenNavMenu}>
+              <MenuIcon />
+            </IconButton>
+
+            <Menu
+              anchorEl={anchorElNav}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+            >
+              {[
+                { label: "Home", path: "/" },
+                { label: "Meet the Group", path: "/group" },
+                { label: "Research", path: "/research" },
+                { label: "Funding", path: "/funding" },
+                { label: "Publications", path: "/publications" },
+                { label: "Software", path: "/software" },
+                { label: "Join us!", path: "/hiring" },
+                { label: "Get in touch", path: "/contact-us" }
+              ].map((item) => (
+                <MenuItem key={item.path} onClick={handleCloseNavMenu}>
+                  <Typography>
+                    <Link to={item.path} style={{ textDecoration: "none", color: "black" }}>
+                      {item.label}
+                    </Link>
+                  </Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+
+          {/* 🧭 DESKTOP NAV */}
+          <Stack
+            direction="row"
+            sx={{
+              display: { xs: "none", md: "flex" },
+              flexGrow: 1,
+              justifyContent: "space-evenly"
+            }}
+          >
+            <Button component={Link} to="/" sx={navButtonStyle}>Home</Button>
+            <Button component={Link} to="/group" sx={navButtonStyle}>Meet the Group</Button>
+            <Button component={Link} to="/research" sx={navButtonStyle}>Research Projects</Button>
+            <Button component={Link} to="/funding" sx={navButtonStyle}>Funding</Button>
+            <Button component={Link} to="/publications" sx={navButtonStyle}>Publications</Button>
+            <Button component={Link} to="/software" sx={navButtonStyle}>Software</Button>
+            <Button component={Link} to="/hiring" sx={navButtonStyle}>Join Us!</Button>
+            <Button component={Link} to="/contact-us" sx={navButtonStyle}>Get in touch</Button>
+          </Stack>
+
+        </Toolbar>
+      </Container>
+    </AppBar>
+  );
+};
 
 export default Navbar;

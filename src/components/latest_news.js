@@ -20,7 +20,7 @@ const newsItems = [
     type: "paper"
   },
   {
-    title: "After many years in the UK and Germany, we are back to France, at CNRS Bordeaux"
+    title: "After many years in the UK and Germany, we are back to France, at CNRS in Bordeaux!"
   },
   {
     title: "OptiCellu project has begun – sustainable production of cellulose fibres",
@@ -55,10 +55,10 @@ const LatestNewsCard = () => {
       <CardHeader title="Latest Lab Updates" />
       <Divider />
 
-      {/* 🎠 AUTO-SLIDING CAROUSEL */}
+      {/* 🎠 CAROUSEL */}
       <CardContent>
         <Carousel
-          autoPlay={true}
+          autoPlay
           interval={5000}
           animation="slide"
           indicators
@@ -68,110 +68,77 @@ const LatestNewsCard = () => {
             <Box
               key={index}
               sx={{
-                textAlign: "center",
-                px: 2,
-                minHeight: 220,
+                minHeight: 240,
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center"
+                position: "relative"
               }}
             >
 
-              {/* 🏷️ CHIP SPACE RESERVED */}
-              <Box sx={{ minHeight: 32, mb: 1 }}>
-                {item.type === "paper" && (
-                  <Chip
-                    label="New Publication"
-                    color="primary"
-                    size="small"
-                  />
-                )}
+              {/* 🧠 CENTERED CONTENT */}
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
+                  px: 2
+                }}
+              >
+
+                {/* CHIP */}
+                <Box sx={{ minHeight: 32, mb: 1 }}>
+                  {item.type === "paper" && (
+                    <Chip
+                      label="New Publication"
+                      color="primary"
+                      size="normal"
+                    />
+                  )}
+                </Box>
+
+                {/* TITLE */}
+                <Typography variant="h6" sx={{ mb: 1 }}>
+                  {item.title}
+                </Typography>
+
+                {/* DATE */}
+                <Box sx={{ minHeight: 24 }}>
+                  {item.type !== "paper" && item.date && (
+                    <Typography variant="body2" color="text.secondary">
+                      {item.date}
+                    </Typography>
+                  )}
+                </Box>
+
               </Box>
 
-              {/* TITLE */}
-              <Typography variant="h6" sx={{ mb: 1 }}>
-                {item.title}
-              </Typography>
-
-              {/* DATE SPACE RESERVED */}
-              <Box sx={{ minHeight: 24 }}>
-                {item.type !== "paper" && item.date && (
-                  <Typography variant="body2" color="text.secondary">
-                    {item.date}
-                  </Typography>
-                )}
-              </Box>
-
-              {/* BUTTON */}
+              {/* 🔘 BUTTON (BOTTOM LEFT) */}
               {item.link && (
-                <Button
-                  variant="contained"
-                  href={item.link}
-                  sx={{ mt: 2 }}
+                <Box
+                  sx={{
+                    position: "absolute",
+                    bottom: 8,
+                    left: 16
+                  }}
                 >
-                  Learn More
-                </Button>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    href={item.link}
+                  >
+                    Learn More
+                  </Button>
+                </Box>
               )}
+
             </Box>
           ))}
         </Carousel>
       </CardContent>
 
-      {/* 🔽 TOGGLE OLDER NEWS */}
-      <Box sx={{ textAlign: "center", pb: 1 }}>
-        <IconButton
-          onClick={() => setExpanded(!expanded)}
-          sx={{
-            transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)',
-            transition: '0.3s'
-          }}
-        >
-          <ExpandMoreIcon />
-        </IconButton>
-
-        <Typography variant="body2">
-          {expanded ? "Hide older news" : "Show older news"}
-        </Typography>
-      </Box>
-
-      {/* 📚 OLDER NEWS */}
-      <Collapse in={expanded}>
-        <Divider />
-        <CardContent>
-          {older.map((item, index) => (
-            <Box key={index} sx={{ mb: 2 }}>
-
-              <Box sx={{ minHeight: 32, mb: 0.5 }}>
-                {item.type === "paper" && (
-                  <Chip
-                    label="New Publication"
-                    color="primary"
-                    size="small"
-                  />
-                )}
-              </Box>
-
-              <Typography variant="body1">
-                {item.title}
-              </Typography>
-
-              <Box sx={{ minHeight: 24 }}>
-                {item.type !== "paper" && item.date && (
-                  <Typography variant="body2" color="text.secondary">
-                    {item.date}
-                  </Typography>
-                )}
-              </Box>
-
-              {item.link && (
-                <Button size="small" href={item.link}>
-                  Learn More
-                </Button>
-              )}
-            </Box>
-          ))}
-        </CardContent>
-      </Collapse>
     </Card>
   );
 };
