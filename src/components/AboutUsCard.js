@@ -1,69 +1,161 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import {
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Divider,
+  IconButton,
+  styled,
+  Typography,
+  Fade
+} from "@mui/material";
 
+import { useState, useEffect } from "react";
+import cnrslogo from '../components/images/cnrs_logo.png'
 
 const ExpandMore = styled((props) => {
-    const { expand, ...other } = props;
-    return <IconButton {...other} />;
+  const { expand, ...other } = props;
+  return <IconButton {...other} />;
 })(({ theme, expand }) => ({
-    transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest,
-    }),
+  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+  marginLeft: 'auto',
+  transition: theme.transitions.create('transform', {
+    duration: theme.transitions.duration.shortest,
+  }),
 }));
-
 
 const AboutUsCard = () => {
 
-    const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const [showLabri, setShowLabri] = useState(true);
+  const [paused, setPaused] = useState(false);
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
 
-    return (
-        <Card style={{ minHeight: "550px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
-            <Box>
-                <CardHeader
-                    title="Computational Cell Biology Institute"
-                />
-                <Divider />
-            </Box>
+  // auto flip
+  useEffect(() => {
+    if (paused) return;
 
+    const interval = setInterval(() => {
+      setShowLabri(prev => !prev);
+    }, 1500);
 
+    return () => clearInterval(interval);
+  }, [paused]);
 
+  const currentLink = showLabri
+    ? "https://www.labri.fr/en"
+    : "https://www.cnrs.fr";
 
-            <CardMedia sx={{
-                padding: "1em", maxHeight: 400,
-                margin: "0 auto",
-                width: "auto",
-                height: "auto"
-            }}
-                component="img"
-                image="https://www.cs.hhu.de/fileadmin/_processed_/3/a/csm_ccb_logo-2.1.1_p_2100x2970_828f919ad0.png"
-                alt="CCB Logo"
+  const currentLogo = showLabri
+    ? "https://www.labri.fr/sites/default/files/2021-04/LOGO_LABRI-INTITULE-BIG_0.png?h=d2365be5&itok=lRNoBEsl"
+    : "https://upload.wikimedia.org/wikipedia/commons/7/7e/Logo_CNRS.svg";
+
+  const currentAlt = showLabri ? "LaBRI Logo" : "CNRS Logo";
+
+  return (
+    <Card
+      style={{
+        minHeight: "400px",
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between'
+      }}
+      elevation={5}
+    >
+
+      {/* Logo area */}
+      <Box
+        sx={{
+          flexGrow: 1,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          position: "relative",
+          cursor: "pointer"
+        }}
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+
+        {/* LaBRI */}
+        <Fade in={showLabri} timeout={500}>
+          <Box
+            component="a"
+            href="https://www.labri.fr/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ position: "absolute" }}
+          >
+            <CardMedia
+              component="img"
+              image="https://www.labri.fr/sites/default/files/2021-04/LOGO_LABRI-INTITULE-BIG_0.png?h=d2365be5&itok=lRNoBEsl"
+              alt="LaBRI Logo"
+              sx={{
+                padding: "1em",
+                maxHeight: 200,
+                maxWidth: "100%",
+                objectFit: "contain"
+              }}
             />
-            <CardContent>
-                <Typography variant="body1" align="left" >
-                    We are hosted by the Computational Cell Biology Institute, which is located in the Computer Science Department at Heinrich-Heine University Düsseldorf.
-                </Typography>
-            </CardContent>
+          </Box>
+        </Fade>
 
-            <Box>
-                <Divider />
-                <CardActions >
-                    <Button variant="contained" href="https://www.cs.hhu.de/lehrstuehle-und-arbeitsgruppen/computational-cell-biology">
-                        Learn More
-                    </Button>
+        {/* CNRS */}
+        <Fade in={!showLabri} timeout={500}>
+          <Box
+            component="a"
+            href="https://www.cnrs.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ position: "absolute" }}
+          >
+            <CardMedia
+              component="img"
+              image={cnrslogo}
+              alt="CNRS Logo"
+              sx={{
+                padding: "1em",
+                maxHeight: 200,
+                maxWidth: "100%",
+                objectFit: "contain"
+              }}
+            />
+          </Box>
+        </Fade>
 
-                </CardActions>
-            </Box>
+      </Box>
 
-        </Card >
-    );
+      {/* Text */}
+      <CardContent sx={{ textAlign: 'center' }}>
+        <Typography variant="body1">
+          We are a part of the Bordeaux Computer Science Research Laboratory
+          (LaBRI, UMR 5800) and affiliated with CNRS in France.
+        </Typography>
+      </CardContent>
+
+      {/* Button */}
+      <Box>
+        <Divider />
+        <CardActions sx={{ justifyContent: 'center' }}>
+          <Button
+            variant="contained"
+            href={currentLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn More
+          </Button>
+        </CardActions>
+      </Box>
+
+    </Card>
+  );
 };
 
 export default AboutUsCard;

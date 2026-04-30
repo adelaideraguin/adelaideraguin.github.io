@@ -1,64 +1,81 @@
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardHeader, CardMedia, Divider, Typography, Tooltip, Button } from "@mui/material";
 import EmailIcon from '../components/email.png';
-import EmailOpenIcon from '../components/emailopen.png';
-import React, { useState, useEffect } from 'react';
-
-
-const ExpandMore = styled((props) => {
-    const { expand, ...other } = props;
-    return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-    transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest,
-    }),
-}));
-
+import React, { useState } from 'react';
 
 const EmailCard = () => {
+    const email = 'adelaide.raguin@u-bordeaux.fr';
+    const [tooltipText, setTooltipText] = useState('Click to copy email');
 
-    const [expanded, setExpanded] = useState(false);
+    const handleCopy = () => {
+        navigator.clipboard.writeText(email);
+        setTooltipText('Copied!');
+        setTimeout(() => {
+            setTooltipText('Click to copy email');
+        }, 2000);
+    };
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
+    const handleEmailCompose = () => {
+        window.location.href = `mailto:${email}`;
     };
 
     return (
-        <Card style={{ minHeight: "550px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
-            <Box>
-                <CardHeader
-                    title="Email"
-                />
-                <Divider />
-            </Box>
-            <CardMedia sx={{
-                padding: "1em", maxWidth: 230,
-                margin: "0 auto",
+        <Card
+            style={{
+                minHeight: "400px",
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                position: "relative",
             }}
-                component="img"
-                image={EmailIcon}
-                alt="Email icon"
-            />
-            <CardContent>
-                <Typography variant="body1" >
-                You can contact Dr Raguin <Typography style={{display:'inline-flex'}} sx={{fontStyle: 'italic'}}>via </Typography> email at adelaide.raguin@hhu.de
-                </Typography>
-            </CardContent>
-            <Box>
-            <Divider/>
-                <CardActions >
-                    <Button variant="contained"  onClick={() =>  navigator.clipboard.writeText('adelaide.raguin@hhu.de')}>
-                        Copy Email
-                        
-                    </Button>
+            elevation={5}
+        >
 
-                </CardActions>
+            {/* Centered Logo */}
+            <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <CardMedia
+                    component="img"
+                    image={EmailIcon}
+                    alt="Email icon"
+                    sx={{
+                        padding: "1em",
+                        maxWidth: 230,
+                        width: '100%',
+                        height: 'auto',
+                        display: 'block',
+                    }}
+                />
             </Box>
 
-        
-        </Card >
+            {/* Email text */}
+            <CardContent sx={{ textAlign: 'center' }}>
+                <Tooltip title={tooltipText} arrow>
+                    <Typography
+                        variant="body1"
+                        onClick={handleCopy}
+                        sx={{
+                            textDecoration: 'underline',
+                            cursor: 'pointer',
+                            transition: 'color 0.3s ease',
+                            '&:hover': {
+                                color: '#1976d2',
+                            }
+                        }}
+                    >
+                        {email}
+                    </Typography>
+                </Tooltip>
+            </CardContent>
+
+            {/* Bottom button (ALWAYS at bottom) */}
+            <Box>
+                <Divider />
+                <Box sx={{ p: 1, textAlign: "center" }}>
+                    <Button variant="contained" onClick={handleEmailCompose}>
+                        To Email
+                    </Button>
+                </Box>
+            </Box>
+        </Card>
     );
 };
 

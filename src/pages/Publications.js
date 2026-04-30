@@ -14,6 +14,7 @@ import SakhaDeB2023Card from '../components/paper_cards/SakhaDe_B2023';
 import background from '../components/images/background.png';
 import BenJanete2024Card from '../components/paper_cards/BenJanete2024';
 import SakhaDe2024Card from '../components/paper_cards/SakhaDe2024';
+import Lapsien2025Card from '../components/paper_cards/Lapsien2025Card';
 
 
 function Publications(){
@@ -33,10 +34,13 @@ function Publications(){
 
             </Card>
             <p>
-                <SakhaDe2024Card/>
+                <BenJanete2024Card/>
             </p> 
             <p>
-                <BenJanete2024Card/>
+                <SakhaDe2024Card/>
+            </p>
+            <p>
+                <Lapsien2025Card/>
             </p>
             <p>
                 <SakhaDeB2023Card/>

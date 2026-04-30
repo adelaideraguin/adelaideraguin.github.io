@@ -1,5 +1,13 @@
 import React from 'react';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, styled, Typography } from "@mui/material";
+
+import {
+  Box,
+  Card,
+  CardMedia,
+  Typography,
+  Grid,
+  Divider
+} from "@mui/material";
 
 import GlycogenCard from '../components/research_cards/glycogenCard';
 import TransportCard from '../components/research_cards/transportCard';
@@ -7,77 +15,151 @@ import BiosynthesisCard from '../components/research_cards/biosynthesisCard';
 import ProteinSynthesisCard from '../components/research_cards/proteinsynthesisCard';
 import FattyAcidsCard from '../components/research_cards/fattyacidsCard';
 import StarchCard from '../components/research_cards/starchCard';
+import MulticellCard from '../components/research_cards/multicellCard';
+import CancerCard from '../components/research_cards/cancer';
+
 import background from '../components/images/background.png';
 
+function SectionHeader({ title }) {
+  return (
+    <Box sx={{ mt: 5, mb: 2 }}>
+      <Typography variant="h4" sx={{ fontWeight: 600 }}>
+        {title}
+      </Typography>
+      <Divider sx={{ mt: 1 }} />
+    </Box>
+  );
+}
 
+function Research() {
+  return (
+    <section>
+      <div className="container-fluid">
 
-function Research(){
-    return(
-        <section>
-        <div class="container-fluid">
-            <Card sx={{  marginTop: "1em", position:"relative" }}>
-                <CardMedia
-                    height="300"
-                    component="h1"
-                    sx={{ color: "white", textAlign: "center", padding: "1.5em", margin: "0" }}
-                    image={background}
-                    alt="A field of corn"
-                    ><Typography variant="h2"> 
-                        Research Activity
-                        </Typography>
-                </CardMedia>
+        {/* HEADER */}
+        <Card sx={{ marginTop: "1em" }}>
+          <CardMedia
+            component="div"
+            sx={{
+              height: 300,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "white",
+              backgroundImage: `url(${background})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}
+          >
+            <Typography variant="h2">
+              Research Activity
+            </Typography>
+          </CardMedia>
+        </Card>
 
-            </Card> 
-            <Card sx={{ marginTop: "2em", position:"relative"  }}>
-                <Typography variant="h5" sx={{ textAlign: "left", margin: "1em", display: { xs: "none", sm: "none", md: "block" }}} xs={12} md={12}>
-                We develop computational and mathematical methods to study the dynamics of complex biological systems at the sub-cellular scale. 
-                Our main expertise are stochastic simulations 
-                that we use to investigate the synthesis or degradation of large polymeric systems, and collective transport processes in one dimension.
-                </Typography>
-                <Typography variant="body1" sx={{ textAlign: "left", margin: "1em", display: { xs: "block", sm: "block", md: "none" }}} xs={12} md={12}>
-                We develop computational and mathematical methods to study the dynamics of complex biological systems at the sub-cellular scale. 
-                Our main expertise are stochastic simulations 
-                that we use to investigate the synthesis or degradation of large polymeric systems, and collective transport processes in one dimension.
-                </Typography>
-            </Card>
+        {/* INTRO */}
+        <Card sx={{ marginTop: "2em" }}>
+          <Typography
+            variant="h5"
+            sx={{
+              textAlign: "left",
+              margin: "1em",
+              display: { xs: "none", md: "block" }
+            }}
+          >
+            We develop digital twins based on biophysical and mathematical principles to study the dynamics of complex biological systems at the cellular and sub-cellular scales. Our main expertise lies on stochastic simulations, that we apply to a variety of systems, including the synthesis and degradation of large polymeric 3D structures, cytoskeletal transport, and protein expression. We are currently focussing on modelling cancer development and therapy, deciphering the interplay between genetics and mechanics across scales.
+          </Typography>
 
-            <Grid container spacing={3} marginTop={"2em"} sx={{position:"relative", flexGrow: "1", alignItems: 'stretch'}} >
-                    <Grid item xs={12} sm={12} md={6}>
-                        <BiosynthesisCard/>
-                    </Grid>
-                    <Grid item item xs={12} sm={12} md={6} >
-                        <StarchCard/>
-                    </Grid>
-                </Grid>
-                <Grid container justifyContent="space-around" spacing={3} marginTop={"2em"} sx={{position:"relative"}} >
-                    <Grid item xs={12} sm={12} md={6} >
-                    <ProteinSynthesisCard/>                       
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={6} >
-                        <TransportCard/>
-                    </Grid>
-                </Grid>
-                <Grid container justifyContent="space-around" spacing={3} marginTop={"2em"} marginBottom={'4em'} sx={{position:"relative"}} >
-                    <Grid item xs={12} sm={12} md={6} >
-                        <GlycogenCard/>
-                    </Grid>
+          <Typography
+            variant="body1"
+            sx={{
+              textAlign: "left",
+              margin: "1em",
+              display: { xs: "block", md: "none" }
+            }}
+          >
+            We develop digital twins based on biophysical and mathematical principles to study the dynamics of complex biological systems at the cellular and sub-cellular scales. Our main expertise lies on stochastic simulations, that we apply to a variety of systems, including the synthesis and degradation of large polymeric 3D structures, cytoskeletal transport, and protein expression. We are currently focussing on modelling cancer development and therapy, deciphering the interplay between genetics and mechanics across scales.
+          </Typography>
+        </Card>
 
-                    <Grid item xs={12} sm={12} md={6} >
-                        <FattyAcidsCard/>
-                    </Grid>
-                </Grid>
+        {/* =============================== */}
+        {/* MULTICELLULAR SYSTEMS */}
+        {/* =============================== */}
+        <SectionHeader title="Dynamics of multicellular systems" />
 
+        <Grid container spacing={3} alignItems="stretch">
 
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <Box sx={{ width: "100%", display: "flex" }}>
+              <MulticellCard />
+            </Box>
+          </Grid>
 
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <Box sx={{ width: "100%", display: "flex" }}>
+              <CancerCard />
+            </Box>
+          </Grid>
 
+        </Grid>
 
+        {/* =============================== */}
+        {/* 1D TRANSPORT */}
+        {/* =============================== */}
+        <SectionHeader title="1-Dimensional transport" />
 
+        <Grid container spacing={3} alignItems="stretch">
 
-        </div>
-        </section>
-    );
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <Box sx={{ width: "100%", display: "flex" }}>
+              <ProteinSynthesisCard />
+            </Box>
+          </Grid>
 
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <Box sx={{ width: "100%", display: "flex" }}>
+              <TransportCard />
+            </Box>
+          </Grid>
 
+        </Grid>
+
+        {/* =============================== */}
+        {/* PHYSICS OF BIOPOLYMERS */}
+        {/* =============================== */}
+        <SectionHeader title="Physics of biopolymers" />
+
+        <Grid container spacing={3} alignItems="stretch">
+
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <Box sx={{ width: "100%", display: "flex" }}>
+              <BiosynthesisCard />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <Box sx={{ width: "100%", display: "flex" }}>
+              <StarchCard />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <Box sx={{ width: "100%", display: "flex" }}>
+              <GlycogenCard />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            <Box sx={{ width: "100%", display: "flex" }}>
+              <FattyAcidsCard />
+            </Box>
+          </Grid>
+
+        </Grid>
+
+      </div>
+    </section>
+  );
 }
 
 export default Research;

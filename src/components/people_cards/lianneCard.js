@@ -29,7 +29,7 @@ const LianneCard = () => {
         <Card style={{ position:"relative", minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
-                    title="Dr Lianne Gahan"
+                    title="Dr Lianne Gahan (Alumni)"
                 />
                 <Divider />
             </Box>
@@ -49,10 +49,10 @@ const LianneCard = () => {
                 <Grid item xs={12} sm={12} md={7}>
 
                 <Typography variant="body1" align='left' >
-                Lianne is in her first postdoctoral position at Heinrich-Heine University after completing her PhD in computational biophysics at the University of Sheffield, 
+                Lianne joined the group for her first postdoctoral position at Heinrich-Heine University after completing her PhD in computational biophysics at the University of Sheffield, 
                 where she also completed her undergraduate degree in Theoretical Physics (MPhys). She is now working on a computational project
-                at the interface of physics and biology, where she is using stochastic simulations to investigate 
-                    the impact of microscopic properties of the xylem cell wall on its ability to transport water. 
+                at the interface of physics and biology, where she used stochastic simulations to investigate 
+                    the impact of microscopic properties of the xylem cell wall on its ability to transport water. She is now a Scientist in the Industry.
 
                 </Typography>
                 <Grid container  spacing={1} alignItems="center" justifyContent="center" marginTop={"1em"} >

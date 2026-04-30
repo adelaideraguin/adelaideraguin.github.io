@@ -1,200 +1,146 @@
-import React from 'react';
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, Grid, IconButton, Paper, styled, Typography } from "@mui/material";
-import {List, ListItem, ListItemText, ListItemAvatar, Avatar} from "@mui/material"
+import React, { useState } from 'react';
+import {
+  Card, CardHeader, CardContent, Divider,
+  Typography, Button, Collapse, IconButton, Box, Chip
+} from "@mui/material";
+
 import Carousel from 'react-material-ui-carousel';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import ArrowBack from '@mui/icons-material/ArrowBackIos';
-import ArrowForward from '@mui/icons-material/ArrowForwardIos';
-
-import Groups2OutlinedIcon from '@mui/icons-material/Groups2Outlined';
-import CelebrationOutlinedIcon from '@mui/icons-material/CelebrationOutlined';
-import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined';
-import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
+// 🧠 Data
+const newsItems = [
+  {
+    title: "Stochastic model highlights the impact of crystallinity on saccharification dynamics depending on plant chemotype and pre-treatment",
+    link: "https://doi.org/10.1371/journal.pone.0322367",
+    type: "paper"
+  },
+  {
+    title: "Transport at a complex multiple-input-multiple-output TASEP junction",
+    link: "https://doi.org/10.1016/j.physa.2026.131466",
+    type: "paper"
+  },
+  {
+    title: "After many years in the UK and Germany, we are back to France, at CNRS in Bordeaux!"
+  },
+  {
+    title: "OptiCellu project has begun – sustainable production of cellulose fibres",
+    date: "April 2024",
+    link: "https://www.biosc.de/OptiCellu_EN",
+    type: "project"
+  },
+  {
+    title: "Sensitivity analysis of enzymatic saccharification",
+    date: "January 2024",
+    link: "https://doi.org/10.1016/j.csbj.2024.01.006",
+    type: "paper"
+  },
+  {
+    title: "Group attends Cell Physics conference",
+    date: "October 2023"
+  },
+  {
+    title: "Master's thesis completed",
+    date: "October 2023"
+  }
+];
 
 const LatestNewsCard = () => {
+  const [expanded, setExpanded] = useState(false);
 
-    return (
+  const latest = newsItems.slice(0, 3);
+  const older = newsItems.slice(3);
 
-        <Card style={{ display: 'flex', minHeight: "550px", justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
+  return (
+    <Card elevation={0} sx={{ borderRadius: 3 }}>
+      <CardHeader title="Latest Lab Updates" />
+      <Divider />
 
-<CardHeader
-                       title="Latest Lab Updates"
-        />
-        <Divider />
+      {/* 🎠 CAROUSEL */}
+      <CardContent>
+        <Carousel
+          autoPlay
+          interval={5000}
+          animation="slide"
+          indicators
+          navButtonsAlwaysVisible
+        >
+          {latest.map((item, index) => (
+            <Box
+              key={index}
+              sx={{
+                minHeight: 240,
+                display: "flex",
+                flexDirection: "column",
+                position: "relative"
+              }}
+            >
 
-        <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
-        <ListItem>
-            <ListItemAvatar>
-            <CampaignOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary={
-                            <React.Fragment>
-                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"Stochastic model highlights the impact of crystallinity on saccharification dynamics depending on plant chemotype and pre-treatment" }
-            </React.Fragment>}
-            secondary="July 2024" />
-            <Button variant="contained"  href="http://dx.doi.org/10.13140/RG.2.2.26381.96489">
-                        Learn More
-                    </Button>
-        </ListItem>
-        <ListItem>
-            <ListItemAvatar>
-            <CampaignOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary={
-                            <React.Fragment>
-                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"Transport at a complex multiple-input-multiple-output TASEP junction" }
-            </React.Fragment>}
-            secondary="June 2024" />
-            <Button variant="contained"  href="http://dx.doi.org/10.13140/RG.2.2.35661.04326">
-                        Learn More
-                    </Button>
-        </ListItem>
-        <ListItem>
-            <ListItemAvatar>
-            <CampaignOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary="The BioSC funded OptiCellu project has begun! A multidisciplinary approach towards the sustainable production of cellulose fibres" secondary="April 2024" />
-            <Button variant="contained"  href="https://www.biosc.de/OptiCellu_EN">
-                        Learn More
-                    </Button>
-        </ListItem>
+              {/* 🧠 CENTERED CONTENT */}
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
+                  px: 2
+                }}
+              >
 
+                {/* CHIP */}
+                <Box sx={{ minHeight: 32, mb: 1 }}>
+                  {item.type === "paper" && (
+                    <Chip
+                      label="New Publication"
+                      color="primary"
+                      size="normal"
+                    />
+                  )}
+                </Box>
 
-        <ListItem>
-            <ListItemAvatar>
-            <CampaignOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary={
-                            <React.Fragment>
-                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"A detailed sensitivity analysis identifies the key factors influencing the enzymatic saccharification of lignocellulosic biomass" }
-            </React.Fragment>}
-            secondary="January 2024" />
-            <Button variant="contained"  href="https://doi.org/10.1016/j.csbj.2024.01.006">
-                        Learn More
-                    </Button>
-        </ListItem>
+                {/* TITLE */}
+                <Typography variant="h6" sx={{ mb: 1 }}>
+                  {item.title}
+                </Typography>
 
-        <ListItem>
-            <ListItemAvatar>
-            <Groups2OutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary="CEPLAS funded group members attend the early career researcher retreat in Eifel" secondary="November 2023" />
-        </ListItem>
+                {/* DATE */}
+                <Box sx={{ minHeight: 24 }}>
+                  {item.type !== "paper" && item.date && (
+                    <Typography variant="body2" color="text.secondary">
+                      {item.date}
+                    </Typography>
+                  )}
+                </Box>
 
+              </Box>
 
-        <ListItem>
-            <ListItemAvatar>
-            <CelebrationOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary="Congratulations to Jasmin Theilmann for successfully completing her Master's thesis" secondary="October 2023" />
-        </ListItem>
+              {/* 🔘 BUTTON (BOTTOM LEFT) */}
+              {item.link && (
+                <Box
+                  sx={{
+                    position: "absolute",
+                    bottom: 8,
+                    left: 16
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    size="small"
+                    href={item.link}
+                  >
+                    Learn More
+                  </Button>
+                </Box>
+              )}
 
-        <ListItem>
-            <ListItemAvatar>
-            <Groups2OutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary="The group attends the Cell Physics conference in Saarbrücken" secondary="October 2023" />
-        </ListItem>
-
-
-        <ListItem>
-            <ListItemAvatar>
-            <CampaignOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary={
-                            <React.Fragment>
-                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}> Paper published:  </Typography> { "PREDIG web application to model and predict the enzymatic saccharification of plant cell wall"} 
-                            </React.Fragment>}
-                                secondary="September 2023" />
-            <Button variant="contained"  href="https://doi.org/10.1016/j.csbj.2023.09.026">
-                        Learn More
-                    </Button>
-        </ListItem>
-
-        <ListItem>
-            <ListItemAvatar>
-            <PersonAddAltOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary="Marco Lapsien joins the group as a Master's student to use molecular dynamics for simulations of lignin" secondary="September 2023" />
-        </ListItem>
-
-        <ListItem>
-            <ListItemAvatar>
-            <CampaignOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary="Lianne speaks at the Soapbox Rheinland event in Düsseldorf" secondary="August 2023" />
-        </ListItem>
-
-        <ListItem>
-            <ListItemAvatar>
-            <CampaignOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary={
-                            <React.Fragment>
-                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"Kinetic data for modeling the dynamics of the enzymes involved in animal fatty acid synthesis"}
-                            </React.Fragment>}
-                            secondary="July 2023" />
-            <Button variant="contained"  href="https://doi.org/10.1042/BSR20222496">
-                        Learn More
-                    </Button>
-        </ListItem>
-
-        <ListItem>
-            <ListItemAvatar>
-            <Groups2OutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary='Adélaïde and Merle attend the "RNA meets protein decay" EMBO workshop in Cavtat, Croatia' secondary="May 2023" />
-        </ListItem>
-
-
-        <ListItem>
-            <ListItemAvatar>
-            <CampaignOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary={
-                            <React.Fragment>
-                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}> Paper published:  </Typography> { "Stochastic modelling of a three-dimensional glycogen granule synthesis and impact of the branching enzyme" }
-                            </React.Fragment>}
-                                secondary="May 2023" />
-            <Button variant="contained"  href="https://doi.org/10.1371/journal.pcbi.1010694">
-                        Learn More
-                    </Button>
-        </ListItem>
-        
-        <ListItem>
-            <ListItemAvatar>
-            <CampaignOutlinedIcon />
-            </ListItemAvatar>
-            <ListItemText primary={
-                            <React.Fragment>
-                                <Typography style={{display:'inline-flex'}} sx={{fontWeight: 'bold'}}>Paper published:  </Typography> {"ExpressInHost, A Codon Tuning Tool for the Expression of Recombinant Proteins in Host Microorganisms"}
-                            </React.Fragment>}
-                            secondary="February 2023" />
-            <Button variant="contained"  href="https://doi.org/10.5334/jors.385">
-                        Learn More
-                    </Button>
-        </ListItem>
-
-
-
-
-       
-        </List>
-
-
-
-
-
-
-
+            </Box>
+          ))}
+        </Carousel>
+      </CardContent>
 
     </Card>
-
-
-
-      
-    );
+  );
 };
+
 export default LatestNewsCard;
-
-

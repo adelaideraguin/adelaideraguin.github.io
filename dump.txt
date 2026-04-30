@@ -1,0 +1,2 @@
+src/components/Navbar.js:32:                        Raguin Team 
+src/components/Reactive_navbar.js:68:                        Raguin Team 

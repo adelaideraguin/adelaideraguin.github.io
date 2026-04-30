@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import synthesis_fig1 from "../proteinsynthesis1.png";
 import synthesis_fig from "../protein_synthesis.png";
+import model_fig from "../images/protein_model.png"
 
 
 const ExpandMore = styled((props) => {
@@ -38,7 +39,7 @@ const ProteinSynthesisCard = () => {
                 margin: "0 auto", display: { xs: "none", sm: "none", md: "flex" }}}
     
                 component="img"
-                image={synthesis_fig}
+                image={model_fig}
                 alt="Simulation of a comprehensive translation system comprising tRNAs, ribosomes and codon-biased mRNAs to analyse tRNA synthetase depletion. (A) Global translation model of mRNAs by ribosomes including competition for tRNAs, tRNA synthetase and ribosomes. The ribosome from the reservoir enters the mRNA-lattice m
                     via the initiation rate αm at the first lattice site, codon i=0
                     ⁠, and terminates with the constant rate β

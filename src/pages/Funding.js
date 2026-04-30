@@ -1,54 +1,77 @@
 import React from 'react';
-import { Card, CardMedia, Grid, Typography } from '@mui/material';
+import { Card, CardMedia, Typography, Box } from '@mui/material';
+
+import ANRCard from '../components/funders_cards/ANRCard';
 import BioSCCard from '../components/funders_cards/BioSCCard';
 import DFGCard from '../components/funders_cards/DFGCard';
 import CEPLASCard from '../components/funders_cards/CEPLASCard';
+import BMBFCard from '../components/funders_cards/bmbfCard';
+
 import background from '../components/images/background.png';
-import BMBFCard from '../components/funders_cards/bmbfCard.js';
 
+function Funding() {
+  return (
+    <section>
+      <div className="container-fluid">
 
+        {/* HEADER */}
+        <Card sx={{ marginTop: "1em", marginBottom: "2em" }}>
+          <CardMedia
+            component="div"
+            sx={{
+              height: 300,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "white",
+              backgroundImage: `url(${background})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}
+          >
+            <Typography variant="h2">
+              Our work is supported by ...
+            </Typography>
+          </CardMedia>
+        </Card>
 
-function Funding(){
-    return(
+        {/* RESPONSIVE GRID */}
+        <Box
+          sx={{
+            display: "grid",
+            gap: 3,
 
-        <section>
-        <div class="container-fluid">
+            // default (mobile)
+            gridTemplateColumns: "1fr",
 
-            <Card sx={{ marginTop: "1em", marginBottom: "2em", position:"relative"}}>
-                    <CardMedia
-                        height="300"
-                        component="h1"
-                        sx={{ color: "white", textAlign: "center", padding: "1.5em", margin: "0" }}
-                        image={background}
-                    ><Typography variant="h2"> 
-                        Our work is supported by ... 
-                        </Typography></CardMedia>
+            // small screens
+            "@media (min-width:600px)": {
+              gridTemplateColumns: "repeat(2, 1fr)"
+            },
 
-            </Card>
+            // medium screens
+            "@media (min-width:900px)": {
+              gridTemplateColumns: "repeat(3, 1fr)"
+            },
 
-       
-            <Grid container justifyContent="space-around" spacing={3} sx={{ marginBottom: "2em"}} >
-                <Grid item xs={12} sm={12} md={6} lg={3}>
-                    <DFGCard />
-                </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={3} >
-                    <BioSCCard />
+            // large screens
+            "@media (min-width:1200px)": {
+              gridTemplateColumns: "repeat(5, 1fr)"
+            }
+          }}
+        >
 
-                </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={3} >
-                    <BMBFCard />
+          <ANRCard />
+          <DFGCard />
+          <BioSCCard />
+          <BMBFCard />
+          <CEPLASCard />
 
-                </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={3} >
-                    <CEPLASCard />
-                </Grid>
-            </Grid>   
-       
-        </div>
-        </section>
-    );
+        </Box>
 
-
+      </div>
+    </section>
+  );
 }
 
 export default Funding;

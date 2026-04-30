@@ -1,6 +1,7 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
+import image from "../images/logo-dfg.jpg"
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -26,7 +27,7 @@ const DFGCard = () => {
         <Card style={{ minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column', position:"relative" }} elevation={5} >
             <CardMedia sx={{ display: 'flex', color: "white", textAlign: "center", padding: "2em", margin: "auto"}}
                 component="img"
-                image="https://www.uni-bonn.de/en/research-and-teaching/research-profile/transdisciplinary-research-areas/tra-1-modelling/programs/german-research-foundation/logo-dfg.jpg/@@images/image/leadimagesize"
+                image={image}
                 alt="Logo for the DFG"
             />
             <CardContent>

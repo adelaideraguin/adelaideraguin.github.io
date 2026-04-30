@@ -2,7 +2,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Divider, IconButton, styled, Typography } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import photo from '../components/people_cards/group.jpg';
+import photo from '../components/images/photo-collage.png';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -36,16 +36,15 @@ const MeetUsCard = () => {
 
 
 
-            <CardMedia sx={{ padding: "1em", width: "85%",
+            <CardMedia sx={{ padding: "1em", width: "100%", height: "200",
                 margin: "0 auto" }}
                 component="img"
                 image={photo}
-                alt="Asma, Jasmin and Merle"
+                alt="Group collage"
             />
             <CardContent>
                 <Typography align='left' padding="1em" variant="body1" >
-                We are a recently established and rapidly growing team of international researchers funded by third parties. 
-                Our home is within the Computational Cell Biology Group at Heinrich-Heine University.
+                After many years in the UK and Germany, we are back to France, at the National Center for Scientific Research (CNRS) in Bordeaux. Adélaïde Raguin got a Junior Professor Chair of Computer Sciences for Health Data and we are focussing on modelling cancer development and therapy.
                 </Typography>
             </CardContent>
 

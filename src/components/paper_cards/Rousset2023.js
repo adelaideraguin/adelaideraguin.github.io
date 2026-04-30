@@ -34,7 +34,7 @@ const Rousset2023Card = () => {
 
             <CardContent>
                 <Typography align="left" variant="body1" >
-                Y Rousset, O Ebenhöh, A Raguin (2023) Stochastic modelling of a three-dimensional glycogen granule synthesis and impact of the branching enzyme. PLoS Computational Biology. 19(5): e1010694.
+                Y Rousset, O Ebenhöh, and A Raguin (2023) Stochastic modelling of a three-dimensional glycogen granule synthesis and impact of the branching enzyme. PLoS Computational Biology. 19(5): e1010694.
                 </Typography>
             </CardContent>
             <Box>
@@ -62,11 +62,7 @@ const Rousset2023Card = () => {
             }}
                 component="img"
                 image={figure}
-                alt="Main enzyme reactions involved in the synthesis and breakdown of
-glycogen. In vivo, the GS and GBE enzymes synthesise glycogen, while the GP and
-GDE degrade it. Besides, GN is the initial precursor of the granule and stands in its
-core. Enzymes are noted in orange, glucose residues are in blue, and GN is highlighted
-with a yellow sphere."
+                alt="Main enzyme reactions involved in the synthesis and breakdown of glycogen. In vivo, the GS and GBE enzymes synthesise glycogen, while the GP and GDE degrade it. Besides, GN is the initial precursor of the granule and stands in its core. Enzymes are noted in orange,  lucose residues are in blue, and GN is highlighted with a yellow sphere."
             />
 
                 </Grid>

@@ -30,7 +30,7 @@ const MerleCard = () => {
         <Card style={{position:"relative",  minHeight: "500px", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }} elevation={5} >
             <Box>
                 <CardHeader
-                    title="Merle Stein"
+                    title="Merle Stein (Alumni)"
                 />
                 <Divider />
             </Box>
@@ -50,10 +50,8 @@ const MerleCard = () => {
                 <Grid item xs={12} sm={12} md={7} >
 
                 <Typography variant="body1" align='left' >
-                Merle completed her Bachelor's degree in quantitative biology at Heinrich-Heine University. She worked with crops 
-                before discovering her interest in modelling techniques, which are the focus of her PhD project. Merle is working 
-                on a CEPLAS funded PhD project about modelling gene expression 
-                regulation at the whole-translatome scale under controlled optogenetic perturbation.
+                Merle joined the group for her PhD project in the Department of Computer Science.
+                Merle completed her Bachelor's degree in quantitative biology at Heinrich-Heine University. She worked with crops before discovering her interest in modelling techniques, which were the focus of her PhD project. Merle is working on a CEPLAS funded PhD project about modelling gene expression regulation at the whole-translatome scale under controlled optogenetic perturbation.
 
                 </Typography>
                 <p>
