@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.797418dd.css",
-    "main.js": "/static/js/main.f4615b0a.js",
+    "main.js": "/static/js/main.d06a544c.js",
     "static/media/starch.png": "/static/media/starch.9f34cf9c369554a5de93.png",
     "static/media/PSD.jpg": "/static/media/PSD.7db929da06c11c8fd620.jpg",
     "static/media/michael.JPG": "/static/media/michael.6654257e222aaba673ce.JPG",
@@ -24,7 +24,6 @@
     "static/media/glycogen.png": "/static/media/glycogen.10e64e66ca27191bc19d.png",
     "static/media/expressinhost_logo.png": "/static/media/expressinhost_logo.3f643b12cd835edd8f51.png",
     "static/media/Sakhade2024.png": "/static/media/Sakhade2024.399d9a7b5fb8a729ec64.png",
-    "static/media/LinkedIn_icon.png": "/static/media/LinkedIn_icon.9b9ccd716eb466e5045b.png",
     "static/media/Raguin.jpg": "/static/media/Raguin.2b4ea33e03b78f41f4de.jpg",
     "static/media/Raguin_expressioninhost_light.png": "/static/media/Raguin_expressioninhost_light.c6ff92b5b7b2330fd21e.png",
     "static/media/logo-dfg.jpg": "/static/media/logo-dfg.bdece5361b2103ea8776.jpg",
@@ -50,10 +49,10 @@
     "static/media/email.png": "/static/media/email.2c378c9ee25927123f7d.png",
     "index.html": "/index.html",
     "main.797418dd.css.map": "/static/css/main.797418dd.css.map",
-    "main.f4615b0a.js.map": "/static/js/main.f4615b0a.js.map"
+    "main.d06a544c.js.map": "/static/js/main.d06a544c.js.map"
   },
   "entrypoints": [
     "static/css/main.797418dd.css",
-    "static/js/main.f4615b0a.js"
+    "static/js/main.d06a544c.js"
   ]
 }
