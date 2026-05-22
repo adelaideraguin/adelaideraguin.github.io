@@ -20,7 +20,7 @@ const newsItems = [
     type: "paper"
   },
   {
-    title: "After many years in the UK and Germany, we are back to France, at CNRS in Bordeaux!"
+    title: "After many years in the UK and Germany, we are back to France, at CNRS in Bordeaux."
   },
   {
     title: "OptiCellu project has begun – sustainable production of cellulose fibres",

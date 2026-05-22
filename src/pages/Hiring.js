@@ -23,7 +23,7 @@ function Hiring() {
                         alt="A field of corn"
                     >
                         <Typography variant="h2">
-                            Join Us!
+                            Join Us
                         </Typography>
                     </CardMedia>
                 </Card>

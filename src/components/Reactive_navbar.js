@@ -132,13 +132,13 @@ const Navbar = () => {
             }}
           >
             <Button component={Link} to="/" sx={navButtonStyle}>Home</Button>
-            <Button component={Link} to="/group" sx={navButtonStyle}>Meet the Group</Button>
+            <Button component={Link} to="/group" sx={navButtonStyle}>Group Members</Button>
             <Button component={Link} to="/research" sx={navButtonStyle}>Research Projects</Button>
             <Button component={Link} to="/funding" sx={navButtonStyle}>Funding</Button>
             <Button component={Link} to="/publications" sx={navButtonStyle}>Publications</Button>
             <Button component={Link} to="/software" sx={navButtonStyle}>Software</Button>
-            <Button component={Link} to="/hiring" sx={navButtonStyle}>Join Us!</Button>
-            <Button component={Link} to="/contact-us" sx={navButtonStyle}>Get in touch</Button>
+            <Button component={Link} to="/hiring" sx={navButtonStyle}>Join Us</Button>
+            <Button component={Link} to="/contact-us" sx={navButtonStyle}>Contacts</Button>
           </Stack>
 
         </Toolbar>

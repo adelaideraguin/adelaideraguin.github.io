@@ -10,6 +10,7 @@ import {
     Typography
 } from "@mui/material";
 
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { useState } from "react";
 import photo from "./Raguin.jpg";
 
@@ -98,6 +99,17 @@ const AdelaideCard = () => {
                                     href="https://www.researchgate.net/profile/Adelaide-Raguin"
                                 >
                                     Research Gate
+                                </Button>
+                            </Grid>
+
+                            <Grid item>
+                                <Button
+                                    variant="outlined"
+                                    size="large"
+                                    startIcon={<EmailOutlinedIcon />}
+                                    href="mailto:adelaide.raguin@u-bordeaux.fr"
+                                >
+                                    Email
                                 </Button>
                             </Grid>
                         </Grid>

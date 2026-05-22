@@ -65,7 +65,7 @@ const ResearchPaperCard = () => {
     >
 
       <Box>
-        <CardHeader title="Take a look at our Research!" />
+        <CardHeader title="Take a look at our Research" />
         <Divider />
       </Box>
 
