@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.797418dd.css",
-    "main.js": "/static/js/main.b51d23d2.js",
+    "main.js": "/static/js/main.ba82e883.js",
     "static/media/starch.png": "/static/media/starch.9f34cf9c369554a5de93.png",
     "static/media/PSD.jpg": "/static/media/PSD.7db929da06c11c8fd620.jpg",
     "static/media/michael.JPG": "/static/media/michael.6654257e222aaba673ce.JPG",
@@ -12,6 +12,7 @@
     "static/media/digestion_light2.gif": "/static/media/digestion_light2.8c0cae5f82ebb0690850.gif",
     "static/media/Asma-portraitformat.jpeg": "/static/media/Asma-portraitformat.dd6434ec257dd5a48b82.jpeg",
     "static/media/McFarlandfig.jpeg": "/static/media/McFarlandfig.a177c3848c2433e94708.jpeg",
+    "static/media/logo_RNA.jpg": "/static/media/logo_RNA.fefe06f076a280f8ee2c.jpg",
     "static/media/protein_model.png": "/static/media/protein_model.bcca4b8bccba0daee63f.png",
     "static/media/Foko2023.png": "/static/media/Foko2023.e0247249512443da084d.png",
     "static/media/david.jpeg": "/static/media/david.fbdad81eb4f4d3740f94.jpeg",
@@ -49,10 +50,10 @@
     "static/media/email.png": "/static/media/email.2c378c9ee25927123f7d.png",
     "index.html": "/index.html",
     "main.797418dd.css.map": "/static/css/main.797418dd.css.map",
-    "main.b51d23d2.js.map": "/static/js/main.b51d23d2.js.map"
+    "main.ba82e883.js.map": "/static/js/main.ba82e883.js.map"
   },
   "entrypoints": [
     "static/css/main.797418dd.css",
-    "static/js/main.b51d23d2.js"
+    "static/js/main.ba82e883.js"
   ]
 }
