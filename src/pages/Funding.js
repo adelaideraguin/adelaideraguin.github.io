@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardMedia, Typography, Box } from '@mui/material';
+import Carousel from 'react-material-ui-carousel';
 
 import ANRCard from '../components/funders_cards/ANRCard';
 import BioSCCard from '../components/funders_cards/BioSCCard';
@@ -12,7 +13,6 @@ import background from '../components/images/background.png';
 
 function Funding() {
 
-  // 👉 EASY TO ADD MORE CARDS HERE
   const funders = [
     { id: "ANR", component: <ANRCard /> },
     { id: "RNA", component: <RNACard /> },
@@ -21,6 +21,23 @@ function Funding() {
     { id: "BMBF", component: <BMBFCard /> },
     { id: "CEPLAS", component: <CEPLASCard /> },
   ];
+
+  // 🧠 helper: build “virtual infinite slides”
+  const getVisible = (index) => {
+    const len = funders.length;
+
+    return [
+      funders[index % len],
+      funders[(index + 1) % len],
+      funders[(index + 2) % len],
+    ];
+  };
+
+  const [index, setIndex] = useState(0);
+
+  const handleNext = () => setIndex((prev) => (prev + 1) % funders.length);
+  const handlePrev = () =>
+    setIndex((prev) => (prev - 1 + funders.length) % funders.length);
 
   return (
     <section>
@@ -47,41 +64,38 @@ function Funding() {
           </CardMedia>
         </Card>
 
-        {/* SCROLLABLE SINGLE ROW LAYOUT */}
-        <Box
-          sx={{
-            display: "flex",
-            flexWrap: "nowrap",
-            gap: 3,
-            overflowX: "auto",
-            paddingBottom: 2,
-            alignItems: "stretch",
-
-            // optional nicer scroll behavior
-            scrollBehavior: "smooth",
-
-            // hides ugly scrollbar (optional)
-            "&::-webkit-scrollbar": {
-              height: 8
-            },
-            "&::-webkit-scrollbar-thumb": {
-              backgroundColor: "#ccc",
-              borderRadius: 4
-            }
-          }}
+        {/* CAROUSEL */}
+        <Carousel
+          autoPlay
+          interval={3000}
+          animation="slide"
+          indicators={false}
+          navButtonsAlwaysVisible
+          next={handleNext}
+          prev={handlePrev}
         >
-          {funders.map((funder) => (
-            <Box
-              key={funder.id}
-              sx={{
-                flex: "0 0 250px",   // 👈 fixed card width
-                display: "flex"
-              }}
-            >
-              {funder.component}
-            </Box>
-          ))}
-        </Box>
+          {/* ONE “SLIDE” ALWAYS SHOWS 3 CARDS */}
+          <Box
+            sx={{
+              display: "flex",
+              gap: 3,
+              justifyContent: "center",
+              padding: 2
+            }}
+          >
+            {getVisible(index).map((funder) => (
+              <Box
+                key={funder.id}
+                sx={{
+                  flex: "1 1 0",
+                  maxWidth: 350
+                }}
+              >
+                {funder.component}
+              </Box>
+            ))}
+          </Box>
+        </Carousel>
 
       </div>
     </section>

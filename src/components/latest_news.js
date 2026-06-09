@@ -5,82 +5,74 @@ import {
 } from "@mui/material";
 
 import Carousel from 'react-material-ui-carousel';
+import { Link as RouterLink } from "react-router-dom";
+
+// reusable external link style
+const ExternalLink = ({ href, children }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: "#000", textDecoration: "none" }}
+    onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
+    onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
+  >
+    {children}
+  </a>
+);
 
 // 🧠 DATA
 const newsItems = [
+    {
+    title: (
+      <>
+        We are looking for a PhD student in Computational Biophysics. Please see the {" "}
+        <RouterLink
+          to="/hiring"
+          style={{ color: "#000", textDecoration: "none" }}
+          onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
+          onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
+        >
+          Join Us
+        </RouterLink>
+        {" "}page for details.
+      </>
+    ),
+    type: "job"
+  },
   {
     title: (
       <>
         We are delighted that the MODINVAD project coordinated by Adélaïde Raguin has been funded by the{" "}
-        <a
-          href="https://entreprises.nouvelle-aquitaine.fr/que-fait-la-region-pour-les-entreprises/innovation-dans-les-entreprises/enseignement-superieur-recherche-et-innovation"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#000", textDecoration: "none" }}
-          onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
-          onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
-        >
+        <ExternalLink href="https://entreprises.nouvelle-aquitaine.fr/que-fait-la-region-pour-les-entreprises/innovation-dans-les-entreprises/enseignement-superieur-recherche-et-innovation">
           Région Nouvelle-Aquitaine
-        </a>
+        </ExternalLink>
         . We are looking forward to collaborate with the{" "}
-        <a
-          href="https://www.bricbordeaux.com/en/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#000", textDecoration: "none" }}
-          onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
-          onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
-        >
+        <ExternalLink href="https://www.bricbordeaux.com/en/">
           Bordeaux Institute of Oncology (BRIC)
-        </a>
+        </ExternalLink>
         , the{" "}
-        <a
-          href="https://arna.cnrs.fr/en/home-page/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#000", textDecoration: "none" }}
-          onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
-          onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
-        >
+        <ExternalLink href="https://arna.cnrs.fr/en/home-page/">
           Nucleic Acids lab (ARNA)
-        </a>
+        </ExternalLink>
         , the{" "}
-        <a
-          href="https://team.inria.fr/storm/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#000", textDecoration: "none" }}
-          onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
-          onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
-        >
+        <ExternalLink href="https://team.inria.fr/storm/">
           STORM team at Inria
-        </a>
+        </ExternalLink>
         , and the biotechnology companies{" "}
-        <a
-          href="https://www.byorna.bio/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#000", textDecoration: "none" }}
-          onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
-          onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
-        >
+        <ExternalLink href="https://www.byorna.bio/">
           bYoRNA
-        </a>
+        </ExternalLink>
         {" "}and{" "}
-        <a
-          href="https://novaptech.com/en/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#000", textDecoration: "none" }}
-          onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
-          onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
-        >
+        <ExternalLink href="https://novaptech.com/en/">
           Novaptech
-        </a>
-        .
+        </ExternalLink>.
       </>
-    )
+    ),
+    type: "project"
   },
+
+
   {
     title: "Transport at a complex multiple-input-multiple-output TASEP junction",
     link: "https://doi.org/10.1016/j.physa.2026.131466",
@@ -93,34 +85,15 @@ const newsItems = [
   },
   {
     title: "After many years in the UK and Germany, we are back to France, at CNRS in Bordeaux."
-  },
-  {
-    title: "OptiCellu project has begun – sustainable production of cellulose fibres",
-    date: "April 2024",
-    link: "https://www.biosc.de/OptiCellu_EN",
-    type: "project"
-  },
-  {
-    title: "Sensitivity analysis of enzymatic saccharification",
-    date: "January 2024",
-    link: "https://doi.org/10.1016/j.csbj.2024.01.006",
-    type: "paper"
-  },
-  {
-    title: "Group attends Cell Physics conference",
-    date: "October 2023"
-  },
-  {
-    title: "Master's thesis completed",
-    date: "October 2023"
   }
 ];
 
 // 🧠 COMPONENT
 const LatestNewsCard = () => {
-  const latest = newsItems.slice(0, 3);
 
-  const LinkText = ({ href, children }) => (
+  const latest = newsItems.slice(0, 4);
+
+  const ExternalLink = ({ href, children }) => (
     <a
       href={href}
       target="_blank"
@@ -137,7 +110,7 @@ const LatestNewsCard = () => {
     if (React.isValidElement(item.title)) return item.title;
 
     if (item.link && item.type === "paper") {
-      return <LinkText href={item.link}>{item.title}</LinkText>;
+      return <ExternalLink href={item.link}>{item.title}</ExternalLink>;
     }
 
     return item.title;
@@ -161,32 +134,33 @@ const LatestNewsCard = () => {
               key={index}
               sx={{
                 minHeight: 240,
+                px: { xs: 6, sm: 8, md: 10 },
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                textAlign: "center",
-                px: 2
+                textAlign: "center"
               }}
             >
+
               {/* CHIP */}
               <Box sx={{ minHeight: 32, mb: 1 }}>
                 {item.type === "paper" && (
                   <Chip label="New Publication" color="primary" />
                 )}
+                {item.type === "project" && (
+                  <Chip label="New Project" color="primary" />
+                )}
+                {item.type === "job" && (
+                  <Chip label="Job Opportunity" color="secondary" />
+                )}
               </Box>
 
               {/* TITLE */}
-              <Typography variant="h6" sx={{ mb: 1 }}>
+              <Typography variant="h6" sx={{ maxWidth: "85%" }}>
                 {renderTitle(item)}
               </Typography>
 
-              {/* DATE */}
-              {item.date && item.type !== "paper" && (
-                <Typography variant="body2" color="text.secondary">
-                  {item.date}
-                </Typography>
-              )}
             </Box>
           ))}
         </Carousel>
