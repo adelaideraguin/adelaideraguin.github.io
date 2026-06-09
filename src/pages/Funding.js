@@ -6,10 +6,22 @@ import BioSCCard from '../components/funders_cards/BioSCCard';
 import DFGCard from '../components/funders_cards/DFGCard';
 import CEPLASCard from '../components/funders_cards/CEPLASCard';
 import BMBFCard from '../components/funders_cards/bmbfCard';
+import RNACard from '../components/funders_cards/RNACard';
 
 import background from '../components/images/background.png';
 
 function Funding() {
+
+  // 👉 EASY TO ADD MORE CARDS HERE
+  const funders = [
+    { id: "ANR", component: <ANRCard /> },
+    { id: "RNA", component: <RNACard /> },
+    { id: "DFG", component: <DFGCard /> },
+    { id: "BioSC", component: <BioSCCard /> },
+    { id: "BMBF", component: <BMBFCard /> },
+    { id: "CEPLAS", component: <CEPLASCard /> },
+  ];
+
   return (
     <section>
       <div className="container-fluid">
@@ -35,38 +47,40 @@ function Funding() {
           </CardMedia>
         </Card>
 
-        {/* RESPONSIVE GRID */}
+        {/* SCROLLABLE SINGLE ROW LAYOUT */}
         <Box
           sx={{
-            display: "grid",
+            display: "flex",
+            flexWrap: "nowrap",
             gap: 3,
+            overflowX: "auto",
+            paddingBottom: 2,
+            alignItems: "stretch",
 
-            // default (mobile)
-            gridTemplateColumns: "1fr",
+            // optional nicer scroll behavior
+            scrollBehavior: "smooth",
 
-            // small screens
-            "@media (min-width:600px)": {
-              gridTemplateColumns: "repeat(2, 1fr)"
+            // hides ugly scrollbar (optional)
+            "&::-webkit-scrollbar": {
+              height: 8
             },
-
-            // medium screens
-            "@media (min-width:900px)": {
-              gridTemplateColumns: "repeat(3, 1fr)"
-            },
-
-            // large screens
-            "@media (min-width:1200px)": {
-              gridTemplateColumns: "repeat(5, 1fr)"
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: "#ccc",
+              borderRadius: 4
             }
           }}
         >
-
-          <ANRCard />
-          <DFGCard />
-          <BioSCCard />
-          <BMBFCard />
-          <CEPLASCard />
-
+          {funders.map((funder) => (
+            <Box
+              key={funder.id}
+              sx={{
+                flex: "0 0 250px",   // 👈 fixed card width
+                display: "flex"
+              }}
+            >
+              {funder.component}
+            </Box>
+          ))}
         </Box>
 
       </div>
